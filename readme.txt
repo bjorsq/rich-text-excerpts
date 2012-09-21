@@ -3,8 +3,8 @@ Contributors: bjorsq
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ2WC8UHFMEQ
 Tags: excerpt, editor, TinyMCE, formatting
 Requires at least: 3.3
-Tested up to: 3.4-beta
-Stable tag: 1.0
+Tested up to: 3.5
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -24,28 +24,15 @@ The plugin utilises three action hooks:
 
 http://core.trac.wordpress.org/ticket/19173
 
-The editing box for excerpts uses [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) to create a rich text editor with the following options:
+The editing box for excerpts uses [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) to create a rich text editor. You can set the options for the rich text editot in the plugin options page (in the Wordpress  Settings menu).
 
-`
-$options = array(
-    "wpautop" => true,
-    "media_buttons" => false,
-    "textarea_name" => 'excerpt',
-    "textarea_rows" => 3,
-    "teeny" => true
-);
-`
-
-You could change these lines in the plugin to generate a fully featured editor with media upload fields if you wished - just look at the documentation in the Wordpress Codex for all the details: 
-
-http://codex.wordpress.org/Function_Reference/wp_editor
-
-The plugin also contains two filters which act on the "teeny" MCE editor instance which is used by default. These currently add the "charmap" and "paste" plugins, remove some buttons (strikethrough, for example), and add a few buttons for the new plugins. 
+The plugin also contains two filters which act on the "teeny" MCE editor instance which is used by default. The plugins and buttons used by the minimal editor can be customised on the plugin options page. 
 
 == Installation ==
 
 1. Upload the plugin to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Configure the plugin using the Plugin options page under the Settings menu
 
 If you want to use excerpts in pages, add this to your theme's `functions.php` file:
 
@@ -58,6 +45,10 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 
 == Changelog ==
 
+= 1.1 =
+* Addition of plugin options page to Wordpress Admin area, giving users the ability to configure the operation of the plugin
+* Fixed minor bug relating to editor display which was triggered in some circumstances
+
 = 1.0 =
 * Wordpress submission after [initial development on bitbucket](https://bitbucket.org/bjorsq/rich-text-excerpts).
 
@@ -68,9 +59,5 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 == Contribute ==
 
 At the moment, the plugin uses [html_entity_decode](http://php.net/manual/en/function.html-entity-decode.php) to decode encoded entities in the excerpt content prior to displaying it in the editor. It would be nice to find a more robust way of accessing the excerpt field data using a Wordpress filter.
-
-The plugin will change all excerpt fields into rich text editors - there isn't currently an option to only enable it for specified post types (although this would be easy to add).
-
-The options for the editor should really be placed in an administration page so users can configure the plugin without editing the source. The only trouble is, which options do you put there? The TinyMCE Advanced Plugin does a good job of making the vast number of options for the editor configurable, but how much control do you really need over excerpts? It may be enough to have a simple choice of "tiny" or "teeny", but having any choice at all begs the question "if it can do that, why can't it do this?"
 
 I use git for version control, so if you want to contribute, go over to [bitbucket](https://bitbucket.org/bjorsq/rich-text-excerpts). I'll push any stable changes to the Wordpress SVN repo when they're ready.

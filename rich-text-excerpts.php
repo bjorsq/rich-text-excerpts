@@ -46,6 +46,11 @@ class RichTextExcerpts {
          */
         add_filter('teeny_mce_plugins', array('RichTextExcerpts', 'teeny_mce_plugins'), 10, 2);
         add_filter('teeny_mce_buttons', array('RichTextExcerpts', 'teeny_mce_buttons'), 10, 2);
+        /**
+         * register plugin admin options
+         */
+        add_action( 'admin_menu', array('RichTextExcerpts', 'add_plugin_admin_menu') );
+        add_action( 'admin_init', array('RichTextExcerpts', 'register_plugin_options') );
     }
 
     /**
@@ -76,14 +81,15 @@ class RichTextExcerpts {
     public static function post_excerpt_editor()
     {
         global $post;
-        print('<div class="postbox-container"><h3 style="float:left;"><label for="excerpt">Excerpt</label></h3>');
+        $plugin_options = self::get_plugin_options();
+        print('<div style="margin-bottom:1em;clear:both;width:100%;"><h3><label for="excerpt">Excerpt</label></h3>');
         /* options for editor */
         $options = array(
-            "wpautop" => true,
-            "media_buttons" => false,
+            "wpautop" => $plugin_options['editor_settings']['wpautop'],
+            "media_buttons" => $plugin_options['editor_settings']['media_buttons'],
             "textarea_name" => 'excerpt',
-            "textarea_rows" => 3,
-            "teeny" => true //use minimal editor configuration
+            "textarea_rows" => $plugin_options['editor_settings']['textarea_rows'],
+            "teeny" => ($plugin_options['editor_type'] === "teeny")? true: false
         );
         /* "echo" the editor */
         wp_editor(html_entity_decode($post->post_excerpt), 'excerpt', $options );
@@ -95,11 +101,13 @@ class RichTextExcerpts {
      */
     public static function teeny_mce_plugins($plugins, $editor_id)
     {
-        if (!isset($plugins["paste"])) {
-            array_push($plugins, "paste");
-        }
-        if (!isset($plugins["charmap"])) {
-            array_push($plugins, "charmap");
+        $plugin_options = self::get_plugin_options();
+        if (count($plugin_options['editor_settings']['plugins'])) {
+            foreach ($plugin_options['editor_settings']['plugins'] as $plugin_name) {
+                if (!isset($plugins[$plugin_name])) {
+                    array_push($plugins, $plugin_name);
+                }
+            }
         }
         return $plugins;
     }
@@ -110,7 +118,236 @@ class RichTextExcerpts {
      */
     public static function teeny_mce_buttons($buttons, $editor_id)
     {
-        return array('bold', 'italic', 'underline', 'separator','pastetext', 'pasteword', 'removeformat', 'separator', 'charmap', 'blockquote', 'separator', 'bullist', 'numlist', 'separator', 'justifyleft', 'justifycenter', 'justifyright', 'separator', 'undo', 'redo', 'separator', 'link', 'unlink');
+        $plugin_options = self::get_plugin_options();
+        return $plugin_options['editor_settings']['buttons'];
+    }
+
+
+    /************************************************************
+     * PLUGIN OPTIONS ADMINISTRATION                            *
+     ************************************************************/
+    
+    /**
+     * add an admin page under settings to configure the plugin
+     */
+    public static function add_plugin_admin_menu()
+    {
+        /* Plugin Options page */
+        $options_page = add_submenu_page("options-general.php", "Rich Text Excerpts", "Rich Text Excerpts", "manage_options", "rich_text_excerpts_options", array('RichTextExcerpts', "plugin_options_page") );
+        /* Use the admin_print_scripts action to add scripts for theme options */
+        add_action( 'admin_print_scripts-' . $options_page, array('RichTextExcerpts', 'plugin_admin_scripts') );
+        /* Use the admin_print_styles action to add CSS for theme options */
+        //add_action( 'admin_print_styles-' . $options_page, array('RichTextExcerpts', 'plugin_admin_styles') );
+    }
+
+    /**
+     * add script to admin for plugin options
+     */
+    public static function plugin_admin_scripts()
+    {
+        wp_enqueue_script('RichTextExcerptsAdminScript', plugins_url('rich-text-excerpts.js', __FILE__), array('jquery'));
+    }
+    
+    /**
+     * creates the options page
+     */
+    public static function plugin_options_page()
+    {
+        print('<div class="wrap"><div class="icon32" id="icon-options-general"><br /></div><h2>Rich Text Excerpts Options</h2>');
+        settings_errors('rich_text_excerpts_options');
+        print('<form method="post" action="options.php">');
+        settings_fields('rich_text_excerpts_options');
+        do_settings_sections('rte');
+        printf('<p class="submit"><input type="submit" class="button-primary" name="Submit" value="%s" /></p>', _('Save Changes'));
+        print('</form></div>');
+    }
+
+    /**
+     * registers settings and sections
+     */
+    function register_plugin_options()
+    {
+        register_setting('rich_text_excerpts_options', 'rich_text_excerpts_options', array('RichTextExcerpts', 'validate_rich_text_excerpts_options'));
+        
+        /* post type options */
+        add_settings_section(
+            'post-type-options',
+            'Post Types',
+            array('RichTextExcerpts', 'options_section_text'), 
+            'rte'
+        );
+        add_settings_field(
+            'supported_post_types', 
+            'Choose which post types will have rich text editor for excerpts', 
+            array('RichTextExcerpts', 'options_setting_post_types'), 
+            'rte', 
+            'post-type-options'
+        );
+                
+        /* editor options */
+        add_settings_section(
+            'editor-options',
+            'Editor Options',
+            array('RichTextExcerpts', 'options_section_text'), 
+            'rte'
+        );
+        add_settings_field(
+            'editor_type', 
+            'Choose which Editor is used for excerpts', 
+            array('RichTextExcerpts', 'options_setting_editor_type'), 
+            'rte', 
+            'editor-options'
+        );
+        /* settings for editor */
+        add_settings_field(
+            'editor_settings', 
+            'Editor Settings', 
+            array('RichTextExcerpts', 'options_editor_settings'), 
+            'rte', 
+            'editor-options'
+        );
+    }
+
+    /**
+     * gets plugin options - merges saved options with defaults
+     * @return array
+     */
+    public static function get_plugin_options()
+    {
+        $defaults = array(
+            "supported_post_types" => array('post'),
+            "editor_type" => "teeny",
+            "editor_settings" => array(
+                "wpautop" => true,
+                "media_buttons" => false,
+                "textarea_rows" => 3,
+                "buttons" => array('bold', 'italic', 'underline', 'separator','pastetext', 'pasteword', 'removeformat', 'separator', 'charmap', 'blockquote', 'separator', 'bullist', 'numlist', 'separator', 'justifyleft', 'justifycenter', 'justifyright', 'separator', 'undo', 'redo', 'separator', 'link', 'unlink'),
+                "plugins" => array('charmap', 'paste')
+            )
+        );
+        $saved = get_option('rich_text_excerpts_options');
+        foreach ($defaults as $key => $val) {
+            if (!isset($saved[$key])) {
+                $saved[$key] = $val;
+            }
+        }
+        return $saved;
+    }
+
+    /**
+     * settings section text
+     */
+    public static function options_section_text()
+    { 
+        echo "";
+    }
+
+    /**
+     * post type support settings
+     */
+    public static function options_setting_post_types()
+    { 
+        $options = self::get_plugin_options();
+        $post_types = get_post_types(array("public" => true),'names');
+        foreach ($post_types as $post_type ) {
+            if ( post_type_supports($post_type, 'excerpt') ) {
+                $chckd = (in_array($post_type, $options["supported_post_types"]))? ' checked="checked"': '';
+                printf('<p><input type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type, $post_type, $chckd, $post_type, $post_type);
+            }
+        }
+        print('<p>Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see <a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a> in the Wordpress Codex.</p>');
+    }
+
+    /**
+     * settings section text
+     */
+    public static function options_setting_editor_type()
+    { 
+        $options = self::get_plugin_options();
+        $chckd = ($options["editor_type"] === "teeny")? ' checked="checked"': '';
+        printf('<p><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-teeny" class="rte-options-editor-type" value="teeny"%s /> <label for="rich_text_excerpts_options-editor_type-teeny">Use the minimal editor configuration used in PressThis</label></p>', $chckd);
+        $chckd = ($options["editor_type"] === "teeny")? '': ' checked="checked"';
+        printf('<p><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-tiny" class="rte-options-editor-type" value="tiny"%s /> <label for="rich_text_excerpts_options-editor_type-tiny">Use the full version of the editor</label></p>', $chckd);
+        print('<p>Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; version of the editor (recommended). Customising the full TinyMCE editor is best carried out using a plugin like TinyMCE Advanced. If you choose to use the &ldquo;teeny&rdquo; version of the editor, you can customise the controls it will have here.</p>');
+    }
+
+    /**
+     * general settings for text editor
+     */
+    public static function options_editor_settings()
+    { 
+        $options = self::get_plugin_options();
+        $chckd = $options['editor_settings']['wpautop']? '': ' checked="checked"';
+        printf('<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][wpautop]" id="rich_text_excerpts_options-editor_settings-wpautop"%s /> <label for="rich_text_excerpts_options-editor_settings-wpautop">Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in the HTML editor This will make it possible to use more advanced coding in the HTML editor without the back-end filtering affecting it much. However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently.</label></p>', $chckd);
+        $chckd = $options['editor_settings']['media_buttons']? 'checked="checked"': '';
+        printf('<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][media_buttons]" id="rich_text_excerpts_options-editor_settings-media_buttons"%s /> <label for="rich_text_excerpts_options-editor_settings-media_buttons">Enable upload media button</label></p>', $chckd);
+        printf('<p><input type="text" length="2" name="rich_text_excerpts_options[editor_settings][textarea_rows]" id="rich_text_excerpts_options-editor_settings-textarea_rows" value="%d" /> <label for="rich_text_excerpts_options-editor_settings-textarea_rows">Number of rows to use in the text editor (minimum is 3)</label></p>', intVal($options['editor_settings']['textarea_rows']));
+        print('<p><strong>Toolbar Buttons and Plugins</strong></p>');
+        /**
+         * settings for teeny text editor
+         */
+        print('<div id="editor_type_teeny_options">');
+        print('<p>For a list of buttons and plugins in TinyMCE, <a href="http://www.tinymce.com/wiki.php/Buttons/controls">see this page on the TinyMCE wiki</a>. There is also some documentation on the <a href="http://codex.wordpress.org/TinyMCE">implementation of TinyMCE in Wordpress on the Wordpress Codex</a>.</p><p>Button and plugin names should be separated using commas.</p>');
+        printf('<p><label for="rich_text_excerpts_options-editor_settings-plugins">Plugins to add - make sure you add any plugin specific buttons to the editor below.</label><br /><input type="text" length="50" name="rich_text_excerpts_options[editor_settings][plugins]" id="rich_text_excerpts_options-editor_settings-plugins" value="%s" /></p>', implode(',', $options['editor_settings']['plugins']));
+        printf('<p><label for="rich_text_excerpts_options-editor_settings-buttons">Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of buttons</label><br /><textarea name="rich_text_excerpts_options[editor_settings][buttons]" id="rich_text_excerpts_options-editor_settings-buttons" cols="100" rows="3">%s</textarea></p>', implode(',', $options['editor_settings']['buttons']));
+        print('</div>');
+        /**
+         * settings for tiny text editor (none to show here, but show links to TinyMCE advanced)
+         */
+        print('<div id="editor_type_tiny_options">');
+        if (is_plugin_active('tinymce-advanced/tinymce-advanced.php')) {
+            printf('<p id=""><a href="%s">Configure the buttons for the advanced editor using the TinyMCE Advanced plugin</a>.</p>', admin_url('options-general.php?page=tinymce-advanced'));
+        } else {
+            printf('<p>If you want to configure the buttons for the advanced editor, <a href="%s">install and activate the TinyMCE Advanced plugin</a>.</p>', admin_url('plugins.php'));
+        }
+        print('</div>');
+    }
+
+    /**
+     * takes a string of comma-separated arguments and splits/trims it
+     */
+    public static function cleanup_mce_array($inputStr = '')
+    {
+        if (trim($inputStr) === "") {
+            return array();
+        } else {
+            $input = explode(',', $inputStr);
+            $output = array();
+            foreach ($input as $str) {
+                if (trim($str) !== '') {
+                    $output[] = $str;
+                }
+            }
+            return $output;
+        }
+    }
+    
+    /**
+     * input validation callback
+     */
+    public static function validate_rich_text_excerpts_options($plugin_options)
+    {
+        if (!isset($plugin_options['supported_post_types'])) {
+            $plugin_options['supported_post_types'] = array();
+        }
+        $plugin_options['editor_settings']['wpautop'] = (!isset($plugin_options['editor_settings']['wpautop']));
+        $plugin_options['editor_settings']['media_buttons'] = (isset($plugin_options['editor_settings']['media_buttons']));
+        $plugin_options['editor_settings']['textarea_rows'] = intval($plugin_options['editor_settings']['textarea_rows']);
+        if ($plugin_options['editor_settings']['textarea_rows'] < 3) {
+            $plugin_options['editor_settings']['textarea_rows'] = 3;
+        }
+        if (trim($plugin_options['editor_settings']['plugins']) == "") {
+            $plugin_options['editor_settings']['plugins'] = array();
+        } else {
+            $plugin_options['editor_settings']['plugins'] = self::cleanup_mce_array($plugin_options['editor_settings']['plugins']);
+        }
+        if (trim($plugin_options['editor_settings']['buttons']) == "") {
+            $plugin_options['editor_settings']['buttons'] = array();
+        } else {
+            $plugin_options['editor_settings']['buttons'] = self::cleanup_mce_array($plugin_options['editor_settings']['buttons']);
+        }
+
+        return $plugin_options;
     }
 
 }
