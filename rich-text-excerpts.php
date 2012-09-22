@@ -5,7 +5,7 @@ Plugin URI: https://bitbucket.org/bjorsq/rich-text-excerpts
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.1
+Version: 1.2beta
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
@@ -51,6 +51,18 @@ class RichTextExcerpts {
          */
         add_action( 'admin_menu', array('RichTextExcerpts', 'add_plugin_admin_menu') );
         add_action( 'admin_init', array('RichTextExcerpts', 'register_plugin_options') );
+        /**
+         * register text domain
+         */
+        add_action('plugins_loaded', array('RichTextExcerpts', 'load_text_domain'));
+    }
+
+    /**
+     * i18n
+     */
+    public static function load_text_domain()
+    {
+        load_plugin_textdomain( 'rich-text-excerpts', false, dirname(plugin_basename(__FILE__)) . '/languages/');
     }
 
     /**
@@ -82,7 +94,7 @@ class RichTextExcerpts {
     {
         global $post;
         $plugin_options = self::get_plugin_options();
-        print('<div style="margin-bottom:1em;clear:both;width:100%;"><h3><label for="excerpt">Excerpt</label></h3>');
+        printf('<div style="margin-bottom:1em;clear:both;width:100%%;"><h3><label for="excerpt">%s</label></h3>', __('Excerpt', 'rich-text-excerpts'));
         /* options for editor */
         $options = array(
             "wpautop" => $plugin_options['editor_settings']['wpautop'],
@@ -133,7 +145,7 @@ class RichTextExcerpts {
     public static function add_plugin_admin_menu()
     {
         /* Plugin Options page */
-        $options_page = add_submenu_page("options-general.php", "Rich Text Excerpts", "Rich Text Excerpts", "manage_options", "rich_text_excerpts_options", array('RichTextExcerpts', "plugin_options_page") );
+        $options_page = add_submenu_page("options-general.php", __('Rich Text Excerpts', 'rich-text-excerpts'), __('Rich Text Excerpts', 'rich-text-excerpts'), "manage_options", "rich_text_excerpts_options", array('RichTextExcerpts', "plugin_options_page") );
         /* Use the admin_print_scripts action to add scripts for theme options */
         add_action( 'admin_print_scripts-' . $options_page, array('RichTextExcerpts', 'plugin_admin_scripts') );
         /* Use the admin_print_styles action to add CSS for theme options */
@@ -153,12 +165,12 @@ class RichTextExcerpts {
      */
     public static function plugin_options_page()
     {
-        print('<div class="wrap"><div class="icon32" id="icon-options-general"><br /></div><h2>Rich Text Excerpts Options</h2>');
+        printf('<div class="wrap"><div class="icon32" id="icon-options-general"><br /></div><h2>%s</h2>', __('Rich Text Excerpts Options', 'rich-text-excerpts'));
         settings_errors('rich_text_excerpts_options');
         print('<form method="post" action="options.php">');
         settings_fields('rich_text_excerpts_options');
         do_settings_sections('rte');
-        printf('<p class="submit"><input type="submit" class="button-primary" name="Submit" value="%s" /></p>', _('Save Changes'));
+        printf('<p class="submit"><input type="submit" class="button-primary" name="Submit" value="%s" /></p>', __('Save Changes', 'rich-text-excerpts'));
         print('</form></div>');
     }
 
@@ -178,7 +190,7 @@ class RichTextExcerpts {
         );
         add_settings_field(
             'supported_post_types', 
-            'Choose which post types will have rich text editor for excerpts', 
+            __('Choose which post types will have rich text editor for excerpts', 'rich-text-excerpts'), 
             array('RichTextExcerpts', 'options_setting_post_types'), 
             'rte', 
             'post-type-options'
@@ -187,13 +199,13 @@ class RichTextExcerpts {
         /* editor options */
         add_settings_section(
             'editor-options',
-            'Editor Options',
+            __('Editor Options', 'rich-text-excerpts'),
             array('RichTextExcerpts', 'options_section_text'), 
             'rte'
         );
         add_settings_field(
             'editor_type', 
-            'Choose which Editor is used for excerpts', 
+            __('Choose which Editor is used for excerpts', 'rich-text-excerpts'), 
             array('RichTextExcerpts', 'options_setting_editor_type'), 
             'rte', 
             'editor-options'
@@ -201,7 +213,7 @@ class RichTextExcerpts {
         /* settings for editor */
         add_settings_field(
             'editor_settings', 
-            'Editor Settings', 
+            __('Editor Settings', 'rich-text-excerpts'), 
             array('RichTextExcerpts', 'options_editor_settings'), 
             'rte', 
             'editor-options'
@@ -255,7 +267,9 @@ class RichTextExcerpts {
                 printf('<p><input type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type, $post_type, $chckd, $post_type, $post_type);
             }
         }
-        print('<p>Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see <a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a> in the Wordpress Codex.</p>');
+        print('<p>');
+        printf(__('Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see %s in the Wordpress Codex', 'rich-text-excerpts'), '<a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a>');
+        print('.</p>');
     }
 
     /**
@@ -265,10 +279,10 @@ class RichTextExcerpts {
     { 
         $options = self::get_plugin_options();
         $chckd = ($options["editor_type"] === "teeny")? ' checked="checked"': '';
-        printf('<p><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-teeny" class="rte-options-editor-type" value="teeny"%s /> <label for="rich_text_excerpts_options-editor_type-teeny">Use the minimal editor configuration used in PressThis</label></p>', $chckd);
+        printf('<p><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-teeny" class="rte-options-editor-type" value="teeny"%s /> <label for="rich_text_excerpts_options-editor_type-teeny">%s</label></p>', $chckd, __('Use the minimal editor configuration used in PressThis', 'rich-text-excerpts'));
         $chckd = ($options["editor_type"] === "teeny")? '': ' checked="checked"';
-        printf('<p><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-tiny" class="rte-options-editor-type" value="tiny"%s /> <label for="rich_text_excerpts_options-editor_type-tiny">Use the full version of the editor</label></p>', $chckd);
-        print('<p>Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; version of the editor (recommended). Customising the full TinyMCE editor is best carried out using a plugin like TinyMCE Advanced. If you choose to use the &ldquo;teeny&rdquo; version of the editor, you can customise the controls it will have here.</p>');
+        printf('<p><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-tiny" class="rte-options-editor-type" value="tiny"%s /> <label for="rich_text_excerpts_options-editor_type-tiny">%s</label></p>', $chckd, __('Use the full version of the editor', 'rich-text-excerpts'));
+        printf('<p>%s.</p>', __('Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; version of the editor (recommended). Customising the full TinyMCE editor is best carried out using a plugin like TinyMCE Advanced. If you choose to use the &ldquo;teeny&rdquo; version of the editor, you can customise the controls it will have here', 'rich-text-excerpts'));
     }
 
     /**
@@ -278,27 +292,27 @@ class RichTextExcerpts {
     { 
         $options = self::get_plugin_options();
         $chckd = $options['editor_settings']['wpautop']? '': ' checked="checked"';
-        printf('<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][wpautop]" id="rich_text_excerpts_options-editor_settings-wpautop"%s /> <label for="rich_text_excerpts_options-editor_settings-wpautop">Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in the HTML editor This will make it possible to use more advanced coding in the HTML editor without the back-end filtering affecting it much. However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently.</label></p>', $chckd);
+        printf('<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][wpautop]" id="rich_text_excerpts_options-editor_settings-wpautop"%s /> <label for="rich_text_excerpts_options-editor_settings-wpautop">%s.</label></p>', $chckd, __('Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in the HTML editor This will make it possible to use more advanced coding in the HTML editor without the back-end filtering affecting it much. However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently', 'rich-text-excerpts'));
         $chckd = $options['editor_settings']['media_buttons']? 'checked="checked"': '';
-        printf('<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][media_buttons]" id="rich_text_excerpts_options-editor_settings-media_buttons"%s /> <label for="rich_text_excerpts_options-editor_settings-media_buttons">Enable upload media button</label></p>', $chckd);
-        printf('<p><input type="text" length="2" name="rich_text_excerpts_options[editor_settings][textarea_rows]" id="rich_text_excerpts_options-editor_settings-textarea_rows" value="%d" /> <label for="rich_text_excerpts_options-editor_settings-textarea_rows">Number of rows to use in the text editor (minimum is 3)</label></p>', intVal($options['editor_settings']['textarea_rows']));
-        print('<p><strong>Toolbar Buttons and Plugins</strong></p>');
+        printf('<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][media_buttons]" id="rich_text_excerpts_options-editor_settings-media_buttons"%s /> <label for="rich_text_excerpts_options-editor_settings-media_buttons">%s</label></p>', $chckd, __('Enable upload media button', 'rich-text-excerpts'));
+        printf('<p><input type="text" length="2" name="rich_text_excerpts_options[editor_settings][textarea_rows]" id="rich_text_excerpts_options-editor_settings-textarea_rows" value="%d" /> <label for="rich_text_excerpts_options-editor_settings-textarea_rows">%s</label></p>', intVal($options['editor_settings']['textarea_rows']), __('Number of rows to use in the text editor (minimum is 3)', 'rich-text-excerpts'));
+        printf('<p><strong>%s</strong></p>', __('Toolbar Buttons and Plugins', 'rich-text-excerpts'));
         /**
          * settings for teeny text editor
          */
         print('<div id="editor_type_teeny_options">');
-        print('<p>For a list of buttons and plugins in TinyMCE, <a href="http://www.tinymce.com/wiki.php/Buttons/controls">see this page on the TinyMCE wiki</a>. There is also some documentation on the <a href="http://codex.wordpress.org/TinyMCE">implementation of TinyMCE in Wordpress on the Wordpress Codex</a>.</p><p>Button and plugin names should be separated using commas.</p>');
-        printf('<p><label for="rich_text_excerpts_options-editor_settings-plugins">Plugins to add - make sure you add any plugin specific buttons to the editor below.</label><br /><input type="text" length="50" name="rich_text_excerpts_options[editor_settings][plugins]" id="rich_text_excerpts_options-editor_settings-plugins" value="%s" /></p>', implode(',', $options['editor_settings']['plugins']));
-        printf('<p><label for="rich_text_excerpts_options-editor_settings-buttons">Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of buttons</label><br /><textarea name="rich_text_excerpts_options[editor_settings][buttons]" id="rich_text_excerpts_options-editor_settings-buttons" cols="100" rows="3">%s</textarea></p>', implode(',', $options['editor_settings']['buttons']));
+        printf('<p>%s.</p>', __('For a list of buttons and plugins in TinyMCE, <a href="http://www.tinymce.com/wiki.php/Buttons/controls">see this page on the TinyMCE wiki</a>. There is also some documentation on the <a href="http://codex.wordpress.org/TinyMCE">implementation of TinyMCE in Wordpress on the Wordpress Codex</a>.</p><p>Button and plugin names should be separated using commas', 'rich-text-excerpts'));
+        printf('<p><label for="rich_text_excerpts_options-editor_settings-plugins">%s.</label><br /><input type="text" length="50" name="rich_text_excerpts_options[editor_settings][plugins]" id="rich_text_excerpts_options-editor_settings-plugins" value="%s" /></p>', __('Plugins to add - make sure you add any plugin specific buttons to the editor below', 'rich-text-excerpts'), implode(',', $options['editor_settings']['plugins']));
+        printf('<p><label for="rich_text_excerpts_options-editor_settings-buttons">%s</label><br /><textarea name="rich_text_excerpts_options[editor_settings][buttons]" id="rich_text_excerpts_options-editor_settings-buttons" cols="100" rows="3">%s</textarea></p>', __('Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of buttons', 'rich-text-excerpts'), implode(',', $options['editor_settings']['buttons']));
         print('</div>');
         /**
          * settings for tiny text editor (none to show here, but show links to TinyMCE advanced)
          */
         print('<div id="editor_type_tiny_options">');
         if (is_plugin_active('tinymce-advanced/tinymce-advanced.php')) {
-            printf('<p id=""><a href="%s">Configure the buttons for the advanced editor using the TinyMCE Advanced plugin</a>.</p>', admin_url('options-general.php?page=tinymce-advanced'));
+            printf('<p><a href="%s">%s</a>.</p>', admin_url('options-general.php?page=tinymce-advanced'), __('Configure the buttons for the advanced editor using the TinyMCE Advanced plugin', 'rich-text-excerpts'));
         } else {
-            printf('<p>If you want to configure the buttons for the advanced editor, <a href="%s">install and activate the TinyMCE Advanced plugin</a>.</p>', admin_url('plugins.php'));
+            printf('<p><a href="%s">%s</a>.</p>', admin_url('plugins.php'), __('If you want to configure the buttons for the advanced editor, install and activate the TinyMCE Advanced plugin', 'rich-text-excerpts'));
         }
         print('</div>');
     }
