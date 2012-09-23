@@ -3,48 +3,47 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Rich Text Excerpts 1.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/rich-text-excerpts\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/extend/plugins/rich-text-excerpts\n"
 "POT-Creation-Date: 2012-09-23 20:16:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 
 #: rich-text-excerpts.php:98
 msgid "Excerpt"
-msgstr ""
+msgstr "مقتطفات"
 
 #. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.2)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: rich-text-excerpts.php:149
 msgid "Rich Text Excerpts"
-msgstr ""
+msgstr "مقتطفات النص المنسق"
 
 #: rich-text-excerpts.php:169
 msgid "Rich Text Excerpts Options"
-msgstr ""
+msgstr "النص المنسق مقتطفات خيارات"
 
 #: rich-text-excerpts.php:174
 msgid "Save Changes"
-msgstr ""
+msgstr "حفظ التغييرات"
 
 #: rich-text-excerpts.php:194
 msgid "Choose which post types will have rich text editor for excerpts"
-msgstr ""
+msgstr "اختيار أي نوع من أنواع آخر سيكون محرر نص منسق لمقتطفات"
 
 #: rich-text-excerpts.php:203
 msgid "Editor Options"
-msgstr ""
+msgstr "خيارات المحرر"
 
 #: rich-text-excerpts.php:209
 msgid "Choose which Editor is used for excerpts"
-msgstr ""
+msgstr "اختيار أي محرر يستخدم لمقتطفات"
 
 #: rich-text-excerpts.php:217
 msgid "Editor Settings"
-msgstr ""
+msgstr "محرر إعدادات"
 
 #: rich-text-excerpts.php:271
 msgid ""
@@ -52,15 +51,15 @@ msgid ""
 "excerpts. If the post type you want is not listed here, it does not "
 "currently support excerpts - to add support for excerpts to a post type, see "
 "the Wordpress Codex"
-msgstr ""
+msgstr "وسوف يتم تحديد أنواع آخر هنا استخدام محرر نص عادي العادية لمقتطفات. إذا لم يتم سرد نوع آخر الذي تريد هنا، فإنه لا يعتمد حاليا مقتطفات - لإضافة دعم لمقتطفات إلى نوع آخر، راجع الدستور وورد"
 
 #: rich-text-excerpts.php:281
 msgid "Use the minimal editor configuration used in PressThis"
-msgstr ""
+msgstr "استخدام الحد الأدنى من التكوين محرر المستخدمة في PressThis"
 
 #: rich-text-excerpts.php:283
 msgid "Use the full version of the editor"
-msgstr ""
+msgstr "استخدام النسخة الكاملة من محرر"
 
 #: rich-text-excerpts.php:284
 msgid ""
@@ -69,7 +68,7 @@ msgid ""
 "best carried out using a plugin like TinyMCE Advanced. If you choose to use "
 "the &ldquo;teeny&rdquo; version of the editor, you can customise the "
 "controls it will have here"
-msgstr ""
+msgstr "اختيار ما إذا كنت تريد استخدام محرر TinyMCE كامل، أو &ldquo;teeny&rdquo; نسخة من محرر (مستحسن). Customising المحرر TinyMCE كامل ويتم استخدام أفضل ما مثل البرنامج المساعد المتقدم TinyMCE. إذا اخترت استخدام &ldquo;teeny&rdquo; نسخة من المحرر، يمكنك تخصيص عناصر التحكم سيكون لها هنا"
 
 #: rich-text-excerpts.php:294
 msgid ""
@@ -78,70 +77,70 @@ msgid ""
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
-msgstr ""
+msgstr "وقف إزالة علامات &lt;p&gt;، و &lt;br&gt; عند حفظ وتبين لهم في محرر HTML وهذا سيجعل من الممكن استخدام الترميز الأكثر تقدما في محرر HTML دون تصفية للجهة الخلفية التي تؤثر فيه كثيرا. ومع ذلك فإنه قد تتصرف بشكل غير متوقع في حالات نادرة، لذلك اختبار جيدا قبل تمكنها بشكل دائم"
 
 #: rich-text-excerpts.php:296
 msgid "Enable upload media button"
-msgstr ""
+msgstr "تمكين وسائل الإعلام زر تحميل"
 
 #: rich-text-excerpts.php:297
 msgid "Number of rows to use in the text editor (minimum is 3)"
-msgstr ""
+msgstr "عدد الصفوف لاستخدامها في محرر النصوص (الحد الأدنى هو 3)"
 
 #: rich-text-excerpts.php:298
 msgid "Toolbar Buttons and Plugins"
-msgstr ""
+msgstr "أزرار شريط الأدوات والإضافات"
 
 #: rich-text-excerpts.php:303
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
-msgstr ""
+msgstr "للحصول على قائمة من الأزرار والإضافات في TinyMCE، انظر ويكي TinyMCE"
 
 #: rich-text-excerpts.php:303
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
-msgstr ""
+msgstr "هناك أيضا بعض الوثائق عن تنفيذ TinyMCE في وورد على الدستور وورد"
 
 #: rich-text-excerpts.php:303
 msgid "Button and plugin names should be separated using commas"
-msgstr ""
+msgstr "يجب فصل زر والبرنامج المساعد الأسماء باستخدام الفواصل"
 
 #: rich-text-excerpts.php:304
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
-msgstr ""
+msgstr "الإضافات لإضافة - تأكد من إضافة أية أزرار المساعد محددة إلى المحرر أدناه"
 
 #: rich-text-excerpts.php:305
 msgid ""
 "Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
-msgstr ""
+msgstr "أزرار شريط الأدوات - استخدام &lsquo;separator&rsquo; الكلمة إلى مجموعات منفصلة من الأزرار"
 
 #: rich-text-excerpts.php:312
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
-msgstr ""
+msgstr "تكوين أزرار لتحرير متقدمة باستخدام البرنامج المساعد TinyMCE المتقدم"
 
 #: rich-text-excerpts.php:314
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"
-msgstr ""
+msgstr "إذا كنت ترغب في تكوين أزرار لتحرير متقدمة وتركيب وتفعيل البرنامج المساعد TinyMCE المتقدم"
 
 #. Plugin URI of the plugin/theme
-msgid "https://bitbucket.org/bjorsq/rich-text-excerpts"
-msgstr ""
+msgid "http://wordpress.org/extend/plugins/rich-text-excerpts"
+msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts"
 
 #. Description of the plugin/theme
 msgid "Adds rich text editing capability for excerpts using wp_editor()"
-msgstr ""
+msgstr "يضيف الغنية القدرة لتحرير النص باستخدام مقتطفات wp_editor()"
 
 #. Author of the plugin/theme
 msgid "Peter Edwards"
-msgstr ""
+msgstr "Peter Edwards"
 
 #. Author URI of the plugin/theme
 msgid "http://bjorsq.net"
-msgstr ""
+msgstr "http://bjorsq.net"
