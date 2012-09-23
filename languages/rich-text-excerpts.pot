@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Rich Text Excerpts 1.2beta\n"
+"Project-Id-Version: Rich Text Excerpts 1.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/rich-text-excerpts\n"
-"POT-Creation-Date: 2012-09-23 18:33:43+00:00\n"
+"POT-Creation-Date: 2012-09-23 20:07:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,41 +12,41 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: rich-text-excerpts.php:97
+#: rich-text-excerpts.php:98
 msgid "Excerpt"
 msgstr ""
 
 #. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.2)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:148
+#: rich-text-excerpts.php:149
 msgid "Rich Text Excerpts"
 msgstr ""
 
-#: rich-text-excerpts.php:168
+#: rich-text-excerpts.php:169
 msgid "Rich Text Excerpts Options"
 msgstr ""
 
-#: rich-text-excerpts.php:173
+#: rich-text-excerpts.php:174
 msgid "Save Changes"
 msgstr ""
 
-#: rich-text-excerpts.php:193
+#: rich-text-excerpts.php:194
 msgid "Choose which post types will have rich text editor for excerpts"
 msgstr ""
 
-#: rich-text-excerpts.php:202
+#: rich-text-excerpts.php:203
 msgid "Editor Options"
 msgstr ""
 
-#: rich-text-excerpts.php:208
+#: rich-text-excerpts.php:209
 msgid "Choose which Editor is used for excerpts"
 msgstr ""
 
-#: rich-text-excerpts.php:216
+#: rich-text-excerpts.php:217
 msgid "Editor Settings"
 msgstr ""
 
-#: rich-text-excerpts.php:271
+#: rich-text-excerpts.php:272
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -54,15 +54,15 @@ msgid ""
 "%s in the Wordpress Codex"
 msgstr ""
 
-#: rich-text-excerpts.php:282
+#: rich-text-excerpts.php:283
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr ""
 
-#: rich-text-excerpts.php:284
+#: rich-text-excerpts.php:285
 msgid "Use the full version of the editor"
 msgstr ""
 
-#: rich-text-excerpts.php:285
+#: rich-text-excerpts.php:286
 msgid ""
 "Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor (recommended). Customising the full TinyMCE editor is "
@@ -71,7 +71,7 @@ msgid ""
 "controls it will have here"
 msgstr ""
 
-#: rich-text-excerpts.php:295
+#: rich-text-excerpts.php:296
 msgid ""
 "Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
@@ -80,46 +80,51 @@ msgid ""
 "it permanently"
 msgstr ""
 
-#: rich-text-excerpts.php:297
+#: rich-text-excerpts.php:298
 msgid "Enable upload media button"
 msgstr ""
 
-#: rich-text-excerpts.php:298
+#: rich-text-excerpts.php:299
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr ""
 
-#: rich-text-excerpts.php:299
+#: rich-text-excerpts.php:300
 msgid "Toolbar Buttons and Plugins"
 msgstr ""
 
-#: rich-text-excerpts.php:304
-msgid ""
-"For a list of buttons and plugins in TinyMCE, <a href=\"http://www.tinymce."
-"com/wiki.php/Buttons/controls\">see this page on the TinyMCE wiki</a>. There "
-"is also some documentation on the <a href=\"http://codex.wordpress.org/"
-"TinyMCE\">implementation of TinyMCE in Wordpress on the Wordpress Codex</a>."
-"</p><p>Button and plugin names should be separated using commas"
+#: rich-text-excerpts.php:305
+msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr ""
 
 #: rich-text-excerpts.php:305
+msgid ""
+"There is also some documentation on the implementation of TinyMCE in "
+"Wordpress on the Wordpress Codex"
+msgstr ""
+
+#: rich-text-excerpts.php:305
+msgid "Button and plugin names should be separated using commas"
+msgstr ""
+
+#: rich-text-excerpts.php:306
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
 msgstr ""
 
-#: rich-text-excerpts.php:306
+#: rich-text-excerpts.php:307
 msgid ""
 "Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
 
-#: rich-text-excerpts.php:313
+#: rich-text-excerpts.php:314
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
 msgstr ""
 
-#: rich-text-excerpts.php:315
+#: rich-text-excerpts.php:316
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

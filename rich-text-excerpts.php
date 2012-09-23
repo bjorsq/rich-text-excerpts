@@ -268,9 +268,7 @@ class RichTextExcerpts {
                 printf('<p><input type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type, $post_type, $chckd, $post_type, $post_type);
             }
         }
-        print('<p>');
-        printf(__('Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see %s in the Wordpress Codex', 'rich-text-excerpts'), '<a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a>');
-        print('.</p>');
+        printf('<p>%s<br /><a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a></p>', __('Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see the Wordpress Codex', 'rich-text-excerpts'));
     }
 
     /**
