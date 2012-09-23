@@ -5,7 +5,8 @@ Plugin URI: https://bitbucket.org/bjorsq/rich-text-excerpts
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.2beta
+Version: 1.2
+Text Domain: rich-text-excerpts
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
@@ -301,7 +302,7 @@ class RichTextExcerpts {
          * settings for teeny text editor
          */
         print('<div id="editor_type_teeny_options">');
-        printf('<p>%s.</p>', __('For a list of buttons and plugins in TinyMCE, <a href="http://www.tinymce.com/wiki.php/Buttons/controls">see this page on the TinyMCE wiki</a>. There is also some documentation on the <a href="http://codex.wordpress.org/TinyMCE">implementation of TinyMCE in Wordpress on the Wordpress Codex</a>.</p><p>Button and plugin names should be separated using commas', 'rich-text-excerpts'));
+        printf('<p>%s.<br /><a href="http://www.tinymce.com/wiki.php/Buttons/controls">http://www.tinymce.com/wiki.php/Buttons/controls</a><br />%s<br /><a href="http://codex.wordpress.org/TinyMCE">http://codex.wordpress.org/TinyMCE</a><br />%s.</p>', __('For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki', 'rich-text-excerpts'), __('There is also some documentation on the implementation of TinyMCE in Wordpress on the Wordpress Codex', 'rich-text-excerpts'), __('Button and plugin names should be separated using commas', 'rich-text-excerpts'));
         printf('<p><label for="rich_text_excerpts_options-editor_settings-plugins">%s.</label><br /><input type="text" length="50" name="rich_text_excerpts_options[editor_settings][plugins]" id="rich_text_excerpts_options-editor_settings-plugins" value="%s" /></p>', __('Plugins to add - make sure you add any plugin specific buttons to the editor below', 'rich-text-excerpts'), implode(',', $options['editor_settings']['plugins']));
         printf('<p><label for="rich_text_excerpts_options-editor_settings-buttons">%s</label><br /><textarea name="rich_text_excerpts_options[editor_settings][buttons]" id="rich_text_excerpts_options-editor_settings-buttons" cols="100" rows="3">%s</textarea></p>', __('Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of buttons', 'rich-text-excerpts'), implode(',', $options['editor_settings']['buttons']));
         print('</div>');

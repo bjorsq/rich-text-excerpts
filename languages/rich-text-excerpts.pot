@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Rich Text Excerpts 1.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/extend/plugins/rich-text-excerpts/\n"
-"POT-Creation-Date: 2012-09-22 20:48:26+00:00\n"
+"Project-Id-Version: Rich Text Excerpts 1.2beta\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/rich-text-excerpts\n"
+"POT-Creation-Date: 2012-09-23 18:33:43+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -97,8 +97,8 @@ msgid ""
 "For a list of buttons and plugins in TinyMCE, <a href=\"http://www.tinymce."
 "com/wiki.php/Buttons/controls\">see this page on the TinyMCE wiki</a>. There "
 "is also some documentation on the <a href=\"http://codex.wordpress.org/"
-"TinyMCE\">implementation of TinyMCE in Wordpress on the Wordpress Codex</a>. "
-"Button and plugin names should be separated using commas"
+"TinyMCE\">implementation of TinyMCE in Wordpress on the Wordpress Codex</a>."
+"</p><p>Button and plugin names should be separated using commas"
 msgstr ""
 
 #: rich-text-excerpts.php:305

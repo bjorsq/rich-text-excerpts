@@ -24,9 +24,9 @@ The plugin utilises three action hooks:
 
 http://core.trac.wordpress.org/ticket/19173
 
-The editing box for excerpts uses [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) to create a rich text editor. You can set the options for the rich text editot in the plugin options page (in the Wordpress  Settings menu).
+The editing box for excerpts uses [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) to create a rich text editor. You can set the options for the rich text editor in the plugin options page (in the Wordpress  Settings menu).
 
-The plugin also contains two filters which act on the "teeny" MCE editor instance which is used by default. The plugins and buttons used by the minimal editor can be customised on the plugin options page. 
+The plugin also contains two filters which act on the "teeny" MCE editor instance which is used by default. The plugins and buttons used by the minimal editor can also be customised on the plugin options page. 
 
 == Installation ==
 
@@ -45,6 +45,9 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 
 == Changelog ==
 
+= 1.2 =
+* Added translations
+
 = 1.1 =
 * Addition of plugin options page to Wordpress Admin area, giving users the ability to configure the operation of the plugin
 * Fixed minor bug relating to editor display which was triggered in some circumstances
@@ -60,4 +63,4 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 
 At the moment, the plugin uses [html_entity_decode](http://php.net/manual/en/function.html-entity-decode.php) to decode encoded entities in the excerpt content prior to displaying it in the editor. It would be nice to find a more robust way of accessing the excerpt field data using a Wordpress filter.
 
-I use git for version control, so if you want to contribute, go over to [bitbucket](https://bitbucket.org/bjorsq/rich-text-excerpts). I'll push any stable changes to the Wordpress SVN repo when they're ready.
+If you can translate this plugin, please get in touch - there is a POT file with the plugin for translators to use.

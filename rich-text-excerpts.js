@@ -4,7 +4,8 @@ Plugin URI: https://bitbucket.org/bjorsq/rich-text-excerpts
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.2beta
+Version: 1.2
+Text Domain: rich-text-excerpts
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
