@@ -1,0 +1,9 @@
+.js .rich-text-excerpt h3 {
+	cursor: default;
+}
+.rich-text-excerpt h3 label {
+	cursor: default;
+}
+.rich-text-excerpt div.rte-wrap {
+	padding:10px;
+}

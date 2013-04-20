@@ -39,4 +39,6 @@ jQuery(function($){
 		check_editor_options();
 	});
 	check_editor_options();
+	/* turn off javascript on postbox heading */
+	window.setTimeout(function(){$('.rich-text-excerpt h3').unbind('click.postboxes');},500);
 });
