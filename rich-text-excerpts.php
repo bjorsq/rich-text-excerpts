@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.2
+Version: 1.2.1
 Text Domain: rich-text-excerpts
 License: GPLv3
 
@@ -137,7 +137,7 @@ class RichTextExcerpts {
             "wpautop" => $plugin_options['editor_settings']['wpautop'],
             "media_buttons" => $plugin_options['editor_settings']['media_buttons'],
             "textarea_name" => 'excerpt',
-            "textarea_rows" => 20,//$plugin_options['editor_settings']['textarea_rows'],
+            "textarea_rows" => $plugin_options['editor_settings']['textarea_rows'],
             "teeny" => ($plugin_options['editor_type'] === "teeny")? true: false
         );
         /* "echo" the editor */
