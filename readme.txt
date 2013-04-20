@@ -3,8 +3,8 @@ Contributors: bjorsq
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ2WC8UHFMEQ
 Tags: excerpt, editor, TinyMCE, formatting
 Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.1
+Tested up to: 3.6
+Stable tag: 1.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -46,7 +46,11 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 == Changelog ==
 
 = 1.2 =
-* Added translations
+* Added translations (no idea whether these work though!)
+* Fixed some bugs in plugin options saving/retrieval
+* Fixed post type support
+* Put the editor in a container (suggestion from Chris Van Patten)
+* changed screenshot
 
 = 1.1 =
 * Addition of plugin options page to Wordpress Admin area, giving users the ability to configure the operation of the plugin
