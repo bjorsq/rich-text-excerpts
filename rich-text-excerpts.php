@@ -53,6 +53,10 @@ class RichTextExcerpts {
          */
         add_action( 'admin_menu', array( __CLASS__, 'add_plugin_admin_menu' ) );
         add_action( 'admin_init', array( __CLASS__, 'register_plugin_options' ) );
+         /**
+          * add a link to the settings page from the plugins page
+          */
+        add_filter( 'plugin_action_links', array( __CLASS__, 'add_settings_page_link'), 10, 2 );
         /**
          * register text domain
          */
@@ -177,6 +181,19 @@ class RichTextExcerpts {
      ************************************************************/
     
     /**
+     * adds a link to the settings page from the plugins listing page
+     * called using the plugin_action_links filter
+     */
+    public static function add_settings_page_link($links, $file)
+    {
+        if ($file == plugin_basename(__FILE__)) {
+            $settings_page_link = sprintf('<a href="%s">%s</a>', admin_url('options-general.php?page=rich_text_excerpts_options'), __('Settings', 'rich-text-excerpts'));
+            $links[] = $settings_page_link;
+        }
+        return $links;
+    }
+
+    /**
      * add an admin page under settings to configure the plugin
      */
     public static function add_plugin_admin_menu()
@@ -235,7 +252,7 @@ class RichTextExcerpts {
         );
         add_settings_field(
             'supported_post_types', 
-            __('Choose which post types will have rich text editor for excerpts', 'rich-text-excerpts'), 
+            __('Choose which post types will use a rich text editor for excerpts', 'rich-text-excerpts'), 
             array( __CLASS__, 'options_setting_post_types' ), 
             'rte', 
             'post-type-options'
