@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: excerpt, editor, TinyMCE, formatting
 Requires at least: 3.3
 Tested up to: 3.6
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -45,8 +45,9 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 == Changelog ==
 
 = 1.2.1 =
-* removed a debugging setting from the plugin which set the `textarea_rows` to 20. Setting `textarea_rows` in `wp_editor()` doesn't appear to have any effect
-* tidied up javascript
+* removed a debugging setting from the plugin which set the `textarea_rows` to 20. Setting `textarea_rows` in `wp_editor()` doesn't appear to have any effect anyway
+* tidied up javascript and added error checking for selection of post types
+* additional error checking in the validation routine
 
 = 1.2 =
 * Added translations (no idea whether these work though!)

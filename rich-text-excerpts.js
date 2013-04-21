@@ -31,6 +31,18 @@ jQuery(document).ready(function($){
 		/* initial check on page load */
 		check_editor_options();
 	}
+	/* this block prevents the de-selection of all post types on the settings page */
+	if ($('.rte-post-types').length) {
+		/* keep track of the last checkbox checked */
+		var lastchecked = false;
+		/* add a handler to the checkboxes for post type support */
+		$('.rte-post-types').click(function(e){
+			lastchecked = $(this);
+			check_post_type_options(e);
+		});
+		/* initial check on page load */
+		check_post_type_options();
+	}
 	/**
 	 * function to check the editor type selected for the plugin and show/hide the options
 	 * for the appropriate type
@@ -44,6 +56,24 @@ jQuery(document).ready(function($){
 			} else {
 				$('#editor_type_teeny_options').hide();
 				$('#editor_type_tiny_options').show();
+			}
+		}
+	}
+	/**
+	 * function to check the post-types checkboxes and ensure that one is checked
+	 */
+	function check_post_type_options(evt)
+	{
+		if ($('.rte-post-types').length) {
+			if (!$('.rte-post-types:checked').length) {
+				if (lastchecked === false) {
+					$('.rte-post-types:first').attr('checked', 'checked');
+				} else {
+					lastchecked.attr('checked', 'checked');
+				}
+				$('.rte-post-types-error').show();
+			} else {
+				$('.rte-post-types-error').hide();
 			}
 		}
 	}

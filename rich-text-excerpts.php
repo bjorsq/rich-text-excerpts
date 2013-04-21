@@ -81,8 +81,9 @@ class RichTextExcerpts {
      */
     public static function on_activation()
     {
-        if ( ! current_user_can( 'activate_plugins' ) )
+        if ( ! current_user_can( 'activate_plugins' ) ) {
             return;
+        }
         update_option('rich_text_excerpts_options', self::get_default_plugin_options());
     }
 
@@ -91,8 +92,9 @@ class RichTextExcerpts {
      */
     public static function on_deactivation()
     {
-        if ( ! current_user_can( 'activate_plugins' ) )
+        if ( ! current_user_can( 'activate_plugins' ) ) {
             return;
+        }
         delete_option('rich_text_excerpts_options');
     }
 
@@ -135,7 +137,7 @@ class RichTextExcerpts {
     {
         global $post;
         $plugin_options = self::get_plugin_options();
-        printf('<div class="postbox rich-text-excerpt"><h3><label for="excerpt">%s</label></h3><div style="padding:10px;">', __('Excerpt', 'rich-text-excerpts'));
+        printf('<div class="postbox rich-text-excerpt"><h3><label for="excerpt">%s</label></h3><div class="rte-wrap">', __('Excerpt', 'rich-text-excerpts'));
         /* options for editor */
         $options = array(
             "wpautop" => $plugin_options['editor_settings']['wpautop'],
@@ -200,9 +202,15 @@ class RichTextExcerpts {
     {
         /* Plugin Options page */
         $options_page = add_submenu_page("options-general.php", __('Rich Text Excerpts', 'rich-text-excerpts'), __('Rich Text Excerpts', 'rich-text-excerpts'), "manage_options", "rich_text_excerpts_options", array( __CLASS__, "plugin_options_page" ) );
-        /* Use the admin_print_scripts action to add scripts for theme options */
+        /**
+         * Use the admin_print_scripts action to add scripts.
+         * Script is needed on both the theme options page and post/page editor
+         */
         add_action( 'admin_print_scripts', array( __CLASS__, 'plugin_admin_scripts' ) );
-        /* Use the admin_print_styles action to add CSS for theme options */
+        /**
+         * Use the admin_print_styles action to add CSS.
+         * CSS is needed for the post/page editor only
+         */
         add_action( 'admin_print_styles', array( __CLASS__, 'plugin_admin_styles' ) );
     }
 
@@ -328,14 +336,15 @@ class RichTextExcerpts {
         foreach ($post_types as $post_type ) {
             if ( post_type_supports($post_type, 'excerpt') ) {
                 $chckd = (in_array($post_type, $options["supported_post_types"]))? ' checked="checked"': '';
-                printf('<p><input type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type, $post_type, $chckd, $post_type, $post_type);
+                printf('<p class="rte-post-types-inputs"><input class="rte-post-types" type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type, $post_type, $chckd, $post_type, $post_type);
             }
         }
+        printf('<div class="rte-post-types-error"></p>%s</p></div>', __('If you want to disable support for all post types, please disable the plugin', 'rich-text-excerpts'));
         printf('<p>%s<br /><a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a></p>', __('Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see the Wordpress Codex', 'rich-text-excerpts'));
     }
 
     /**
-     * settings section text
+     * editor type radios
      */
     public static function options_setting_editor_type()
     { 
@@ -348,7 +357,15 @@ class RichTextExcerpts {
     }
 
     /**
-     * general settings for text editor
+     * Settings for text editor
+     * Follows the Wordpress wp_editor function. Arguments not implemented are:
+     *  - tabindex - may be a way to find out what this should be for a metabox and pass to wp_editor automatically?
+     *  - editor_css - Additional CSS styling applied for both visual and HTML editors buttons, needs to include <style> tags, can use "scoped" (hard to validate)
+     *  - editor_class - Any extra CSS Classes to append to the Editor textarea (could be useful?)
+     *  - dfw - Whether to replace the default fullscreen editor with DFW (needs specific DOM elements and css)
+     *  - tinymce - Load TinyMCE, can be used to pass settings directly to TinyMCE using an array() - direct people to TinyMCE Advanced rther than implement this
+     *  - quicktags - Load Quicktags, can be used to pass settings directly to Quicktags using an array() (could be useful? does TA handle quicktags?)
+     * @see http://codex.wordpress.org/Function_Reference/wp_editor
      */
     public static function options_editor_settings()
     { 
@@ -380,7 +397,7 @@ class RichTextExcerpts {
     }
 
     /**
-     * takes a string of comma-separated arguments and splits/trims it
+     * takes a string of comma-separated arguments and splits it into an array
      */
     public static function get_mce_array($inputStr = '')
     {
@@ -393,11 +410,12 @@ class RichTextExcerpts {
 
     /**
      * removes empty elements from an array
+     * Always returns an array, no matter what is passed to it
      */
     public static function cleanup_array($arr = array())
     {
         $output = array();
-        if (is_array($arr)) {
+        if (is_array($arr) && count($arr)) {
             $arr = array_map('trim', $arr);
             foreach ($arr as $str) {
                 if (!empty($str)) {
@@ -410,37 +428,48 @@ class RichTextExcerpts {
     
     /**
      * input validation callback
+     * also used to sanitise options in get_plugin_options()
      */
     public static function validate_rich_text_excerpts_options($plugin_options)
     {
+        /* get defaults as a fallabck for missing values */
         $defaults = self::get_default_plugin_options();
+        /* make sure supported post types is an array */
         if (!isset($plugin_options['supported_post_types']) || !is_array($plugin_options['supported_post_types'])) {
             $plugin_options['supported_post_types'] = $defaults['supported_post_types'];
         }
+        /* make sure editor type is one of the allowed types */
         if (!isset($plugin_options['editor_type']) || !in_array($plugin_options['editor_type'], array('teeny','tiny'))) {
             $plugin_options['editor_type'] = $defaults['editor_type'];
         }
+        /* make sure there are some editor settings */
         if (!isset($plugin_options['editor_settings'])) {
             $plugin_options['editor_settings'] = $defaults['editor_settings'];
         } else {
+            /* make sure wpautop is set, and a boolean value */
             if (!isset($plugin_options['editor_settings']['wpautop'])) {
-                $plugin_options['editor_settings']['wpautop'] = true;
+                $plugin_options['editor_settings']['wpautop'] = $defaults['editor_settings']['wpautop'];
             } else {
                 $plugin_options['editor_settings']['wpautop'] = (bool) $plugin_options['editor_settings']['wpautop'];
             }
+            /* make sure media_buttons is set, and a boolean value */
             if (!isset($plugin_options['editor_settings']['media_buttons'])) {
-                $plugin_options['editor_settings']['media_buttons'] = false;
+                $plugin_options['editor_settings']['media_buttons'] = $defaults['editor_settings']['media_buttons'];
             } else {
                 $plugin_options['editor_settings']['media_buttons'] = (bool) $plugin_options['editor_settings']['media_buttons'];
             }
+            /* make sure textarea_rows is set, and is an integer greater than 3 */
             $plugin_options['editor_settings']['textarea_rows'] = isset($plugin_options['editor_settings']['textarea_rows'])? intval($plugin_options['editor_settings']['textarea_rows']): $defaults['editor_settings']['textarea_rows'];
             if ($plugin_options['editor_settings']['textarea_rows'] < 3) {
                 $plugin_options['editor_settings']['textarea_rows'] = 3;
             }
+            /* make sure plugins and buttons are set, and are arrays */
             if (!isset($plugin_options['editor_settings']['plugins'])) {
                 $plugin_options['editor_settings']['plugins'] = $defaults['editor_settings']['plugins'];
             } else {
+                /* if this is a string, we are coming from the settings form */
                 if (!is_array($plugin_options['editor_settings']['plugins'])) {
+                    /* tidy up the string and make sure we end up with an array */
                     if (trim($plugin_options['editor_settings']['plugins']) === "") {
                         $plugin_options['editor_settings']['plugins'] = array();
                     } else {
@@ -453,7 +482,9 @@ class RichTextExcerpts {
             if (!isset($plugin_options['editor_settings']['buttons'])) {
                 $plugin_options['editor_settings']['buttons'] = $defaults['editor_settings']['buttons'];
             } else {
+                /* if this is a string, we are coming from the settings form */
                 if (!is_array($plugin_options['editor_settings']['buttons'])) {
+                    /* tidy up the string and make sure we end up with an array */
                     if (trim($plugin_options['editor_settings']['buttons']) === "") {
                         $plugin_options['editor_settings']['buttons'] = array();
                     } else {
@@ -463,6 +494,7 @@ class RichTextExcerpts {
                     $plugin_options['editor_settings']['buttons'] = self::cleanup_array($plugin_options['editor_settings']['buttons']);
                 }
             }
+            /* if the buttons array is empty, reset both buttons and plugins to the default value */
             if (!count($plugin_options['editor_settings']['buttons'])) {
                 $plugin_options['editor_settings']['buttons'] = $defaults['editor_settings']['buttons'];
                 $plugin_options['editor_settings']['plugins'] = $defaults['editor_settings']['plugins'];
