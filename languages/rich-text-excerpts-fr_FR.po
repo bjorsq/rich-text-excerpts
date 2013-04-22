@@ -1,0 +1,146 @@
+# Copyright (C) 2012 Rich Text Excerpts
+# This file is distributed under the same license as the Rich Text Excerpts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rich Text Excerpts 1.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/extend/plugins/rich-text-excerpts\n"
+"POT-Creation-Date: 2012-09-23 20:16:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
+
+#: rich-text-excerpts.php:98
+msgid "Excerpt"
+msgstr "extrait"
+
+#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: rich-text-excerpts.php:149
+msgid "Rich Text Excerpts"
+msgstr "Extraits Rich Text"
+
+#: rich-text-excerpts.php:169
+msgid "Rich Text Excerpts Options"
+msgstr "Riches extraits de textes options"
+
+#: rich-text-excerpts.php:174
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: rich-text-excerpts.php:194
+msgid "Choose which post types will have rich text editor for excerpts"
+msgstr "Choisissez les types de poste auront éditeur de texte enrichi d&rsquo;extraits"
+
+#: rich-text-excerpts.php:203
+msgid "Editor Options"
+msgstr "options de l&rsquo;éditeur"
+
+#: rich-text-excerpts.php:209
+msgid "Choose which Editor is used for excerpts"
+msgstr "Choisissez ce qui Editor est utilisé pour les extraits"
+
+#: rich-text-excerpts.php:217
+msgid "Editor Settings"
+msgstr "Paramètres de l&rsquo;éditeur"
+
+#: rich-text-excerpts.php:271
+msgid ""
+"Post types not selected here will use the regular plain text editor for "
+"excerpts. If the post type you want is not listed here, it does not "
+"currently support excerpts - to add support for excerpts to a post type, see "
+"the Wordpress Codex"
+msgstr "Types de poste non retenus ici utiliser l&rsquo;éditeur de texte normal plaine des extraits. Si le type de message que vous souhaitez ne figure pas ici, il ne prend pas en charge extraits - d&rsquo;ajouter le support pour les extraits d&rsquo;un type de message, consultez le Codex Wordpress"
+
+#: rich-text-excerpts.php:281
+msgid "Use the minimal editor configuration used in PressThis"
+msgstr "Utilisez l&rsquo;éditeur de configuration minimale servant à PressThis"
+
+#: rich-text-excerpts.php:283
+msgid "Use the full version of the editor"
+msgstr "Utilisez la version complète de l&rsquo;éditeur"
+
+#: rich-text-excerpts.php:284
+msgid ""
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
+"version of the editor (recommended). Customising the full TinyMCE editor is "
+"best carried out using a plugin like TinyMCE Advanced. If you choose to use "
+"the &ldquo;teeny&rdquo; version of the editor, you can customise the "
+"controls it will have here"
+msgstr "Choisissez si vous voulez utiliser l&rsquo;éditeur TinyMCE complet, ou une &ldquo;teeny&rdquo; version de l&rsquo;éditeur (recommandé). Personnalisation de l&rsquo;éditeur TinyMCE complet est mieux réalisée à l&rsquo;aide d&rsquo;un plugin comme TinyMCE Advanced. Si vous choisissez d&rsquo;utiliser une &ldquo;teeny&rdquo; version de l&rsquo;éditeur, vous pouvez personnaliser les commandes qu&rsquo;il aura ici"
+
+#: rich-text-excerpts.php:294
+msgid ""
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
+"the HTML editor This will make it possible to use more advanced coding in "
+"the HTML editor without the back-end filtering affecting it much. However it "
+"may behave unexpectedly in rare cases, so test it thoroughly before enabling "
+"it permanently"
+msgstr "Cesser de retirer les &lt;p&gt; et &lt;br&gt; lors de l&rsquo;enregistrement et les affiche dans l&rsquo;éditeur HTML Ainsi, il sera possible d&rsquo;utiliser un codage plus avancés dans l&rsquo;éditeur HTML sans le filtrage back-end qui l&rsquo;affectent beaucoup. Cependant, il peut se comporter de façon inattendue dans de rares cas, si le tester à fond avant de l&rsquo;activer de façon permanente"
+
+#: rich-text-excerpts.php:296
+msgid "Enable upload media button"
+msgstr "Permettre le transfert bouton médias"
+
+#: rich-text-excerpts.php:297
+msgid "Number of rows to use in the text editor (minimum is 3)"
+msgstr "Nombre de lignes à utiliser dans l&rsquo;éditeur de texte (minimum 3)"
+
+#: rich-text-excerpts.php:298
+msgid "Toolbar Buttons and Plugins"
+msgstr "Boutons de barre d&rsquo;outils et plugins"
+
+#: rich-text-excerpts.php:303
+msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
+msgstr "Pour une liste de boutons et plugins dans TinyMCE, voir le wiki TinyMCE"
+
+#: rich-text-excerpts.php:303
+msgid ""
+"There is also some documentation on the implementation of TinyMCE in "
+"Wordpress on the Wordpress Codex"
+msgstr "Il ya aussi de la documentation sur la mise en œuvre de TinyMCE dans Wordpress sur le Codex Wordpress"
+
+#: rich-text-excerpts.php:303
+msgid "Button and plugin names should be separated using commas"
+msgstr "Les noms des touches et le plugin doivent être séparés par des virgules"
+
+#: rich-text-excerpts.php:304
+msgid ""
+"Plugins to add - make sure you add any plugin specific buttons to the editor "
+"below"
+msgstr "Plugins pour ajouter - assurez-vous d&rsquo;ajouter des boutons de plugins spécifiques à l&rsquo;éditeur ci-dessous"
+
+#: rich-text-excerpts.php:305
+msgid ""
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
+"buttons"
+msgstr "Boutons de la barre d&rsquo;outils - utiliser &lsquo;separator&rsquo; le mot pour séparer des groupes de boutons"
+
+#: rich-text-excerpts.php:312
+msgid ""
+"Configure the buttons for the advanced editor using the TinyMCE Advanced "
+"plugin"
+msgstr "Configurer les boutons de l&rsquo;éditeur avancé en utilisant le plugin TinyMCE avancée"
+
+#: rich-text-excerpts.php:314
+msgid ""
+"If you want to configure the buttons for the advanced editor, install and "
+"activate the TinyMCE Advanced plugin"
+msgstr "Si vous souhaitez configurer les boutons de l&rsquo;éditeur avancé, installer et activer le plugin TinyMCE avancée"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/rich-text-excerpts"
+msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts"
+
+#. Description of the plugin/theme
+msgid "Adds rich text editing capability for excerpts using wp_editor()"
+msgstr "Ajoute la capacité d&rsquo;édition de texte riche d&rsquo;extraits à l&rsquo;aide wp_editor()"
+
+#. Author of the plugin/theme
+msgid "Peter Edwards"
+msgstr "Peter Edwards"
+
+#. Author URI of the plugin/theme
+msgid "http://bjorsq.net"
+msgstr "http://bjorsq.net"

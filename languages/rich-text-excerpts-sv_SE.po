@@ -1,0 +1,146 @@
+# Copyright (C) 2012 Rich Text Excerpts
+# This file is distributed under the same license as the Rich Text Excerpts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rich Text Excerpts 1.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/extend/plugins/rich-text-excerpts\n"
+"POT-Creation-Date: 2012-09-23 20:16:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
+
+#: rich-text-excerpts.php:98
+msgid "Excerpt"
+msgstr "utdrag"
+
+#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: rich-text-excerpts.php:149
+msgid "Rich Text Excerpts"
+msgstr "Rich Text Utdrag"
+
+#: rich-text-excerpts.php:169
+msgid "Rich Text Excerpts Options"
+msgstr "Rich Text Utdrag Alternativ"
+
+#: rich-text-excerpts.php:174
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+#: rich-text-excerpts.php:194
+msgid "Choose which post types will have rich text editor for excerpts"
+msgstr "Välj vilken post typer har rika textredigerare för utdrag"
+
+#: rich-text-excerpts.php:203
+msgid "Editor Options"
+msgstr "Redigeringsalternativ"
+
+#: rich-text-excerpts.php:209
+msgid "Choose which Editor is used for excerpts"
+msgstr "Välj vilken Redaktör används för utdrag"
+
+#: rich-text-excerpts.php:217
+msgid "Editor Settings"
+msgstr "Editor Inställningar"
+
+#: rich-text-excerpts.php:271
+msgid ""
+"Post types not selected here will use the regular plain text editor for "
+"excerpts. If the post type you want is not listed here, it does not "
+"currently support excerpts - to add support for excerpts to a post type, see "
+"the Wordpress Codex"
+msgstr "Post typer som inte valts här kommer att använda den vanliga textredigerare för utdrag. Om inlägget som du vill inte finns med här, inte stöder för närvarande utdrag - att lägga till stöd för utdrag till ett inlägg typ, se Wordpress Codex"
+
+#: rich-text-excerpts.php:281
+msgid "Use the minimal editor configuration used in PressThis"
+msgstr "Använd den minsta editorn konfigurationen i PressThis"
+
+#: rich-text-excerpts.php:283
+msgid "Use the full version of the editor"
+msgstr "Använd den fullständiga versionen av editorn"
+
+#: rich-text-excerpts.php:284
+msgid ""
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
+"version of the editor (recommended). Customising the full TinyMCE editor is "
+"best carried out using a plugin like TinyMCE Advanced. If you choose to use "
+"the &ldquo;teeny&rdquo; version of the editor, you can customise the "
+"controls it will have here"
+msgstr "Välj om du vill använda hela TinyMCE editor, eller &ldquo;teeny&rdquo; version av editorn (rekommenderas). Anpassa hela TinyMCE editor utförs bäst med hjälp av en plugin som TinyMCE Advanced. Om du väljer att använda &ldquo;teeny&rdquo; version av editorn kan du anpassa kontrollerna det kommer att få här"
+
+#: rich-text-excerpts.php:294
+msgid ""
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
+"the HTML editor This will make it possible to use more advanced coding in "
+"the HTML editor without the back-end filtering affecting it much. However it "
+"may behave unexpectedly in rare cases, so test it thoroughly before enabling "
+"it permanently"
+msgstr "Sluta ta bort &lt;p&gt; och &lt;br&gt; taggar när du sparar och visa dem i HTML-editorn Detta gör det möjligt att använda mer avancerade kodning i HTML-editorn utan back-end-filtrering påverkar det mycket. Men det kan uppträda oväntat i sällsynta fall, så testa den ordentligt innan du aktiverar den permanent"
+
+#: rich-text-excerpts.php:296
+msgid "Enable upload media button"
+msgstr "Aktivera knappen Skicka media"
+
+#: rich-text-excerpts.php:297
+msgid "Number of rows to use in the text editor (minimum is 3)"
+msgstr "Antal rader som ska användas i textredigeraren (minimum är 3)"
+
+#: rich-text-excerpts.php:298
+msgid "Toolbar Buttons and Plugins"
+msgstr "Verktygsfältsknappar och plugins"
+
+#: rich-text-excerpts.php:303
+msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
+msgstr "För en lista över knappar och plugins i TinyMCE, se TinyMCE wiki"
+
+#: rich-text-excerpts.php:303
+msgid ""
+"There is also some documentation on the implementation of TinyMCE in "
+"Wordpress on the Wordpress Codex"
+msgstr "Det finns också en viss dokumentation om genomförandet av TinyMCE i Wordpress på Wordpress Codex"
+
+#: rich-text-excerpts.php:303
+msgid "Button and plugin names should be separated using commas"
+msgstr "Knapp och plugin namn bör separeras med kommatecken"
+
+#: rich-text-excerpts.php:304
+msgid ""
+"Plugins to add - make sure you add any plugin specific buttons to the editor "
+"below"
+msgstr "Plugins att lägga - se till att du lägger till några plugin specifika knappar till redaktören under"
+
+#: rich-text-excerpts.php:305
+msgid ""
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
+"buttons"
+msgstr "Verktygsknappar - använda ordet &lsquo;separator&rsquo; till separata grupper av knappar"
+
+#: rich-text-excerpts.php:312
+msgid ""
+"Configure the buttons for the advanced editor using the TinyMCE Advanced "
+"plugin"
+msgstr "Konfigurera knappar för avancerade redaktör med TinyMCE Advanced plugin"
+
+#: rich-text-excerpts.php:314
+msgid ""
+"If you want to configure the buttons for the advanced editor, install and "
+"activate the TinyMCE Advanced plugin"
+msgstr "Om du vill konfigurera knapparna för avancerad redaktör, installera och aktivera TinyMCE Advanced plugin"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/rich-text-excerpts"
+msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts"
+
+#. Description of the plugin/theme
+msgid "Adds rich text editing capability for excerpts using wp_editor()"
+msgstr "Lägger rik förmåga textredigering för utdrag med wp_editor()"
+
+#. Author of the plugin/theme
+msgid "Peter Edwards"
+msgstr "Peter Edwards"
+
+#. Author URI of the plugin/theme
+msgid "http://bjorsq.net"
+msgstr "http://bjorsq.net"
