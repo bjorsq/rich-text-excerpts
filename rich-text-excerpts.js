@@ -81,9 +81,10 @@ jQuery(document).ready(function($){
 	 * this removes the click.postboxes handler added by wordpress to the .postbox h3
 	 * for the rich text excerpt editor. This is because the editor is placed in a 
 	 * static metabox (the postbox class is used for formatting only) - it cannot be
-	 * expanded, hidden or moved
+	 * expanded, hidden or moved. This will only be invoked if the editor is added
+	 * using edit_page_form and edit_form_advanced hooks to make the editor static.
 	 */
-	if ($('.rich-text-excerpt h3').length) {
+	if ($('.rte-wrap').length) {
 		/* turn off javascript on postbox heading - leave a little time for it to be added first */
 		window.setTimeout(function(){jQuery('.rich-text-excerpt h3').unbind('click.postboxes');},500);
 	}
@@ -116,6 +117,9 @@ jQuery(document).ready(function($){
 			} 
 		});
 	};
+	/**
+	 * these functions will be invoked if the editor is placed inside a metabox
+	 */
 	$('#poststuff').on('sortstart', function(event) {
 		_triggerAllEditors(event, false);
 	}).on('sortstop', function(event) {

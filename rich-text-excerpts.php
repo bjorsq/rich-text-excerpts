@@ -38,19 +38,21 @@ class RichTextExcerpts {
          */
         add_action( 'add_meta_boxes', array( __CLASS__, 'remove_excerpt_meta_box' ), 1, 1 );
         /**
+         * get the plugin options
+         */
+        $plugin_options = self::get_plugin_options();
+        /**
          * adding a richtext editor to a sortable postbox has only been tested in 3.5
          * so only add using add_meta_box() for 3.5 and above
          */
-        if (version_compare(get_bloginfo('version'), 3.5, '>=')) {
+        if ($plugin_options['metabox']['use']) {
             /**
-             * adds an action to add the new meta box using wp_editor()
-             * @see http://codex.wordpress.org/Function_Reference/wp_editor
+             * adds an action to add the editor in a new meta box
              */
             add_action( 'add_meta_boxes', array(__CLASS__, 'add_richtext_excerpt_editor_metabox'));
         } else {
             /**
-             * adds an action to add the editor using wp_editor()
-             * @see http://codex.wordpress.org/Function_Reference/wp_editor
+             * adds an action to add the editor using edit_page_form and edit_form_advanced
              */
             add_action( 'edit_page_form', array( __CLASS__, 'add_richtext_excerpt_editor' ) );
             add_action( 'edit_form_advanced', array( __CLASS__, 'add_richtext_excerpt_editor' ) );
@@ -147,15 +149,15 @@ class RichTextExcerpts {
      */
     public static function add_richtext_excerpt_editor_metabox()
     {
-        global $post;
-        if ( self::post_type_supported($post->post_type) ) {
+        $plugin_options = self::get_plugin_options();
+        foreach ($plugin_options["supported_post_types"] as $post_type) {
             add_meta_box(
-                 'richtext_excerpt_editor_metabox'
-                ,__( 'Excerpt' )
-                ,array( __CLASS__, 'add_richtext_excerpt_editor' )
-                ,'post'
-                ,'advanced'
-                ,'high'
+                'richtext_excerpt_editor_metabox'
+                ,__('Excerpt', 'rich-text-excerpts')
+                ,array( __CLASS__, 'post_excerpt_editor' )
+                ,$post_type
+                ,$plugin_options["metabox"]["context"]
+                ,$plugin_options["metabox"]["priority"]
             );
         }
     }
@@ -166,8 +168,16 @@ class RichTextExcerpts {
     public static function post_excerpt_editor()
     {
         global $post;
+        if ($post && $post->post_excerpt) {
+            $excerpt = $post->post_excerpt;
+        } else {
+            $excerpt = '';
+        }
         $plugin_options = self::get_plugin_options();
-        printf('<div class="postbox rich-text-excerpt"><h3><label for="excerpt">%s</label></h3><div class="rte-wrap">', __('Excerpt', 'rich-text-excerpts'));
+        if (!$plugin_options['metabox']['use']) {
+            /* wrap in a postbox to make it look pretty */
+            printf('<div class="postbox rich-text-excerpt"><h3><label for="excerpt">%s</label></h3><div class="rte-wrap">', __('Excerpt', 'rich-text-excerpts'));
+        }
         /* options for editor */
         $options = array(
             "wpautop" => $plugin_options['editor_settings']['wpautop'],
@@ -177,8 +187,11 @@ class RichTextExcerpts {
             "teeny" => ($plugin_options['editor_type'] === "teeny")? true: false
         );
         /* "echo" the editor */
-        wp_editor(html_entity_decode($post->post_excerpt), 'excerpt', $options );
-        print('</div></div>');
+        wp_editor(html_entity_decode($excerpt), 'excerpt', $options );
+        if (!$plugin_options['metabox']['use']) {
+            /* finish wrapping */
+            print('</div></div>');
+        }
     }
 
     /**
@@ -281,13 +294,14 @@ class RichTextExcerpts {
     {
         register_setting( 'rich_text_excerpts_options', 'rich_text_excerpts_options', array( __CLASS__, 'validate_rich_text_excerpts_options' ) );
         
-        /* post type options */
+        /* post type and metabox options */
         add_settings_section(
             'post-type-options',
             'Post Types',
             array( __CLASS__, 'options_section_text' ), 
             'rte'
         );
+                
         add_settings_field(
             'supported_post_types', 
             __('Choose which post types will use a rich text editor for excerpts', 'rich-text-excerpts'), 
@@ -295,7 +309,15 @@ class RichTextExcerpts {
             'rte', 
             'post-type-options'
         );
-                
+
+        add_settings_field(
+            'metabox', 
+            __('Embed the excerpt editor in a draggable meta box', 'rich-text-excerpts'), 
+            array( __CLASS__, 'options_setting_metabox' ), 
+            'rte', 
+            'post-type-options'
+        );
+
         /* editor options */
         add_settings_section(
             'editor-options',
@@ -338,6 +360,11 @@ class RichTextExcerpts {
         return array(
             "supported_post_types" => array('post'),
             "editor_type" => "teeny",
+            "metabox" => array(
+                "use" => false,
+                "context" => 'advanced',
+                "priority" => 'high'
+            ),
             "editor_settings" => array(
                 "wpautop" => true,
                 "media_buttons" => false,
@@ -371,6 +398,16 @@ class RichTextExcerpts {
         }
         printf('<div class="rte-post-types-error"></p>%s</p></div>', __('If you want to disable support for all post types, please disable the plugin', 'rich-text-excerpts'));
         printf('<p>%s<br /><a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a></p>', __('Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see the Wordpress Codex', 'rich-text-excerpts'));
+    }
+
+    /**
+     * Meta box support settings
+     */
+    public static function options_setting_metabox()
+    {
+        $options = self::get_plugin_options();
+        $chckd = $options["metabox"]["use"]? ' checked="checked"': '';
+
     }
 
     /**
@@ -467,6 +504,30 @@ class RichTextExcerpts {
         /* make sure supported post types is an array */
         if (!isset($plugin_options['supported_post_types']) || !is_array($plugin_options['supported_post_types'])) {
             $plugin_options['supported_post_types'] = $defaults['supported_post_types'];
+        }
+        /* see if the editor is being embedded in a metabox */
+        if (!isset($plugin_options['metabox'])) {
+            /* use defaults */
+            $plugin_options['metabox'] = $defaults['metabox'];
+        } else {
+            /* whether or not to use a metabox - checkbox */
+            $plugin_options['metabox']['use'] = isset($plugin_options['metabox']['use']);
+            /* check context is an allowed value */
+            if (!isset($plugin_options['metabox']['context'])) {
+                $plugin_options['metabox']['context'] = $defaults['metabox']['context'];
+            } else {
+                if (!in_array($plugin_options['metabox']['context'], array('normal', 'advanced', 'side'))) {
+                    $plugin_options['metabox']['context'] = $defaults['metabox']['context'];
+                }
+            }
+            /* check priority is an allowed value */
+            if (!isset($plugin_options['metabox']['priority'])) {
+                $plugin_options['metabox']['priority'] = $defaults['metabox']['priority'];
+            } else {
+                if (!in_array($plugin_options['metabox']['priority'], array('high', 'core', 'default', 'low'))) {
+                    $plugin_options['metabox']['priority'] = $defaults['metabox']['priority'];
+                }
+            }
         }
         /* make sure editor type is one of the allowed types */
         if (!isset($plugin_options['editor_type']) || !in_array($plugin_options['editor_type'], array('teeny','tiny'))) {
