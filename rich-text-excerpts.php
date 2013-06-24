@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.2.1
+Version: 1.3beta
 Text Domain: rich-text-excerpts
 License: GPLv3
 
@@ -38,11 +38,23 @@ class RichTextExcerpts {
          */
         add_action( 'add_meta_boxes', array( __CLASS__, 'remove_excerpt_meta_box' ), 1, 1 );
         /**
-         * adds an action to add the new meta box using wp_editor()
-         * @see http://codex.wordpress.org/Function_Reference/wp_editor
+         * adding a richtext editor to a sortable postbox has only been tested in 3.5
+         * so only add using add_meta_box() for 3.5 and above
          */
-        add_action( 'edit_page_form', array( __CLASS__, 'add_richtext_excerpt_editor' ) );
-        add_action( 'edit_form_advanced', array( __CLASS__, 'add_richtext_excerpt_editor' ) );
+        if (version_compare(get_bloginfo('version'), 3.5, '>=')) {
+            /**
+             * adds an action to add the new meta box using wp_editor()
+             * @see http://codex.wordpress.org/Function_Reference/wp_editor
+             */
+            add_action( 'add_meta_boxes', array(__CLASS__, 'add_richtext_excerpt_editor_metabox'));
+        } else {
+            /**
+             * adds an action to add the editor using wp_editor()
+             * @see http://codex.wordpress.org/Function_Reference/wp_editor
+             */
+            add_action( 'edit_page_form', array( __CLASS__, 'add_richtext_excerpt_editor' ) );
+            add_action( 'edit_form_advanced', array( __CLASS__, 'add_richtext_excerpt_editor' ) );
+        }
         /**
          * filters to customise the teeny mce editor
          */
@@ -127,6 +139,24 @@ class RichTextExcerpts {
         global $post;
         if ( self::post_type_supported($post->post_type) ) {
             self::post_excerpt_editor();
+        }
+    }
+
+    /**
+     * adds a rich text editor in a metabox
+     */
+    public static function add_richtext_excerpt_editor_metabox()
+    {
+        global $post;
+        if ( self::post_type_supported($post->post_type) ) {
+            add_meta_box(
+                 'richtext_excerpt_editor_metabox'
+                ,__( 'Excerpt' )
+                ,array( __CLASS__, 'add_richtext_excerpt_editor' )
+                ,'post'
+                ,'advanced'
+                ,'high'
+            );
         }
     }
 
@@ -247,7 +277,7 @@ class RichTextExcerpts {
     /**
      * registers settings and sections
      */
-    function register_plugin_options()
+    public static function register_plugin_options()
     {
         register_setting( 'rich_text_excerpts_options', 'rich_text_excerpts_options', array( __CLASS__, 'validate_rich_text_excerpts_options' ) );
         

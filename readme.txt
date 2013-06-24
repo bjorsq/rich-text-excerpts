@@ -44,6 +44,10 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 
 == Changelog ==
 
+= 1.3beta (trunk) =
+* made register_plugin_options() static (bugfix)
+* added option to use a metabox instead of placing the excerpt statically using edit_form_advanced or edit_page_form
+
 = 1.2.1 =
 * removed a debugging setting from the plugin which set the `textarea_rows` to 20. Setting `textarea_rows` in `wp_editor()` doesn't appear to have any effect anyway
 * tidied up javascript and added error checking for selection of post types

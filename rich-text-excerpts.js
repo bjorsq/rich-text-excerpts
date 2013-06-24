@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.2.1
+Version: 1.3beta
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
@@ -87,4 +87,38 @@ jQuery(document).ready(function($){
 		/* turn off javascript on postbox heading - leave a little time for it to be added first */
 		window.setTimeout(function(){jQuery('.rich-text-excerpt h3').unbind('click.postboxes');},500);
 	}
+	/**
+	 * TinyMCE doesn't handle being moved in the DOM.  Destroy the
+	 * editor instances at the start of a sort and recreate 
+	 * them afterwards.
+	 * From a comment by devesine on the TRAC ticket:
+	 * http://core.trac.wordpress.org/ticket/19173
+	 */
+	var _triggerAllEditors = function(event, creatingEditor) {
+		var postbox, textarea;
+
+		postbox = $(event.target);
+		textarea = postbox.find('textarea.wp-editor-area');
+
+		textarea.each(function(index, element) {
+			var editor;
+			editor = tinyMCE.EditorManager.get(element.id);
+			if (creatingEditor) {
+				if (!editor) {
+					tinyMCE.execCommand('mceAddControl', true, element.id);
+				}
+			}
+			else {
+				if (editor) {
+					editor.save();                                          
+					tinyMCE.execCommand('mceRemoveControl', true, element.id);
+				}       
+			} 
+		});
+	};
+	$('#poststuff').on('sortstart', function(event) {
+		_triggerAllEditors(event, false);
+	}).on('sortstop', function(event) {
+		_triggerAllEditors(event, true);
+	});
 });
