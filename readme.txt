@@ -65,7 +65,7 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 * Fixed minor bug relating to editor display which was triggered in some circumstances
 
 = 1.0 =
-* Wordpress submission after [initial development on bitbucket](https://bitbucket.org/bjorsq/rich-text-excerpts).
+* Wordpress submission after initial development on bitbucket.
 
 == Screenshots ==
 

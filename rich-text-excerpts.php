@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.3beta
+Version: 1.3
 Text Domain: rich-text-excerpts
 License: GPLv3
 
@@ -310,13 +310,6 @@ class RichTextExcerpts {
             'post-type-options'
         );
 
-        add_settings_field(
-            'metabox', 
-            __('Embed the excerpt editor in a draggable meta box', 'rich-text-excerpts'), 
-            array( __CLASS__, 'options_setting_metabox' ), 
-            'rte', 
-            'post-type-options'
-        );
 
         /* editor options */
         add_settings_section(
@@ -325,6 +318,15 @@ class RichTextExcerpts {
             array( __CLASS__, 'options_section_text' ), 
             'rte'
         );
+
+        add_settings_field(
+            'metabox', 
+            __('Use a meta box', 'rich-text-excerpts'), 
+            array( __CLASS__, 'options_setting_metabox' ), 
+            'rte', 
+            'editor-options'
+        );
+
         add_settings_field(
             'editor_type', 
             __('Choose which Editor is used for excerpts', 'rich-text-excerpts'), 
@@ -407,7 +409,7 @@ class RichTextExcerpts {
     {
         $options = self::get_plugin_options();
         $chckd = $options["metabox"]["use"]? ' checked="checked"': '';
-
+        printf('<p class="rte-use-metabox-input"><input class="rte-metabox" type="checkbox" name="rich_text_excerpts_options[metabox][use]" id="rte-use-metabox" value="1"%s /> <label for="rte-use-metabox">%s</label></p>', $chckd, __('Check this box to put the excerpt in a draggable meta box (experimental!)', 'rich-text-excerpts'));
     }
 
     /**

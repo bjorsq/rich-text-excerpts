@@ -102,16 +102,19 @@ jQuery(document).ready(function($){
 		textarea = postbox.find('textarea.wp-editor-area');
 
 		textarea.each(function(index, element) {
-			var editor;
+			var editor, is_active;
+
 			editor = tinyMCE.EditorManager.get(element.id);
+			is_active = $(this).parents('.tmce-active').length;
+
 			if (creatingEditor) {
-				if (!editor) {
+				if (!editor && is_active) {
 					tinyMCE.execCommand('mceAddControl', true, element.id);
 				}
 			}
 			else {
-				if (editor) {
-					editor.save();                                          
+				if (editor && is_active) {
+					editor.save();
 					tinyMCE.execCommand('mceRemoveControl', true, element.id);
 				}       
 			} 
