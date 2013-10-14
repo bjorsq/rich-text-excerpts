@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards
 Author URI: http://bjorsq.net
-Version: 1.3beta
+Version: 1.3
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
@@ -66,7 +66,7 @@ jQuery(document).ready(function($){
 	 */
 	check_metabox_settings = function()
 	{
-		if ($('#rte-metabox').prop("checked")) {
+		if ($('#rte-use-metabox').prop("checked")) {
 			$('#rte-metabox-settings').show();
 		} else {
 			$('#rte-metabox-settings').hide();
@@ -116,34 +116,35 @@ jQuery(document).ready(function($){
 		/* add a handler to the checkbox used for the editor metabox display option */
 		$('#rte-use-metabox').on('click', function(){
 			check_metabox_settings();
-		}
+		});
 		
 		/* add a handler to the checkboxes for post type support */
-		$('.rte-post-types').click(function(e){
+		$('.rte-post-types').on('click', function(){
 			lastchecked = $(this);
-			check_post_type_options(e);
+			check_post_type_options();
 		});
 
 		/* initial checks on page load */
 		check_editor_options();
-		check_metabox_settings
+		check_metabox_settings();
 		check_post_type_options();
 	}
 
 	/**
 	 * this removes the click.postboxes handler added by wordpress to the .postbox h3
-	 * for the rich text excerpt editor. This is because the editor is placed in a 
-	 * static metabox (the postbox class is used for formatting only) - it cannot be
-	 * expanded, hidden or moved. This will only be invoked if the editor is added
+	 * for the rich text excerpt editor when it is placed in a static metabox (the 
+	 * postbox class is used for formatting only). Only invoked if the editor is added
 	 * using edit_page_form and edit_form_advanced hooks to make the editor static.
 	 */
-	if ($('.rte-wrap').length) {
+	if ($('.rich-text-excerpt-static').length) {
 		/* turn off javascript on postbox heading - leave a little time for it to be added first */
-		window.setTimeout(function(){jQuery('.rich-text-excerpt h3').unbind('click.postboxes');},500);
+		window.setTimeout(function(){jQuery('.rich-text-excerpt-static h3').unbind('click.postboxes');},500);
 	}
 
 	/**
 	 * these functions will be invoked if the editor is placed inside a draggable metabox
+	 * From a comment by devesine on the TRAC ticket:
+	 * http://core.trac.wordpress.org/ticket/19173
 	 */
 	if ($('.rte-wrap-metabox').length) {
 		$('#poststuff').on('sortstart', function(event) {

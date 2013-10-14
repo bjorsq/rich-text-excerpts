@@ -176,7 +176,7 @@ class RichTextExcerpts {
 		$plugin_options = self::get_plugin_options();
 		if (!$plugin_options['metabox']['use']) {
 			/* wrap in a postbox to make it look pretty */
-			printf('<div class="postbox rich-text-excerpt"><h3><label for="excerpt">%s</label></h3><div class="rte-wrap">', __('Excerpt', 'rich-text-excerpts'));
+			printf('<div class="postbox rich-text-excerpt-static"><h3><label for="excerpt">%s</label></h3><div class="rte-wrap">', __('Excerpt', 'rich-text-excerpts'));
 		} else {
 			/* wrap to identify presence of metabox to scripts so they can disable the editor when sorting takes place */
 			print('<div class="rte-wrap-metabox">');
@@ -367,7 +367,7 @@ class RichTextExcerpts {
 			"supported_post_types" => array('post'),
 			"editor_type" => "teeny",
 			"metabox" => array(
-				"use" => false,
+				"use" => true,
 				"context" => 'advanced',
 				"priority" => 'high'
 			),
@@ -414,7 +414,7 @@ class RichTextExcerpts {
 		$options = self::get_plugin_options();
 		/* whether or not to use a metabox for excerpts */
 		$chckd = $options["metabox"]["use"]? ' checked="checked"': '';
-		printf('<p class="rte-use-metabox-input"><input class="rte-metabox" type="checkbox" name="rich_text_excerpts_options[metabox][use]" id="rte-use-metabox" value="1"%s /> <label for="rte-use-metabox">%s</label></p>', $chckd, __('Check this box to put the excerpt in a draggable meta box (experimental!)', 'rich-text-excerpts'));
+		printf('<p class="rte-use-metabox-input"><input class="rte-metabox" type="checkbox" name="rich_text_excerpts_options[metabox][use]" id="rte-use-metabox" value="1"%s /> <label for="rte-use-metabox">%s</label></p>', $chckd, __('Check this box to put the excerpt in a draggable meta box', 'rich-text-excerpts'));
 		print('<div id="rte-metabox-settings">');
 		/* metabox context settings */
 		print('<p><label for="rte-metabox-context"><select name="rich_text_excerpts_options[metabox][context]">');
@@ -443,7 +443,7 @@ class RichTextExcerpts {
 		printf('<p><label for="rich_text_excerpts_options-editor_type-teeny"><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-teeny" class="rte-options-editor-type" value="teeny"%s /> %s</label></p>', $chckd, __('Use the minimal editor configuration used in PressThis', 'rich-text-excerpts'));
 		$chckd = ($options["editor_type"] === "teeny")? '': ' checked="checked"';
 		printf('<p><label for="rich_text_excerpts_options-editor_type-tiny"><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-tiny" class="rte-options-editor-type" value="tiny"%s /> %s</label></p>', $chckd, __('Use the full version of the editor', 'rich-text-excerpts'));
-		printf('<p>%s.</p>', __('Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; version of the editor (recommended). Customising the full TinyMCE editor is best carried out using a plugin like TinyMCE Advanced. If you choose to use the &ldquo;teeny&rdquo; version of the editor, you can customise the controls it will have here', 'rich-text-excerpts'));
+		printf('<p>%s.</p>', __('Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; version of the editor.', 'rich-text-excerpts'));
 	}
 
 	/**
@@ -522,6 +522,7 @@ class RichTextExcerpts {
 	 */
 	public static function validate_rich_text_excerpts_options($plugin_options)
 	{
+		//print_r($plugin_options);exit;
 		/* get defaults as a fallabck for missing values */
 		$defaults = self::get_default_plugin_options();
 		/* make sure supported post types is an array */
@@ -529,27 +530,21 @@ class RichTextExcerpts {
 			$plugin_options['supported_post_types'] = $defaults['supported_post_types'];
 		}
 		/* see if the editor is being embedded in a metabox */
-		if (!isset($plugin_options['metabox'])) {
-			/* use defaults */
-			$plugin_options['metabox'] = $defaults['metabox'];
+		$plugin_options['metabox']['use'] = (isset($plugin_options['metabox']['use']) && $plugin_options['metabox']['use'] == "1")? true: false;
+		/* check context is an allowed value */
+		if (!isset($plugin_options['metabox']['context'])) {
+			$plugin_options['metabox']['context'] = $defaults['metabox']['context'];
 		} else {
-			/* whether or not to use a metabox - checkbox */
-			$plugin_options['metabox']['use'] = isset($plugin_options['metabox']['use']);
-			/* check context is an allowed value */
-			if (!isset($plugin_options['metabox']['context'])) {
+			if (!in_array($plugin_options['metabox']['context'], array('normal', 'advanced', 'side'))) {
 				$plugin_options['metabox']['context'] = $defaults['metabox']['context'];
-			} else {
-				if (!in_array($plugin_options['metabox']['context'], array('normal', 'advanced', 'side'))) {
-					$plugin_options['metabox']['context'] = $defaults['metabox']['context'];
-				}
 			}
-			/* check priority is an allowed value */
-			if (!isset($plugin_options['metabox']['priority'])) {
+		}
+		/* check priority is an allowed value */
+		if (!isset($plugin_options['metabox']['priority'])) {
+			$plugin_options['metabox']['priority'] = $defaults['metabox']['priority'];
+		} else {
+			if (!in_array($plugin_options['metabox']['priority'], array('high', 'core', 'default', 'low'))) {
 				$plugin_options['metabox']['priority'] = $defaults['metabox']['priority'];
-			} else {
-				if (!in_array($plugin_options['metabox']['priority'], array('high', 'core', 'default', 'low'))) {
-					$plugin_options['metabox']['priority'] = $defaults['metabox']['priority'];
-				}
 			}
 		}
 		/* make sure editor type is one of the allowed types */
