@@ -2,60 +2,68 @@
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Rich Text Excerpts 1.2.1\n"
+"Project-Id-Version: Rich Text Excerpts 1.3\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/rich-text-excerpts\n"
-"POT-Creation-Date: 2013-04-21 08:52:53+00:00\n"
+"POT-Creation-Date: 2013-10-16 21:26:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
+"Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:140
+#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
 msgid "Excerpt"
 msgstr ""
 
-#: rich-text-excerpts.php:192
+#: rich-text-excerpts.php:240
 msgid "Settings"
 msgstr ""
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.2.1)  #-#-#-#-#
+#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:204
+#: rich-text-excerpts.php:252
 msgid "Rich Text Excerpts"
 msgstr ""
 
-#: rich-text-excerpts.php:238
+#: rich-text-excerpts.php:286
 msgid "Rich Text Excerpts Options"
 msgstr ""
 
-#: rich-text-excerpts.php:243
+#: rich-text-excerpts.php:291
 msgid "Save Changes"
 msgstr ""
 
-#: rich-text-excerpts.php:263
+#: rich-text-excerpts.php:305
+msgid "Post Types"
+msgstr ""
+
+#: rich-text-excerpts.php:312
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr ""
 
-#: rich-text-excerpts.php:272
+#: rich-text-excerpts.php:321
 msgid "Editor Options"
 msgstr ""
 
-#: rich-text-excerpts.php:278
+#: rich-text-excerpts.php:328
+msgid "Use a meta box"
+msgstr ""
+
+#: rich-text-excerpts.php:336
 msgid "Choose which Editor is used for excerpts"
 msgstr ""
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:344
 msgid "Editor Settings"
 msgstr ""
 
-#: rich-text-excerpts.php:342
+#: rich-text-excerpts.php:405
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
 
-#: rich-text-excerpts.php:343
+#: rich-text-excerpts.php:406
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -63,24 +71,33 @@ msgid ""
 "the Wordpress Codex"
 msgstr ""
 
-#: rich-text-excerpts.php:353
+#: rich-text-excerpts.php:417
+msgid "Check this box to put the excerpt in a draggable meta box"
+msgstr ""
+
+#: rich-text-excerpts.php:425
+msgid "Set the part of the page where the excerpt editor should be shown"
+msgstr ""
+
+#: rich-text-excerpts.php:432
+msgid "Set the priority of the excerpt editor"
+msgstr ""
+
+#: rich-text-excerpts.php:443
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr ""
 
-#: rich-text-excerpts.php:355
+#: rich-text-excerpts.php:445
 msgid "Use the full version of the editor"
 msgstr ""
 
-#: rich-text-excerpts.php:356
+#: rich-text-excerpts.php:446
 msgid ""
 "Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
-"version of the editor (recommended). Customising the full TinyMCE editor is "
-"best carried out using a plugin like TinyMCE Advanced. If you choose to use "
-"the &ldquo;teeny&rdquo; version of the editor, you can customise the "
-"controls it will have here"
+"version of the editor."
 msgstr ""
 
-#: rich-text-excerpts.php:374
+#: rich-text-excerpts.php:464
 msgid ""
 "Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
@@ -89,51 +106,51 @@ msgid ""
 "it permanently"
 msgstr ""
 
-#: rich-text-excerpts.php:376
+#: rich-text-excerpts.php:466
 msgid "Enable upload media button"
 msgstr ""
 
-#: rich-text-excerpts.php:377
+#: rich-text-excerpts.php:467
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr ""
 
-#: rich-text-excerpts.php:378
+#: rich-text-excerpts.php:468
 msgid "Toolbar Buttons and Plugins"
 msgstr ""
 
-#: rich-text-excerpts.php:383
+#: rich-text-excerpts.php:473
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr ""
 
-#: rich-text-excerpts.php:383
+#: rich-text-excerpts.php:473
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
 msgstr ""
 
-#: rich-text-excerpts.php:383
+#: rich-text-excerpts.php:473
 msgid "Button and plugin names should be separated using commas"
 msgstr ""
 
-#: rich-text-excerpts.php:384
+#: rich-text-excerpts.php:474
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
 msgstr ""
 
-#: rich-text-excerpts.php:385
+#: rich-text-excerpts.php:475
 msgid ""
 "Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
 
-#: rich-text-excerpts.php:392
+#: rich-text-excerpts.php:482
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
 msgstr ""
 
-#: rich-text-excerpts.php:394
+#: rich-text-excerpts.php:484
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"
@@ -152,5 +169,5 @@ msgid "Peter Edwards"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://bjorsq.net"
+msgid "https://github.com/bjorsq/rich-text-excerpts"
 msgstr ""

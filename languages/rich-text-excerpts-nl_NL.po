@@ -1,0 +1,195 @@
+# Copyright (C) 2013 Rich Text Excerpts
+# This file is distributed under the same license as the Rich Text Excerpts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rich Text Excerpts 1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/rich-text-excerpts\n"
+"POT-Creation-Date: 2013-10-16 21:26:24+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
+"Language-Team: Google translate <LL@li.org>\n"
+
+#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+msgid "Excerpt"
+msgstr "excerpt"
+
+#: rich-text-excerpts.php:240
+msgid "Settings"
+msgstr "instellingen"
+
+#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: rich-text-excerpts.php:252
+msgid "Rich Text Excerpts"
+msgstr "Rich Text Fragmenten"
+
+#: rich-text-excerpts.php:286
+msgid "Rich Text Excerpts Options"
+msgstr "Rich Text Uittreksels Opties"
+
+#: rich-text-excerpts.php:291
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: rich-text-excerpts.php:305
+msgid "Post Types"
+msgstr "Bericht Types"
+
+#: rich-text-excerpts.php:312
+msgid "Choose which post types will use a rich text editor for excerpts"
+msgstr "Kiezen welk bericht typen van een RTF-editor gebruiken voor uittreksels"
+
+#: rich-text-excerpts.php:321
+msgid "Editor Options"
+msgstr "editor opties"
+
+#: rich-text-excerpts.php:328
+msgid "Use a meta box"
+msgstr "Gebruik een meta doos"
+
+#: rich-text-excerpts.php:336
+msgid "Choose which Editor is used for excerpts"
+msgstr "Kiezen welke Editor wordt gebruikt voor uittreksels"
+
+#: rich-text-excerpts.php:344
+msgid "Editor Settings"
+msgstr "editor -instellingen"
+
+#: rich-text-excerpts.php:405
+msgid ""
+"If you want to disable support for all post types, please disable the plugin"
+msgstr ""
+"Als u wilt ondersteuning voor alle berichten typen uit te schakelen , kunt u de plugin uitschakelen"
+
+#: rich-text-excerpts.php:406
+msgid ""
+"Post types not selected here will use the regular plain text editor for "
+"excerpts. If the post type you want is not listed here, it does not "
+"currently support excerpts - to add support for excerpts to a post type, see "
+"the Wordpress Codex"
+msgstr ""
+"Bericht typen hier niet geselecteerd zal de gewone platte tekst editor gebruiken voor"
+"fragmenten . Als het bericht dat u wilt hier niet wordt weergegeven , is het niet"
+"ondersteunen momenteel uittreksels - om ondersteuning voor fragmenten toe te voegen aan een post type, zie"
+"de Wordpress Codex"
+
+#: rich-text-excerpts.php:417
+msgid "Check this box to put the excerpt in a draggable meta box"
+msgstr "Schakel dit vakje in om het fragment in een verplaatsbare meta doos gezet"
+
+#: rich-text-excerpts.php:425
+msgid "Set the part of the page where the excerpt editor should be shown"
+msgstr "Stel het gedeelte van de pagina waar het uittreksel editor getoond moet worden"
+
+#: rich-text-excerpts.php:432
+msgid "Set the priority of the excerpt editor"
+msgstr "Stel de prioriteit van het uittreksel editor"
+
+#: rich-text-excerpts.php:443
+msgid "Use the minimal editor configuration used in PressThis"
+msgstr "Met de minimale configuratie editor gebruikt PressThis"
+
+#: rich-text-excerpts.php:445
+msgid "Use the full version of the editor"
+msgstr "Gebruik de volledige versie van de editor"
+
+#: rich-text-excerpts.php:446
+msgid ""
+"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"version of the editor."
+msgstr ""
+"Kies of u de volledige TinyMCE , of de ' teeny ' gebruiken"
+"versie van de editor ."
+
+#: rich-text-excerpts.php:464
+msgid ""
+"Stop removing the <p> and <br> tags when saving and show them in "
+"the HTML editor This will make it possible to use more advanced coding in "
+"the HTML editor without the back-end filtering affecting it much. However it "
+"may behave unexpectedly in rare cases, so test it thoroughly before enabling "
+"it permanently"
+msgstr ""
+"Stoppen met het verwijderen <p> en <br> labels de bij het opslaan en laten zien in"
+"De HTML editor Dit maakt het mogelijk om code als gebruikt"
+"de HTML-editor zonder de back - end filtering die het veel . Maar het"
+"kan onverwacht gedragen in zeldzame gevallen , zo grondig testen voordat inschakelen"
+"het permanent"
+
+#: rich-text-excerpts.php:466
+msgid "Enable upload media button"
+msgstr "Enable media knop uploaden"
+
+#: rich-text-excerpts.php:467
+msgid "Number of rows to use in the text editor (minimum is 3)"
+msgstr "Aantal rijen te gebruiken in de teksteditor ( minimum 3 )"
+
+#: rich-text-excerpts.php:468
+msgid "Toolbar Buttons and Plugins"
+msgstr "Werkbalkknoppen en Plugins"
+
+#: rich-text-excerpts.php:473
+msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
+msgstr "Voor een lijst met knoppen en plugins in TinyMCE , zie de TinyMCE wiki"
+
+#: rich-text-excerpts.php:473
+msgid ""
+"There is also some documentation on the implementation of TinyMCE in "
+"Wordpress on the Wordpress Codex"
+msgstr ""
+"Er is ook wat documentatie over de uitvoering van TinyMCE in"
+"Wordpress op de Wordpress Codex"
+
+#: rich-text-excerpts.php:473
+msgid "Button and plugin names should be separated using commas"
+msgstr "Knop en plugin namen moeten worden gescheiden met komma's"
+
+#: rich-text-excerpts.php:474
+msgid ""
+"Plugins to add - make sure you add any plugin specific buttons to the editor "
+"below"
+msgstr ""
+"Plugins toe te voegen - zorg ervoor dat je elke plugin specifieke knoppen toe te voegen aan de redactie"
+"beneden"
+
+#: rich-text-excerpts.php:475
+msgid ""
+"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"buttons"
+msgstr ""
+"Knoppen Toolbar - het woord ' scheiding' aan afzonderlijke groepen van"
+"knoppen"
+
+#: rich-text-excerpts.php:482
+msgid ""
+"Configure the buttons for the advanced editor using the TinyMCE Advanced "
+"plugin"
+msgstr ""
+"De knoppen configureren voor de geavanceerde editor via het TinyMCE Geavanceerd"
+"plugin"
+
+#: rich-text-excerpts.php:484
+msgid ""
+"If you want to configure the buttons for the advanced editor, install and "
+"activate the TinyMCE Advanced plugin"
+msgstr ""
+"Als u wilt dat de knoppen configureren voor de geavanceerde editor , installeren en"
+"activeer de TinyMCE Geavanceerd plugin"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/rich-text-excerpts/"
+msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts/"
+
+#. Description of the plugin/theme
+msgid "Adds rich text editing capability for excerpts using wp_editor()"
+msgstr "Voegt rich text editing mogelijkheden voor fragmenten met wp_editor ( )"
+
+#. Author of the plugin/theme
+msgid "Peter Edwards"
+msgstr "Peter Edwards"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/bjorsq/rich-text-excerpts"
+msgstr "https://github.com/bjorsq/rich-text-excerpts"

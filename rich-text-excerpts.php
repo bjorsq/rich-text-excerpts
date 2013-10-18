@@ -302,7 +302,7 @@ class RichTextExcerpts {
 		/* post type and metabox options */
 		add_settings_section(
 			'post-type-options',
-			'Post Types',
+			__('Post Types', 'rich-text-excerpts'),
 			array( __CLASS__, 'options_section_text' ), 
 			'rte'
 		);
@@ -395,11 +395,11 @@ class RichTextExcerpts {
 	public static function options_setting_post_types()
 	{ 
 		$options = self::get_plugin_options();
-		$post_types = get_post_types(array("public" => true),'names');
+		$post_types = get_post_types(array("public" => true), 'objects');
 		foreach ($post_types as $post_type ) {
-			if ( post_type_supports($post_type, 'excerpt') ) {
-				$chckd = (in_array($post_type, $options["supported_post_types"]))? ' checked="checked"': '';
-				printf('<p class="rte-post-types-inputs"><input class="rte-post-types" type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type, $post_type, $chckd, $post_type, $post_type);
+			if ( post_type_supports($post_type->name, 'excerpt') ) {
+				$chckd = (in_array($post_type->name, $options["supported_post_types"]))? ' checked="checked"': '';
+				printf('<p class="rte-post-types-inputs"><input class="rte-post-types" type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type->name, $post_type->name, $chckd, $post_type->name, $post_type->labels->name);
 			}
 		}
 		printf('<div class="rte-post-types-error"></p>%s</p></div>', __('If you want to disable support for all post types, please disable the plugin', 'rich-text-excerpts'));

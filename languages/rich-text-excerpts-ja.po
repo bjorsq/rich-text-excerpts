@@ -1,146 +1,195 @@
-# Copyright (C) 2012 Rich Text Excerpts
+# Copyright (C) 2013 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Rich Text Excerpts 1.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/extend/plugins/rich-text-excerpts\n"
-"POT-Creation-Date: 2012-09-23 20:16:00+00:00\n"
+"Project-Id-Version: Rich Text Excerpts 1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/rich-text-excerpts\n"
+"POT-Creation-Date: 2013-10-16 21:26:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
+"Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:98
+#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
 msgid "Excerpt"
 msgstr "抜粋"
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.2)  #-#-#-#-#
+#: rich-text-excerpts.php:240
+msgid "Settings"
+msgstr "設定"
+
+#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:149
+#: rich-text-excerpts.php:252
 msgid "Rich Text Excerpts"
 msgstr "リッチテキストの抜粋"
 
-#: rich-text-excerpts.php:169
+#: rich-text-excerpts.php:286
 msgid "Rich Text Excerpts Options"
-msgstr "リッチテキストの抜粋オプション"
+msgstr "リッチテキスト抜粋のオプション"
 
-#: rich-text-excerpts.php:174
+#: rich-text-excerpts.php:291
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: rich-text-excerpts.php:194
-msgid "Choose which post types will have rich text editor for excerpts"
-msgstr "ポストタイプは抜粋には、リッチテキストエディタを持っていますかを選択"
+#: rich-text-excerpts.php:305
+msgid "Post Types"
+msgstr "ポストタイプ"
 
-#: rich-text-excerpts.php:203
+#: rich-text-excerpts.php:312
+msgid "Choose which post types will use a rich text editor for excerpts"
+msgstr "ポストタイプは抜粋用リッチテキストエディタを使用するかを選択"
+
+#: rich-text-excerpts.php:321
 msgid "Editor Options"
-msgstr "エディタのオプション"
+msgstr "エディタオプション"
 
-#: rich-text-excerpts.php:209
+#: rich-text-excerpts.php:328
+msgid "Use a meta box"
+msgstr "メタボックスを使用"
+
+#: rich-text-excerpts.php:336
 msgid "Choose which Editor is used for excerpts"
-msgstr "抜粋のために使用されるエディタの選択"
+msgstr "抜粋のために使用されているエディタを選択します"
 
-#: rich-text-excerpts.php:217
+#: rich-text-excerpts.php:344
 msgid "Editor Settings"
 msgstr "エディタの設定"
 
-#: rich-text-excerpts.php:271
+#: rich-text-excerpts.php:405
+msgid ""
+"If you want to disable support for all post types, please disable the plugin"
+msgstr ""
+"あなたはすべてのPOSTタイプのサポートを無効にしたい場合は、プラグインを無効にしてください"
+
+#: rich-text-excerpts.php:406
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
 "currently support excerpts - to add support for excerpts to a post type, see "
 "the Wordpress Codex"
-msgstr "ここで選択されていないポストの種類は抜粋のため、正規のプレーンテキストエディタを使用します。あなたが望むポストタイプがここに表示されていない場合、それは現在の抜粋をサポートしていません - ポストタイプに抜粋のサポートを追加するためには、Wordpress Codexを参照してください。"
+msgstr ""
+"ここで選択されていないポストのタイプはのため定期的なプレーンテキストエディタを使用します"
+"抜粋。したいポストタイプがここにリストされていない場合、それはしません"
+"現在の抜粋をサポート - ポストタイプに抜粋のサポートを追加するために、以下を参照してください"
+"Wordpressのコーデックス"
 
-#: rich-text-excerpts.php:281
+#: rich-text-excerpts.php:417
+msgid "Check this box to put the excerpt in a draggable meta box"
+msgstr "ドラッグ可能なメタボックスに抜粋を置くには、このチェックボックスをオン"
+
+#: rich-text-excerpts.php:425
+msgid "Set the part of the page where the excerpt editor should be shown"
+msgstr "抜粋エディタが表示されるべきページの一部を設定します"
+
+#: rich-text-excerpts.php:432
+msgid "Set the priority of the excerpt editor"
+msgstr "抜粋エディタの優先順位を設定"
+
+#: rich-text-excerpts.php:443
 msgid "Use the minimal editor configuration used in PressThis"
-msgstr "PressThisで使用されて最小限のエディタの構成を使用し"
+msgstr "PressThisで使用される最小限のエディタの設定を使用して、"
 
-#: rich-text-excerpts.php:283
+#: rich-text-excerpts.php:445
 msgid "Use the full version of the editor"
-msgstr "エディタのフルバージョンを使用"
+msgstr "エディタのフルバージョンを使用してください"
 
-#: rich-text-excerpts.php:284
+#: rich-text-excerpts.php:446
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
-"version of the editor (recommended). Customising the full TinyMCE editor is "
-"best carried out using a plugin like TinyMCE Advanced. If you choose to use "
-"the &ldquo;teeny&rdquo; version of the editor, you can customise the "
-"controls it will have here"
-msgstr "フルTinyMCEエディタ、またはエディタの &ldquo;teeny&rdquo; バージョン（推奨）を使用するかを選択します。フルTinyMCEエディタをカスタマイズすることは最高のTinyMCEの高度のようなプラグインを用いて行われる。あなたがエディタの &ldquo;teeny&rdquo; のバージョンを使用することを選択した場合、あなたはそれがここにありますコントロールをカスタマイズすることができます"
+"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"version of the editor."
+msgstr ""
+"フルTinyMCEのエディタを使用するかどうかを選択したり、 '小さな'"
+"エディタのバージョン。"
 
-#: rich-text-excerpts.php:294
+#: rich-text-excerpts.php:464
 msgid ""
-"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
+"Stop removing the <p> and <br> tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
-msgstr "保存するとき&lt;p&gt;と&lt;br&gt;タグを削除停止し、これは、それが可能な限りそれに影響を与えるバックエンドフィルタリングなしでHTMLエディタで、より高度なコーディングを使用するようになり、HTMLエディタでそれらを示しています。しかしそれはそう永久にそれを有効にする前に徹底的にテスト、まれに予期しない動作をする場合が"
+msgstr ""
+"保存時<P>と画像タグを削除停止し、それらを表示する"
+"これは、それが可能でのコーディングより高度な使用することになりますHTMLエディタ"
+"あまりそれに影響を与える、バックエンド·フィルタリングなしのHTMLエディタ。しかし"
+"稀に予期しない動作をする可能性がありますので、有効にする前に徹底的にテスト"
+"それは永久に"
 
-#: rich-text-excerpts.php:296
+#: rich-text-excerpts.php:466
 msgid "Enable upload media button"
-msgstr "メディアボタンをアップロードを有効にする"
+msgstr "メディアボタンをアップロード有効"
 
-#: rich-text-excerpts.php:297
+#: rich-text-excerpts.php:467
 msgid "Number of rows to use in the text editor (minimum is 3)"
-msgstr "テキストエディタで使用する行数を設定します（最小値は3です。）"
+msgstr "テキストエディタで使用する行の数（最小値は3）"
 
-#: rich-text-excerpts.php:298
+#: rich-text-excerpts.php:468
 msgid "Toolbar Buttons and Plugins"
-msgstr "ツールバーのボタンとプラグイン"
+msgstr "ツールバーボタンとプラグイン"
 
-#: rich-text-excerpts.php:303
+#: rich-text-excerpts.php:473
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
-msgstr "TinyMCEの中のボタンとプラグインのリストについては、TinyMCEのwikiを参照してください。"
+msgstr "TinyMCEの中にボタンやプラグインのリストについては、TinyMCEのウィキを参照してください"
 
-#: rich-text-excerpts.php:303
+#: rich-text-excerpts.php:473
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
-msgstr "WordpressのコーデックスでWordpressのTinyMCEはの実装にいくつかのドキュメントもあります"
+msgstr ""
+"でTinyMCEをの実施に関するいくつかのドキュメントもあります"
+"WordpressのコーデックスでのWordpress"
 
-#: rich-text-excerpts.php:303
+#: rich-text-excerpts.php:473
 msgid "Button and plugin names should be separated using commas"
-msgstr "ボタンとプラグイン名はカンマを使用して区切る必要があります"
+msgstr "ボタンとプラグイン名はコンマを使用して区切る必要があります"
 
-#: rich-text-excerpts.php:304
+#: rich-text-excerpts.php:474
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
-msgstr "あなたは以下のエディターへのプラグインの特定のボタンを追加してください - 追加するためのプラグイン"
+msgstr ""
+"エディタへのプラグインの特定のボタンを追加することを確認してください - 追加するプラグイン"
+"以下"
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:475
 msgid ""
-"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
+"Toolbar buttons - use the word ‘separator’ to separate groups of "
 "buttons"
-msgstr "ツールバーのボタンは、 - ボタンのグループを区切るために、単語 &lsquo;separator&rsquo; を使用"
+msgstr ""
+"ツールバーのボタンは、 - のグループを分離するために、単語 '区切り文字'を使用"
+"ボタン"
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:482
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
-msgstr "TinyMCEは高度なプラグインを使用して高度なエディタのためのボタンを設定する"
+msgstr ""
+"TinyMCEの高度を使用して高度なエディタのためにボタンを設定"
+"プラグイン"
 
-#: rich-text-excerpts.php:314
+#: rich-text-excerpts.php:484
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"
-msgstr "あなたは高度なエディタ用のボタンを設定したい場合は、インストールしてTinyMCEのアドバンスドプラグインを有効"
+msgstr ""
+"あなたは、高度なエディタのためのボタンを設定したい場合は、インストールし"
+"TinyMCEの高度プラグインを有効にする"
 
 #. Plugin URI of the plugin/theme
-msgid "http://wordpress.org/extend/plugins/rich-text-excerpts"
-msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts"
+msgid "http://wordpress.org/extend/plugins/rich-text-excerpts/"
+msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts/"
 
 #. Description of the plugin/theme
 msgid "Adds rich text editing capability for excerpts using wp_editor()"
-msgstr "wp_editor() を使用して抜粋でのリッチ·テキスト編集機能を追加"
+msgstr "wp_editor（）を使用して抜粋用のリッチテキスト編集機能を追加"
 
 #. Author of the plugin/theme
 msgid "Peter Edwards"
 msgstr "Peter Edwards"
 
 #. Author URI of the plugin/theme
-msgid "http://bjorsq.net"
-msgstr "http://bjorsq.net"
+msgid "https://github.com/bjorsq/rich-text-excerpts"
+msgstr "https://github.com/bjorsq/rich-text-excerpts"

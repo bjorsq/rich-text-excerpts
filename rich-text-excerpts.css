@@ -25,9 +25,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 .js .rich-text-excerpt-static h3 label {
 	cursor: default;
 }
-.rte-wrap {
-	padding:10px;
-}
 .rte-post-types-error {
 	background-color: rgb(255, 255, 224);
 	border:1px solid rgb(230, 219, 85);
@@ -36,4 +33,20 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 	color: rgb(51, 51, 51);
 	padding: 4px 0.5em;
 	display:none;
+}
+div.rich-text-excerpt #wp-excerpt-editor-tools{
+	margin: 0;
+	padding-top: 5px;
+}
+div.rich-text-excerpt .add_media {
+	margin-left: 5px;
+}
+div.rich-text-excerpt .wp-editor-container{
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-radius: 0;
+}
+div.rich-text-excerpt td.mceIframeContainer {
+	background: #ffffff;
 }
