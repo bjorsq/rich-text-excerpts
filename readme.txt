@@ -79,4 +79,4 @@ I've switched to using git for source code maintenance, so fi you want to contri
 
 https://github.com/bjorsq/rich-text-excerpts
 
-If you can translate this plugin, please get in touch - there is a POT file with the plugin for translators to use. I've made translations using Google translate, but not sure if these are any good.
+If you can translate this plugin, please get in touch - there is a POT file with the plugin for translators to use. I've made translations using Google translate, but not sure if these are any good - any edits on thes to improve them are welcome.
