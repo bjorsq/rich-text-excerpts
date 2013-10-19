@@ -190,7 +190,8 @@ class RichTextExcerpts {
 			"teeny" => ($plugin_options['editor_type'] === "teeny")? true: false
 		);
 		/* "echo" the editor */
-		wp_editor(html_entity_decode($excerpt), 'excerpt', $options );
+		$excerpt = apply_filters( 'format_to_edit', $excerpt );
+		wp_editor($excerpt, 'excerpt', $options );
 		if (!$plugin_options['metabox']['use']) {
 			/* finish wrapping */
 			print('</div></div>');
