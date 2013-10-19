@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: excerpt, editor, TinyMCE, formatting
 Requires at least: 3.3
 Tested up to: 3.7
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -43,6 +43,11 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 
 
 == Changelog ==
+
+= 1.3.1 =
+* added extra CSS styles to the editor, incorporated from [this forum post](http://wordpress.org/support/topic/better-look-with-a-few-extra-lines-of-code)
+* re-built translations to reflect new admin options, and incorporated the changes suggested by Johan Pirlouit in [this forum post](http://wordpress.org/support/topic/french-translation-updated-and-a-few-other-minor-things-fixed)
+* started to use the `format_to_edit` filter on content before it is displayed in the editor to stop the behaviour described in [this forum post](http://wordpress.org/support/topic/special-characters-show-as-their-character-codes)
 
 = 1.3 =
 * made register_plugin_options() static (bugfix)
