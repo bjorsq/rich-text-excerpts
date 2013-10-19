@@ -28,7 +28,7 @@ if ($dh = opendir($txtdir)) {
         	$lines = file($txtdir . '/' . $file);
         	$line_no = 1;
         	foreach ($lines as $line) {
-        		$po_file = str_replace('%'.$line_no.'%', trim(str_replace('"', "'", $line)), $po_file);
+        		$po_file = str_replace('%'.$line_no.'%', rtrim(str_replace('"', "'", $line), "\n\r"), $po_file);
         		$line_no++;
         	}
         	file_put_contents($po_filename, $po_file);
