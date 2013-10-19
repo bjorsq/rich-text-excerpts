@@ -1,0 +1,45 @@
+izvod
+postavke
+Rich Text Izvodi
+Rich Text Izvodi Options
+Save Changes
+Post Tipovi
+Odabrati koji post tipovi će koristiti bogat tekst editor za odlomke
+urednik Opcije
+Koristite meta kutiji
+Odabrati koji Editor se koristi za odlomke
+Editor Postavke
+Ako želite da onemogućite podršku za sve tipove post , molimo vas da onemogućite plugin
+Post tvrtke nije izabran ovdje će koristiti regularnom običan tekst editor za
+odlomke . Ako je post tipa koji želite nije navedena ovdje , to ne
+trenutno podržavaju odlomci - dodati podršku za odlomke na post tipa , vidi
+WordPress Codex
+Provjerite ovo polje staviti odlomak u draggable meta kutiji
+Postavite dio stranice gdje se izvod urednik treba biti prikazan
+Postavite prioritet izvod urednika
+Koristite minimalna konfiguracija urednik koriste u PressThis
+Koristite punu verziju urednika
+Odaberite da li koristiti puni TinyMCE urednika , ili " teeny "
+verzija urednika .
+Stop uklanjanje <p> i autora oznaka prilikom čuvanja i pokazati im u
+HTML editor To će omogućiti da se više koriste napredne kodiranje u
+HTML editor , bez back- end filtriranje utiču ga mnogo . Međutim, to
+može ponašati neočekivano u rijetkim slučajevima , tako temeljito testiramo prije omogućavanja
+trajno
+Omogući upload mediji tipku
+Broj redova za korištenje u tekst editor ( minimum je 3 )
+Alatna traka Dugmad i Plugins
+Za popis tipki i dodaci u TinyMCE , pogledajte TinyMCE wiki
+Tu je i neka dokumentacija o implementaciji TinyMCE u
+Wordpress na Wordpress Codex
+Button i plugin imena treba odvojiti pomoću zarezom
+Plugins dodati - pobrinite se da dodate bilo plugin posebne tipke za urednika
+ispod
+Alatna traka tipke - koristiti riječ ' separator ' u odvojene grupe
+tipke
+Konfigurirajte tipke za napredne urednika koristeći TinyMCE Advanced
+plugin
+Ako želite konfigurirati tipke za napredne editor, instalirajte i
+aktivirati TinyMCE Advanced plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Dodaje bogat uređivanje teksta sposobnosti za izvode pomoću wp_editor ( )

@@ -1,0 +1,45 @@
+Excerto 
+Configuración 
+Ricos Fragmentos de texto 
+Rich Text Fragmentos Opcións 
+Gardar cambios 
+Publicar Tipos 
+Seleccione que tipos post vai utilizar un editor de texto rico para fragmentos 
+Opcións do Editor 
+Usar a caixa de meta 
+Escolla cal editor se usa para fragmentos 
+Configuración do editor 
+Se quere desactivar o soporte para todo tipo de mensaxe, por favor, desactive o complemento 
+Pos tipo seleccionados aquí non vai empregar o editor normal de texto para 
+fragmentos. O tipo de mensaxe que quere non está aquí, non fai 
+Actualmente suportamos fragmentos - para engadir soporte para tramos de un tipo de post, vexa 
+o WordPress Codex 
+Marque esta caixa para poñer o tramo nunha caixa de meta draggable 
+Define a parte da páxina onde o editor tramo debe ser mostrada 
+Axuste a prioridade do editor tramo 
+Use o editor de configuración mínima usado en PressThis 
+Utiliza a versión completa do editor 
+Escolla se desexa utilizar o editor TinyMCE completo, ou o "pequeno" 
+versión do editor. 
+Deixe de retirar as etiquetas <p> Mapa e ao gardar e amosar-lles en 
+o editor HTML Isto fará posible a utilización dunha codificación máis avanzados en 
+o editor HTML sen o filtrado de back-end que afectan moito. Con todo 
+pode comportarse de forma inesperada, en casos raros, así probalo completamente antes de activar 
+permanentemente 
+Activar botón de subida de medios 
+Número de liñas para usar no editor de texto (o mínimo é 3) 
+Botóns da barra de ferramentas e plugins 
+Para obter unha lista de botóns e complementos en TinyMCE, consulte a wiki TinyMCE 
+Hai tamén algunha documentación sobre a posta en marcha do TinyMCE en 
+WordPress no WordPress Codex 
+Botón e complemento nomes deben ser separados por comas 
+Plugins para engadir - asegúrese de engadir calquera plugin botóns específicos para o editor 
+abaixo 
+Botóns da barra de ferramentas - use 'ficha' a palabra para separar grupos de 
+botóns 
+Configurar os botóns para o editor avanzado mediante o TinyMCE avanzada 
+Extensión 
+Se quere configurar os botóns para o editor avanzado, instalar e 
+activar o plugin TinyMCE avanzada 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Engade capacidade de edición de texto rico para tramos mediante wp_editor ()...

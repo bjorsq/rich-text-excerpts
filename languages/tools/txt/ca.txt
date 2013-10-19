@@ -1,0 +1,45 @@
+extracte
+Configuració
+Fragments de text enriquit
+Rich Extractes text Opcions
+Desa els canvis
+publiqui Tipus
+Triar quin tipus de destinació s'utilitzi un editor de text enriquit per extractes
+Opcions de l'editor
+Utilitzeu una caixa de meta
+Triar quin editor s'utilitza per extractes
+Configuració de l'editor
+Si voleu desactivar el suport per a tot tipus de correus , si us plau , desactivar el plugin
+Tipus post no seleccionats aquí s'utilitza l'editor de text normal per
+extractes . Si el tipus de missatge que voleu no és aquí , no ho fa
+Actualment suport parcial - per afegir suport per extractes d'un tipus de correus , veure
+el Wordpress Codex
+Marqueu aquesta casella per posar l'extracte en una caixa de meta arrossegable
+Ajusteu la part de la pàgina a l'editor de passatge s'ha de mostrar
+Establir la prioritat de l'editor extracte
+Utilitzeu la configuració mínima editor utilitzat en PressThis
+Feu servir la versió completa de l'editor
+Seleccioneu si voleu utilitzar l'editor TinyMCE complet , o el " petitó "
+Versió de l'editor .
+Aturar l'eliminació de les etiquetes <p> i imatges en desar -los en
+l'editor HTML Això farà que sigui possible l'ús de codificació més avançades en
+l'editor d'HTML sense el filtratge de fons que afecten molt. No obstant això ,
+pot comportar inesperadament en casos rars , pel que provar a fons abans d'activar
+permanentment
+Habilitar pujar botó multimèdia
+Nombre de files que s'utilitzi en l'editor de text ( com a mínim és 3 )
+Toolbar Buttons Plug -ins
+Per obtenir una llista de botons i connectors de TinyMCE , consulteu la wiki TinyMCE
+També hi ha una mica de documentació sobre l'aplicació de TinyMCE en
+Wordpress Wordpress al Codex
+Noms dels botons i el plug -in s'han de separar amb comes
+Plugins per afegir - vos d'afegir els botons específics plugin per a l'editor
+baix
+Botons de la barra d'eines - usen la paraula ' separador ' per separar grups de
+botons
+Configurar els botons de l'editor avançat amb el TinyMCE avançada
+Plugin
+Si voleu configurar els botons per a l'editor avançat , instal · lar i
+activar el plugin TinyMCE Advanced
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Afegeix rica capacitat d'edició de text per extractes utilitzant wp_editor ( )

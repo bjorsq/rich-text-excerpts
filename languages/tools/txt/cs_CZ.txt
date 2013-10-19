@@ -1,0 +1,45 @@
+výňatek
+Nastavení
+Rich Text Výňatky
+RTF výňatky možnosti
+Uložit změny
+Příspěvek typy
+Vyberte si, které typy příspěvek bude používat editor formátovaného textu úryvky
+Možnosti editoru
+Pomocí meta okno
+Vyberte si, které Editor se používá pro ukázky
+Editor nastavení
+Chcete-li zakázat podporu všech příspěvků typů, zakažte plugin
+Příspěvek typy nejsou zde vybrané používat pravidelně editoru prostého textu pro
+výňatky . Pokud po požadovaný typ zde není uveden , není
+V současné době podporujeme ukázky - přidat podporu pro výpisy z poštovního typu , viz
+Wordpress Codex
+Zaškrtněte, pokud chcete vložit úryvek v meta přetáhnout pole
+Nastavte část stránky , kde by měl být výpis editor uvedeno
+Nastavit prioritu výňatek editoru
+Použijte minimální editoru konfigurace použité v PressThis
+Použijte plnou verzi editoru
+Vyberte, zda chcete použít plnou TinyMCE editor, nebo " malinký "
+verze editoru.
+Zastavit odstranění <p> a <br> tagy při ukládání a zobrazit je v
+HTML editor Díky tomu bude možné použít pokročilejší kódování v
+HTML editor bez back-end filtrování , které ji ovlivňují mnoho. Nicméně to
+může chovat neočekávaně ve vzácných případech , tak pořádně otestovat před povolením
+trvale
+Povolit tlačítko Odeslat médium
+Počet řádků pro použití v textovém editoru ( minimum je 3)
+Toolbar Buttons a zásuvných modulů
+Pro seznam tlačítek a pluginy v TinyMCE , viz TinyMCE wiki
+Tam je také nějaký dokumentace o provádění TinyMCE v
+Wordpress na Wordpress kodexu
+Button a plugin jména by měly být odděleny čárkami
+Pluginy pro přidání - ujistěte se, že přidat nějaké pluginy speciální tlačítka k editoru
+níže
+Tlačítka na panelu nástrojů - používat slovo " oddělovač " do samostatných skupin
+tlačítka
+Konfigurace tlačítek pro pokročilé editoru pomocí TinyMCE Advanced
+plugin
+Chcete-li nakonfigurovat tlačítka pro pokročilé editoru instalaci a
+aktivovat TinyMCE Advanced plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Přidá RTF editační schopnosti pro ukázky použití wp_editor ()

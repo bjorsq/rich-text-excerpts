@@ -1,0 +1,45 @@
+Auszug 
+Einstellungen 
+Rich-Text-Auszüge 
+Rich-Text-Auszüge Optionen 
+Änderungen speichern 
+Sende Typen 
+Wählen Sie die Post-Typen wird ein Rich-Text-Editor für Auszüge verwenden 
+Editor-Optionen 
+Verwenden Sie eine Meta-Box 
+Wählen Sie die Editor für Auszüge verwendet 
+Editor-Einstellungen 
+Wenn Sie Unterstützung für alle Arten Beitrag deaktivieren möchten, deaktivieren Sie bitte das Plugin 
+Beitrag Typen nicht gewählt wird hier die regelmäßige Texteditor für den Einsatz 
+Auszüge. Wenn die Post-Typ Sie wollen hier nicht aufgeführt ist, ist es nicht 
+unterstützt derzeit auszugsweise - um Unterstützung für Auszüge an einem Pfosten Typ hinzufügen, finden Sie 
+die Wordpress Codex 
+Markieren Sie dieses Feld, um den Auszug in eine Schachtel gelegt ziehbar meta 
+Stellen Sie den Teil der Seite, wo der Ausschnitt-Editor angezeigt werden sollen 
+Legen Sie die Priorität der Ausschnitt-Editor 
+Verwenden Sie den Editor minimal Konfiguration in PressThis verwendet 
+Nutzen Sie die volle Version des Editors 
+Wählen Sie, ob Sie die vollständige TinyMCE-Editor oder den "Teeny" verwenden 
+Version des Editors. 
+Stoppen Sie das Entfernen der <p> und Bilder Tags beim Speichern und ihnen zeigen, in 
+der HTML-Editor Dadurch wird es möglich, erweiterte Codierung verwenden 
+der HTML-Editor, ohne dass die Back-End-Filterung beeinflussen es viel. Allerdings 
+unerwartet verhalten in seltenen Fällen, so testen Sie es gründlich, bevor Sie die 
+dauerhaft 
+Aktivieren Medien hochladen Taste 
+Anzahl der Zeilen, die im Text-Editor zu verwenden (mindestens 3) 
+Toolbar Buttons und Plugins 
+Für eine Liste der Schaltflächen und Plugins in TinyMCE finden Sie im TinyMCE Wiki 
+Es gibt auch einige Dokumentationen über die Umsetzung der in TinyMCE 
+Wordpress auf dem Wordpress Codex 
+Knopf und Plugin-Namen sollten durch Kommata getrennt werden 
+Plugins hinzufügen - stellen Sie sicher, fügen Sie alle Plug-spezifischen Tasten an den Herausgeber 
+unten 
+Die Schaltflächen der Symbolleiste - das Wort 'Trennzeichen' zu getrennten Gruppen von 
+Tasten 
+Konfigurieren Sie die Tasten für die erweiterten Editor TinyMCE mit der Erweiterte 
+Plugin 
+Wenn Sie die Tasten für die erweiterten Editor konfigurieren möchten, installieren und 
+aktivieren Sie das Plugin TinyMCE Erweiterte 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Fügt Rich-Text-Editing Funktion für Auszüge mit wp_editor()

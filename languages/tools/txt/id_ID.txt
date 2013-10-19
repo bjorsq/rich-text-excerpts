@@ -1,0 +1,45 @@
+Kutipan 
+Pengaturan 
+Kaya Kutipan Teks 
+Rich Text Kutipan Pilihan 
+Simpan Perubahan 
+Posting Jenis 
+Pilih yang jenis posting akan menggunakan editor teks kaya untuk kutipan 
+Pilihan Editor 
+Gunakan kotak meta 
+Pilih yang Editor digunakan untuk kutipan 
+Editor Pengaturan 
+Jika Anda ingin menonaktifkan dukungan untuk semua jenis pos, nonaktifkan plugin 
+Jenis posting tidak dipilih di sini akan menggunakan editor teks biasa biasa untuk 
+kutipan. Jika tipe posting yang Anda inginkan tidak tercantum di sini, itu tidak 
+saat ini mendukung kutipan - untuk menambahkan dukungan untuk kutipan untuk jenis pos, lihat 
+Codex Wordpress 
+Centang kotak ini untuk menaruh kutipan dalam kotak meta draggable 
+Mengatur bagian dari halaman di mana editor kutipan harus ditampilkan 
+Menetapkan prioritas editor kutipan 
+Gunakan konfigurasi editor yang minimal digunakan dalam PressThis 
+Gunakan versi lengkap dari editor 
+Pilih apakah akan menggunakan editor TinyMCE penuh, atau "mungil" 
+versi editor. 
+Hentikan menghapus tag <p> dan <br> saat menyimpan dan menampilkannya pada 
+editor HTML ini akan memungkinkan untuk menggunakan coding lebih maju dalam 
+editor HTML tanpa penyaringan back-end yang mempengaruhi banyak. Namun itu 
+mungkin akan bertingkah aneh dalam kasus yang jarang, jadi menguji secara menyeluruh sebelum mengaktifkan 
+secara permanen 
+Aktifkan tombol media yang meng-upload 
+Jumlah baris untuk digunakan dalam editor teks (minimal 3) 
+Toolbar Buttons dan Plugin 
+Untuk daftar tombol dan plugin di TinyMCE, lihat wiki TinyMCE 
+Ada juga beberapa dokumentasi pada pelaksanaan TinyMCE di 
+Wordpress pada Codex Wordpress 
+Button dan Plugin nama harus dipisahkan menggunakan koma 
+Plugin untuk menambahkan - pastikan Anda menambahkan tombol khusus plugin editor 
+di bawah 
+Tombol toolbar - menggunakan 'pemisah' kata kelompok terpisah 
+kancing-kancing 
+Konfigurasi tombol untuk editor canggih menggunakan TinyMCE Lanjutan 
+Plugin 
+Jika Anda ingin mengkonfigurasi tombol untuk editor canggih, menginstal dan 
+mengaktifkan TinyMCE Plugin Lanjutan 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Menambahkan kaya kemampuan pengeditan teks untuk kutipan menggunakan wp_editor()

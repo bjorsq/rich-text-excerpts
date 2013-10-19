@@ -1,0 +1,45 @@
+Extras 
+Setări 
+Extrase Rich Text 
+Text îmbogățit Opțiuni Extrase 
+Salvați modificările 
+Mesaj Tipuri 
+Alege ce tipuri de post va folosi un editor de text îmbogățit pentru extrase 
+Opțiuni editor 
+Utilizați o cutie meta 
+Alegeți care Editor este folosit pentru listare 
+Setări Editor 
+Dacă doriți să dezactivați suportul pentru toate tipurile de mesaj, vă rugăm să dezactivați plugin 
+Tipuri de post nu selectate aici vor folosi editorul regulat text simplu pentru 
+fragmente. Dacă tipul de mesaj pe care doriți nu este listată aici, ea nu 
+sprijină în prezent fragmente - pentru a adăuga suport pentru extrase la un tip de mesaj, vezi 
+Wordpress Codex 
+Bifați această casetă pentru a pune extras într-o cutie meta draggable 
+Setați parte a paginii care trebuie să fie afișate editor extras 
+Setați prioritatea editor extras 
+Folosiți configurația minimă editorul folosit în PressThis 
+Utilizați versiunea completă a editorului 
+Alegeți dacă doriți să utilizați editorul TinyMCE complet, sau "teeny" 
+versiune a editorului. 
+Nu mai scoate etichetele <p> și <br> când salvarea și să le arătăm în 
+editor HTML Acest lucru va face posibilă utilizarea de codificare mai avansate în 
+editor HTML fără filtrare back-end afectează mult. Cu toate acestea, 
+poate comporta în mod neașteptat, în cazuri rare, deci ao testa temeinic înainte de a activa 
+se permanent 
+Permite încărcarea butonul mass-media 
+Numărul de rânduri de a utiliza în editorul de text (minim este de 3) 
+Butoanele barei de instrumente și Plugin-uri 
+Pentru o listă de butoane și plugin-uri în TinyMCE, consultați wiki TinyMCE 
+Există, de asemenea, unele documente privind punerea în aplicare a TinyMCE 
+Wordpress pe Wordpress Codex 
+Button și plugin nume trebuie să fie separate prin virgule 
+Plugin-uri pentru a adăuga - asigurați-vă că adăugați orice butoane specifice plugin pentru Editor 
+de mai jos 
+Butoanele barei de instrumente - folosesc cuvântul "separator" pentru a grupuri separate de 
+butoane 
+Configurarea butoanelor de avansate Editor folosind TinyMCE avansată 
+plugin 
+Dacă doriți să configurați butoanele pentru editorul de avansate, instalare și 
+activa TinyMCE plugin avansată 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Adaugă bogat Capacitatea de editare de text pentru extrase utilizând wp_editor ()

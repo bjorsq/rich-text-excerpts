@@ -14,55 +14,55 @@ msgstr ""
 
 #: rich-text-excerpts.php:156 rich-text-excerpts.php:179
 msgid "Excerpt"
-msgstr "fragment"
+msgstr "Výňatok"
 
 #: rich-text-excerpts.php:240
 msgid "Settings"
-msgstr "Cilësimet"
+msgstr "Nastavenie"
 
 #. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: rich-text-excerpts.php:252
 msgid "Rich Text Excerpts"
-msgstr "Fragmente pasur tekst"
+msgstr "Rich Text Výňatky"
 
 #: rich-text-excerpts.php:286
 msgid "Rich Text Excerpts Options"
-msgstr "Fragmente Rich Text Options"
+msgstr "RTF výňatky možnosti"
 
 #: rich-text-excerpts.php:291
 msgid "Save Changes"
-msgstr "Save Changes"
+msgstr "Uložiť zmeny"
 
 #: rich-text-excerpts.php:305
 msgid "Post Types"
-msgstr "Post Llojet"
+msgstr "Príspevok typy"
 
 #: rich-text-excerpts.php:312
 msgid "Choose which post types will use a rich text editor for excerpts"
-msgstr "Zgjidhni cilat lloje post do të përdorni një editor teksti për të pasur fragmente"
+msgstr "Vyberte si, ktoré typy príspevok bude používať editor formátovaného textu úryvky"
 
 #: rich-text-excerpts.php:321
 msgid "Editor Options"
-msgstr "Opsionet e Redaktorit"
+msgstr "Možnosti editora"
 
 #: rich-text-excerpts.php:328
 msgid "Use a meta box"
-msgstr "Përdorim nje kuti meta"
+msgstr "Pomocou meta okno"
 
 #: rich-text-excerpts.php:336
 msgid "Choose which Editor is used for excerpts"
-msgstr "Zgjidhni cilat Editor është përdorur për fragmente"
+msgstr "Vyberte si, ktoré Editor sa používa pre ukážky"
 
 #: rich-text-excerpts.php:344
 msgid "Editor Settings"
-msgstr "Cilësimet Editor"
+msgstr "Editor nastavení"
 
 #: rich-text-excerpts.php:405
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
-"Nëse ju doni të çaktivizoni mbështetje për të gjitha llojet post, ju lutemi disable plugin"
+"Ak chcete zakázať podporu všetkých príspevkov typov, zakážte plugin"
 
 #: rich-text-excerpts.php:406
 msgid ""
@@ -71,38 +71,38 @@ msgid ""
 "currently support excerpts - to add support for excerpts to a post type, see "
 "the Wordpress Codex"
 msgstr ""
-"Llojet Post nuk përzgjedhur këtu do të përdorin plain text editor rregullt për"
-"fragmente . Nëselloji mesazhin që ju doni nuk është i listuar këtu , kjo nuk e bën"
-"aktualisht mbështesin fragmente - për të shtuar mbështetjen për fragmente të një lloji të postës , shih"
-"Codex Wordpress"
+"Príspevok typy nie sú tu vybrané používať pravidelne editora obyčajného textu pre"
+"výňatky. Pokiaľ po požadovaný typ tu nie je uvedený, nie je"
+"V súčasnej dobe podporujeme ukážky - pridať podporu pre výpisy z poštového typu, pozri"
+"Wordpress Codex"
 
 #: rich-text-excerpts.php:417
 msgid "Check this box to put the excerpt in a draggable meta box"
-msgstr "Kontrolloni këtë kuti për të vënë në një kuti fragment meta draggable"
+msgstr "Zaškrtnite, ak chcete vložiť úryvok v meta pretiahnuť poľa"
 
 #: rich-text-excerpts.php:425
 msgid "Set the part of the page where the excerpt editor should be shown"
-msgstr "Set pjesë të faqes kuredaktori Fragmenti duhet të tregohet"
+msgstr "Nastavte časť stránky, kde by mal byť výpis editor uvedené"
 
 #: rich-text-excerpts.php:432
 msgid "Set the priority of the excerpt editor"
-msgstr "Set prioritet e redaktorit ekstrakt"
+msgstr "Nastaviť prioritu výňatok editora"
 
 #: rich-text-excerpts.php:443
 msgid "Use the minimal editor configuration used in PressThis"
-msgstr "Përdor konfigurimin minimal editor përdoret në PressThis"
+msgstr "Použite minimálny editora konfigurácie použitej v PressThis"
 
 #: rich-text-excerpts.php:445
 msgid "Use the full version of the editor"
-msgstr "Përdorni versionin e plotë e redaktorit"
+msgstr "Použite plnú verziu editora"
 
 #: rich-text-excerpts.php:446
 msgid ""
 "Choose whether to use the full TinyMCE editor, or the “teeny” "
 "version of the editor."
 msgstr ""
-"Zgjidhni nëse të përdorni redaktor të plotë TinyMCE , ose ' vockël '"
-"versionin e redaktorit ."
+"Vyberte, či chcete použiť plnú TinyMCE editor, alebo 'malinký'"
+"verzia editora."
 
 #: rich-text-excerpts.php:464
 msgid ""
@@ -112,62 +112,62 @@ msgid ""
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"Stop hequr <P> dhe <br> kur kursim dhe të tregojnë ato në"
-"editor HTML Kjo do të bëjë të mundur për të përdorur kodim më të avancuar në"
-"editor HTML pa prapa-fund filtrimin e prekin atë shumë . Megjithatë kjo"
-"papritur mund të sillen në raste të rralla , kështu provuar atë tërësisht para se të mundësuar"
-"të përhershme"
+"Zastaviť odstránenie <p> a <br> tagy pri ukladaní a zobraziť ich v"
+"HTML editor Vďaka tomu bude možné použiť pokročilejšie kódovanie v"
+"HTML editor bez back-end filtrovanie, ktoré ju ovplyvňujú mnoho. Avšak to"
+"môže správať neočakávane vo vzácnych prípadoch, tak poriadne otestovať pred povolením"
+"trvalo"
 
 #: rich-text-excerpts.php:466
 msgid "Enable upload media button"
-msgstr "Aktivizo ngarkoni butonin media"
+msgstr "Povoliť tlačidlo Odoslať médium"
 
 #: rich-text-excerpts.php:467
 msgid "Number of rows to use in the text editor (minimum is 3)"
-msgstr "Numri i rreshtave për të përdorur në editor teksti (minimumi është 3 )"
+msgstr "Počet riadkov pre použitie v textovom editore (minimum je 3)"
 
 #: rich-text-excerpts.php:468
 msgid "Toolbar Buttons and Plugins"
-msgstr "Toolbar Buttons dhe Shtojca"
+msgstr "Toolbar Buttons a zásuvných modulov"
 
 #: rich-text-excerpts.php:473
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
-msgstr "Për një listë e butonave dhe plugins në TinyMCE , shihni wiki TinyMCE"
+msgstr "Pre zoznam tlačidiel a pluginy v TinyMCE, pozri TinyMCE wiki"
 
 #: rich-text-excerpts.php:473
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
 msgstr ""
-"Ka edhe disa dokumente mbi zbatimin e TinyMCE në"
-"Wordpress në Codex Wordpress"
+"Tam je tiež nejaký dokumentácie o vykonávaní TinyMCE v"
+"Wordpress na Wordpress kódexu"
 
 #: rich-text-excerpts.php:473
 msgid "Button and plugin names should be separated using commas"
-msgstr "Button dhe plugin emrat duhet të ndahen duke përdorur presje"
+msgstr "Button a plugin mená by mali byť oddelené čiarkami"
 
 #: rich-text-excerpts.php:474
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
 msgstr ""
-"Plugins për të shtuar - sigurohuni që keni të shtoni ndonjë butonat plugin specifike për redaktorit"
-"poshtë"
+"Pluginy pre pridanie - uistite sa, že pridať nejaké pluginy špeciálne tlačidlá k editoru"
+"nižšie"
 
 #: rich-text-excerpts.php:475
 msgid ""
 "Toolbar buttons - use the word ‘separator’ to separate groups of "
 "buttons"
 msgstr ""
-"Toolbar Buttons - përdorin ' ndarës ' fjala e grupeve të veçanta të"
-"buttons"
+"Tlačidlá na paneli nástrojov - používať slovo 'oddeľovač' do samostatných skupín"
+"tlačidla"
 
 #: rich-text-excerpts.php:482
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
 msgstr ""
-"Konfiguro butonat për redaktor të avancuar duke përdorur të avancuara TinyMCE"
+"Konfigurácia tlačidiel pre pokročilých editore pomocou TinyMCE Advanced"
 "plugin"
 
 #: rich-text-excerpts.php:484
@@ -175,8 +175,8 @@ msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"
 msgstr ""
-"Nëse ju doni të konfiguroni butonat për redaktor të avancuar , instalojë dhe"
-"të aktivizuar plugin TinyMCE avancuar"
+"Ak chcete nakonfigurovať tlačidlá pre pokročilé editora inštaláciu a"
+"aktivovať TinyMCE Advanced plugin"
 
 #. Plugin URI of the plugin/theme
 msgid "http://wordpress.org/extend/plugins/rich-text-excerpts/"
@@ -184,7 +184,7 @@ msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts/"
 
 #. Description of the plugin/theme
 msgid "Adds rich text editing capability for excerpts using wp_editor()"
-msgstr "Shton aftësinë për të pasur redaktimi tekst për fragmente përdorur wp_editor ()"
+msgstr "Pridá RTF editačné schopnosti pre ukážky použitia wp_editor()"
 
 #. Author of the plugin/theme
 msgid "Peter Edwards"

@@ -1,0 +1,45 @@
+izvod
+Postavke
+Bogati tekstualne izvadaka
+Bogati tekstualne izvadaka Options
+Spremi promjene
+Post vrste
+Odaberite koji Post vrste će koristiti bogat tekst editor za izvadaka
+Mogućnosti uređivača
+Koristite okvir meta
+Odaberite koji Editor služi za izvadaka
+Urednik Postavke
+Ako želite isključiti potporu za sve vrste poštanskim , onemogućite plugin
+Post vrste nisu odabrani ovdje će se koristiti redovito običan tekst editor za
+izvatke . Akonakon tip želite nije na popisu , to ne
+Trenutno podržava izvatke - dodati podršku za izvatke u post tipa , vidjet
+Wordpress Codex
+Provjerite ovu kućicu staviti izvadak u mogu povlačiti meta kutiji
+Postavite dio stranice na kojojizvadak urednik treba biti prikazano
+Postavite prioritet izvod urednika
+Koristite minimalnu konfiguraciju urednika koristi u PressThis
+Koristite punu verziju urednika
+Odaberite želite li koristiti puni TinyMCE urednika , ili " vrlo mali "
+Verzija od urednika .
+Zaustavite uklanjanjem <p> i pregled oznaka prilikom spremanja i prikazati ih u
+HTML editor To će omogućiti da se korištenje naprednijih kodiranja u
+HTML editor , bez back-end filtriranje ga utječu puno. Međutim to
+može ponašati neočekivano u rijetkim slučajevima , tako da ga temeljito testirati prije omogućavanja
+je trajno
+Omogućiti prijenos medija gumb
+Broj redaka koristiti u tekst editor ( minimum je 3 )
+Toolbar Gumbi i Plugins
+Za popis tipki i dodataka u TinyMCE , vidjeli wiki TinyMCE
+Tu je također i neki dokumenti o provedbi TinyMCE u
+Wordpress na Wordpress Kodeksa
+Button i plugin imena treba odvojiti pomoću zareze
+Dodaci za dodavanje - provjerite da li dodati bilo koji plugin određene gumbe za urednika
+ispod
+Gumbi alatne trake - koristiti riječ ' separator ' s odvojenim skupinama
+tipke
+Konfiguracija tipke za napredne urednika pomoću TinyMCE Advanced
+plugin
+Ako želite konfigurirati tipke za napredne urednika , instalirati i
+aktivirati TinyMCE Napredno plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Dodaje bogat sposobnost za uređivanje teksta pomoću izvadaka wp_editor ()

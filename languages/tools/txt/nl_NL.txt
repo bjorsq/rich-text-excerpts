@@ -1,0 +1,45 @@
+excerpt
+instellingen
+Rich Text Fragmenten
+Rich Text Uittreksels Opties
+Wijzigingen opslaan
+Bericht Types
+Kiezen welk bericht typen van een RTF-editor gebruiken voor uittreksels
+editor opties
+Gebruik een meta doos
+Kiezen welke Editor wordt gebruikt voor uittreksels
+editor -instellingen
+Als u wilt ondersteuning voor alle berichten typen uit te schakelen , kunt u de plugin uitschakelen
+Bericht typen hier niet geselecteerd zal de gewone platte tekst editor gebruiken voor
+fragmenten . Als het bericht dat u wilt hier niet wordt weergegeven , is het niet
+ondersteunen momenteel uittreksels - om ondersteuning voor fragmenten toe te voegen aan een post type, zie
+de Wordpress Codex
+Schakel dit vakje in om het fragment in een verplaatsbare meta doos gezet
+Stel het gedeelte van de pagina waar het uittreksel editor getoond moet worden
+Stel de prioriteit van het uittreksel editor
+Met de minimale configuratie editor gebruikt PressThis
+Gebruik de volledige versie van de editor
+Kies of u de volledige TinyMCE , of de " teeny " gebruiken
+versie van de editor .
+Stoppen met het verwijderen <p> en <br> labels de bij het opslaan en laten zien in
+De HTML editor Dit maakt het mogelijk om code als gebruikt
+de HTML-editor zonder de back - end filtering die het veel . Maar het
+kan onverwacht gedragen in zeldzame gevallen , zo grondig testen voordat inschakelen
+het permanent
+Enable media knop uploaden
+Aantal rijen te gebruiken in de teksteditor ( minimum 3 )
+Werkbalkknoppen en Plugins
+Voor een lijst met knoppen en plugins in TinyMCE , zie de TinyMCE wiki
+Er is ook wat documentatie over de uitvoering van TinyMCE in
+Wordpress op de Wordpress Codex
+Knop en plugin namen moeten worden gescheiden met komma's
+Plugins toe te voegen - zorg ervoor dat je elke plugin specifieke knoppen toe te voegen aan de redactie
+beneden
+Knoppen Toolbar - het woord ' scheiding' aan afzonderlijke groepen van
+knoppen
+De knoppen configureren voor de geavanceerde editor via het TinyMCE Geavanceerd
+plugin
+Als u wilt dat de knoppen configureren voor de geavanceerde editor , installeren en
+activeer de TinyMCE Geavanceerd plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Voegt rich text editing mogelijkheden voor fragmenten met wp_editor ( )

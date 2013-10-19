@@ -1,0 +1,45 @@
+väljavõte
+Seaded
+Rich Text Väljavõtted
+Rich Text Väljavõtted Valikud
+Salvesta muudatused
+Postitus tüübid
+Vali mis postitus liigid kasutavadrikas tekstiredaktor katkendeid
+toimetaja valikud
+Kasutameta box
+Vali mis Editor kasutatakse katkendeid
+Sorteerimine
+Kui soovite blokeerida toetust kõigile postitus tüübid, keelake plugin
+Post tüübid ei valinud siin kasutanregulaarselt tavaline tekstiredaktor
+lõikudena. Kui postitus tüüp, mida soovite ei ole nimekirjas , siis ei ole
+toeta katkendeid - lisada toetust katkendeid ametikohale tüüp , vaadake
+Wordpress Codex
+Selle kasti pannaväljavõte indraggable meta box
+Seadke osa lehele, kusväljavõte toimetaja tuleb näidata
+Määraprioriteetväljavõte toimetaja
+Kasuta minimaalne toimetaja konfiguratsiooni kasutatakse PressThis
+Kasutage täisversioon toimetaja
+Vali , kas kasutada täis TinyMCE toimetaja või" pisikesed "
+versiooni toimetaja .
+Peatus eemaldamist <p> ja <br> silte salvestamisel ja näidata neid
+HTML editor See võimaldab kasutada rohkem arenenud kodeerimist
+HTML editor ilmaback-end filtreerimine mõjutab see palju . Kuid see
+võib käituda ootamatult harva nii katsetada seda põhjalikult enne võimaldades
+jäädavalt
+Luba laadida meedia nupp
+Ridade arv kasutada tekstiredaktoris ( miinimum 3 )
+Tööriistariba nupud ja pluginate
+For nimekirja nupud ja pluginad TinyMCE vaata TinyMCE wiki
+On ka mõned dokumendid rakendamise TinyMCE sisse
+WordpressWordpress Codex
+Button ja plugin nimed tuleb eraldada kasutades komadega
+Plugins lisada - veenduge lisada plugin konkreetne nuppetoimetaja
+allpool
+Tööriistariba nupud - kasutada sõna " eraldaja " eraldi rühmad
+nupud
+Seadista nupudedasijõudnud toimetaja kasutadesTinyMCE Advanced
+plugin
+Kui soovite konfigureerida nuppudemuutja , paigaldada ja
+aktiveerida TinyMCE Advanced plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Lisab RTF toimetamine võime katkendeid kasutades wp_editor ( )

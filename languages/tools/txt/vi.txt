@@ -1,0 +1,45 @@
+Trích đoạn 
+Cài đặt 
+Trích Rich Text 
+Rich Text Trích Tùy chọn 
+Lưu Thay đổi 
+Gửi các loại 
+Chọn loại bài viết sẽ sử dụng một trình soạn thảo văn bản phong phú cho những đoạn trích 
+Các tùy chọn biên tập viên 
+Sử dụng một hộp meta 
+Chọn Editor được sử dụng cho những đoạn trích 
+Cài đặt trình biên tập 
+Nếu bạn muốn vô hiệu hóa hỗ trợ cho tất cả các loại bài, hãy vô hiệu hóa các plugin 
+Loại bài không được chọn ở đây sẽ dùng trình soạn thảo văn bản đơn giản thường xuyên cho 
+trích đoạn. Nếu loại bài bạn muốn không được liệt kê ở đây, nó không 
+hiện đang hỗ trợ trích đoạn - để hỗ trợ thêm cho các trích đoạn cho một loại bài, xem 
+Wordpress Codex 
+Kiểm tra hộp này để đưa các trích đoạn trong một hộp siêu kéo 
+Thiết lập một phần của trang web mà các biên tập viên trích đoạn sẽ được hiển thị 
+Thiết lập các ưu tiên của trình biên tập đoạn trích 
+Sử dụng cấu hình biên tập tối thiểu được sử dụng trong PressThis 
+Sử dụng phiên bản đầy đủ của các biên tập viên 
+Chọn để sử dụng trình biên tập TinyMCE đầy đủ, hoặc "teeny" 
+phiên bản của trình biên tập. 
+Ngăn chặn loại bỏ các <p> và <br> khi lưu và hiển thị chúng trong 
+trình biên tập HTML này sẽ làm cho nó có thể sử dụng mã hóa tiên tiến hơn trong 
+trình biên tập HTML mà không có bộ lọc phía sau ảnh hưởng đến nó nhiều. Tuy nhiên nó 
+có thể hành xử bất ngờ trong trường hợp hiếm hoi, vì vậy kiểm tra kỹ trước khi kích hoạt 
+nó vĩnh viễn 
+Kích hoạt nút phương tiện truyền thông tải lên 
+Số hàng để sử dụng trong trình soạn thảo văn bản (tối thiểu là 3) 
+Các nút trên thanh công cụ và Plugins 
+Đối với một danh sách các nút và bổ sung trong TinyMCE, xem wiki TinyMCE 
+Ngoài ra còn có một số tài liệu về việc thực hiện TinyMCE trong 
+Wordpress trên Wordpress Codex 
+Nút và plugin tên nên được tách ra sử dụng dấu phẩy 
+Bổ sung thêm - chắc chắn rằng bạn thêm bất kỳ nút cắm cụ thể cho các biên tập viên 
+dưới đây 
+Các nút trên thanh công cụ - sử dụng từ "tách" cho các nhóm riêng biệt của 
+nút 
+Cấu hình các nút để chỉnh sửa và nâng cao bằng cách sử dụng TinyMCE nâng cao 
+Plugin 
+Nếu bạn muốn cấu hình các nút để chỉnh sửa và nâng cao, cài đặt và 
+kích hoạt các plugin TinyMCE nâng cao 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Thêm khả năng chỉnh sửa văn bản phong phú cho những đoạn trích sử dụng wp_editor ()

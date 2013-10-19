@@ -14,55 +14,55 @@ msgstr ""
 
 #: rich-text-excerpts.php:156 rich-text-excerpts.php:179
 msgid "Excerpt"
-msgstr "fragment"
+msgstr "Ištrauka"
 
 #: rich-text-excerpts.php:240
 msgid "Settings"
-msgstr "Cilësimet"
+msgstr "Nustatymai"
 
 #. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: rich-text-excerpts.php:252
 msgid "Rich Text Excerpts"
-msgstr "Fragmente pasur tekst"
+msgstr "Raiškiojo teksto ištraukos"
 
 #: rich-text-excerpts.php:286
 msgid "Rich Text Excerpts Options"
-msgstr "Fragmente Rich Text Options"
+msgstr "Raiškiojo teksto ištraukos parinktys"
 
 #: rich-text-excerpts.php:291
 msgid "Save Changes"
-msgstr "Save Changes"
+msgstr "Išsaugoti pakeitimus"
 
 #: rich-text-excerpts.php:305
 msgid "Post Types"
-msgstr "Post Llojet"
+msgstr "Standartinė tipai"
 
 #: rich-text-excerpts.php:312
 msgid "Choose which post types will use a rich text editor for excerpts"
-msgstr "Zgjidhni cilat lloje post do të përdorni një editor teksti për të pasur fragmente"
+msgstr "Pasirinkite, kuri pranešimas tipai bus naudoti raiškiojo teksto redaktoriaus ištraukos"
 
 #: rich-text-excerpts.php:321
 msgid "Editor Options"
-msgstr "Opsionet e Redaktorit"
+msgstr "Redaktorius parinktys"
 
 #: rich-text-excerpts.php:328
 msgid "Use a meta box"
-msgstr "Përdorim nje kuti meta"
+msgstr "Naudokite meta langelį"
 
 #: rich-text-excerpts.php:336
 msgid "Choose which Editor is used for excerpts"
-msgstr "Zgjidhni cilat Editor është përdorur për fragmente"
+msgstr "Pasirinkite, kuri redaktorius naudojamas ištraukos"
 
 #: rich-text-excerpts.php:344
 msgid "Editor Settings"
-msgstr "Cilësimet Editor"
+msgstr "Redaktorius Nustatymai"
 
 #: rich-text-excerpts.php:405
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
-"Nëse ju doni të çaktivizoni mbështetje për të gjitha llojet post, ju lutemi disable plugin"
+"Jei norite išjungti paramą visų pranešimų tipų, prašome išjungti papildinį"
 
 #: rich-text-excerpts.php:406
 msgid ""
@@ -71,38 +71,38 @@ msgid ""
 "currently support excerpts - to add support for excerpts to a post type, see "
 "the Wordpress Codex"
 msgstr ""
-"Llojet Post nuk përzgjedhur këtu do të përdorin plain text editor rregullt për"
-"fragmente . Nëselloji mesazhin që ju doni nuk është i listuar këtu , kjo nuk e bën"
-"aktualisht mbështesin fragmente - për të shtuar mbështetjen për fragmente të një lloji të postës , shih"
-"Codex Wordpress"
+"Pranešimas tipų nepasirinkote čia bus naudoti įprastą paprastą teksto redaktorių ir"
+"ištraukos. Jei pranešimas tipą, kurį norite čia nenurodyta, ji nėra"
+"šiuo metu nepalaiko ištraukos - įtraukti paramą ištraukas į pareigas tipą, žr"
+"WordPress Codex"
 
 #: rich-text-excerpts.php:417
 msgid "Check this box to put the excerpt in a draggable meta box"
-msgstr "Kontrolloni këtë kuti për të vënë në një kuti fragment meta draggable"
+msgstr "Pažymėkite šį langelį, jei norite įdėti ištrauką į przeciągane meta langelį"
 
 #: rich-text-excerpts.php:425
 msgid "Set the part of the page where the excerpt editor should be shown"
-msgstr "Set pjesë të faqes kuredaktori Fragmenti duhet të tregohet"
+msgstr "Nustatykite puslapio, kuriame ištrauka redaktorius turėtų būti parodyta dalis"
 
 #: rich-text-excerpts.php:432
 msgid "Set the priority of the excerpt editor"
-msgstr "Set prioritet e redaktorit ekstrakt"
+msgstr "Nustatykite ištrauka redaktorius pirmenybę"
 
 #: rich-text-excerpts.php:443
 msgid "Use the minimal editor configuration used in PressThis"
-msgstr "Përdor konfigurimin minimal editor përdoret në PressThis"
+msgstr "Naudokite minimalų redaktorius konfigūracija naudojamas PressThis"
 
 #: rich-text-excerpts.php:445
 msgid "Use the full version of the editor"
-msgstr "Përdorni versionin e plotë e redaktorit"
+msgstr "Naudokite pilną versiją redaktorius"
 
 #: rich-text-excerpts.php:446
 msgid ""
 "Choose whether to use the full TinyMCE editor, or the “teeny” "
 "version of the editor."
 msgstr ""
-"Zgjidhni nëse të përdorni redaktor të plotë TinyMCE , ose ' vockël '"
-"versionin e redaktorit ."
+"Pasirinkite, ar norite naudoti visą TinyMCE redaktorius, arba 'smulkutis'"
+"portalo redaktorius."
 
 #: rich-text-excerpts.php:464
 msgid ""
@@ -112,71 +112,71 @@ msgid ""
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"Stop hequr <P> dhe <br> kur kursim dhe të tregojnë ato në"
-"editor HTML Kjo do të bëjë të mundur për të përdorur kodim më të avancuar në"
-"editor HTML pa prapa-fund filtrimin e prekin atë shumë . Megjithatë kjo"
-"papritur mund të sillen në raste të rralla , kështu provuar atë tërësisht para se të mundësuar"
-"të përhershme"
+"Stop pašalinti <P> ir <br> žodžius įrašant ir rodyti juos"
+"HTML redaktorių Tai bus galima naudoti daugiau papildomų kodavimo"
+"HTML redaktorių be back-end filtravimo juo susijusius daug. Tačiau"
+"gali elgtis netikėtai retais atvejais, todėl išbandyti jį kruopščiai prieš įjungdami"
+"ji visam laikui"
 
 #: rich-text-excerpts.php:466
 msgid "Enable upload media button"
-msgstr "Aktivizo ngarkoni butonin media"
+msgstr "Įjungti įkelti žiniasklaidos mygtuką"
 
 #: rich-text-excerpts.php:467
 msgid "Number of rows to use in the text editor (minimum is 3)"
-msgstr "Numri i rreshtave për të përdorur në editor teksti (minimumi është 3 )"
+msgstr "Eilių skaičius naudoti teksto redaktorius (minimalus 3)"
 
 #: rich-text-excerpts.php:468
 msgid "Toolbar Buttons and Plugins"
-msgstr "Toolbar Buttons dhe Shtojca"
+msgstr "Įrankių juostos mygtukai ir šakutės"
 
 #: rich-text-excerpts.php:473
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
-msgstr "Për një listë e butonave dhe plugins në TinyMCE , shihni wiki TinyMCE"
+msgstr "Dėl mygtukų ir įskiepių į TinyMCE sąrašo ieškokite TinyMCE wiki"
 
 #: rich-text-excerpts.php:473
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
 msgstr ""
-"Ka edhe disa dokumente mbi zbatimin e TinyMCE në"
-"Wordpress në Codex Wordpress"
+"Yra taip pat kai dėl TinyMCE įgyvendinimo dokumentacija"
+"WordPress WordPress Codex"
 
 #: rich-text-excerpts.php:473
 msgid "Button and plugin names should be separated using commas"
-msgstr "Button dhe plugin emrat duhet të ndahen duke përdorur presje"
+msgstr "Mygtuką ir įjungti pavadinimai turėtų būti atskirtos kableliais"
 
 #: rich-text-excerpts.php:474
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
 msgstr ""
-"Plugins për të shtuar - sigurohuni që keni të shtoni ndonjë butonat plugin specifike për redaktorit"
-"poshtë"
+"Įskiepiai pridėti - įsitikinkite, kad pridėti įskiepiai konkrečius mygtukus redakcijai"
+"žemiau"
 
 #: rich-text-excerpts.php:475
 msgid ""
 "Toolbar buttons - use the word ‘separator’ to separate groups of "
 "buttons"
 msgstr ""
-"Toolbar Buttons - përdorin ' ndarës ' fjala e grupeve të veçanta të"
-"buttons"
+"Įrankių juostos mygtukai - naudoti žodį 'separatorius', kad atskirų grupių"
+"mygtukai"
 
 #: rich-text-excerpts.php:482
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
 msgstr ""
-"Konfiguro butonat për redaktor të avancuar duke përdorur të avancuara TinyMCE"
-"plugin"
+"Konfigūruoti mygtukus pažangių redaktorius naudojant TinyMCE Advanced"
+"įskiepiai"
 
 #: rich-text-excerpts.php:484
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"
 msgstr ""
-"Nëse ju doni të konfiguroni butonat për redaktor të avancuar , instalojë dhe"
-"të aktivizuar plugin TinyMCE avancuar"
+"Jei norite konfigūruoti mygtukus pažangių redaktorius, įdiegti ir"
+"įjungti TinyMCE Advanced įskiepiai"
 
 #. Plugin URI of the plugin/theme
 msgid "http://wordpress.org/extend/plugins/rich-text-excerpts/"
@@ -184,7 +184,7 @@ msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts/"
 
 #. Description of the plugin/theme
 msgid "Adds rich text editing capability for excerpts using wp_editor()"
-msgstr "Shton aftësinë për të pasur redaktimi tekst për fragmente përdorur wp_editor ()"
+msgstr "Prideda raiškiojo teksto redagavimo pajėgumus ištraukų naudojant wp_editor ()."
 
 #. Author of the plugin/theme
 msgid "Peter Edwards"

@@ -1,0 +1,45 @@
+laburpena
+ezarpenak
+Rich Text zatiak
+Rich Text zatiak Aukerak
+aldaketak gorde
+Gai motak
+Aukeratu zer motatako aberatsa testu editore bat erabili egingo zatiak egiteko
+editore Aukerak
+Erabili meta kutxa bat
+Aukeratu editorea da zatiak erabiltzen
+Editorearen ezarpenak
+Nahi duzun mezua mota guztien euskarria desgaitu nahi baduzu, mesedez ezgaitu plugina
+Post ez Hemen hautaturiko motak ohiko testu arruntaren editore bat erabili beharko
+zatiak . Ondoko mota nahi duzun zerrendan ez badago , hemen , ez da
+Gaur egun onartzen zatiak - zatiak laguntza gehitzeko zer mota bat , ikus
+Wordpress Codex
+Begiratu lauki hau zatia jartzen duena, meta bat koadroan
+Jarri non Puska editore erakutsi behar den zatia
+Ezarri laburpena editore lehentasuna
+Erabili konfigurazio minimoa editore PressThis erabiltzen
+Erabili editorearen bertsio osoa
+Aukeratu full TinyMCE editore, edo " teeny " da erabili behar den ala
+editore bertsioa.
+Gelditu <p> eta basque tags kendu gordetzean eta erakutsiko ditu urtean
+HTML editorea gehiago aurreratu kodetze posible erabili egingo
+berau eragiten duten askoz back-end iragazi gabe HTML editorea da. Hala ere,
+ustekabean jokatu dezake, oso gutxitan gertatzen da, beraz , probatu ezazu ondo gaitu aurretik
+betirako
+Gaitu igo media botoia
+Lerro kopurua testu editore bat erabili (gutxienez 3 )
+Toolbar Buttons eta Pluginak
+Botoiak eta TinyMCE plugin- en zerrenda bat lortzeko, ikusi TinyMCE wiki
+Halaber, TinyMCE ezartzeari buruzko dokumentazio
+Wordpress Codex on Wordpress
+Button eta plugin izenak bereizita egon beharko koma erabiliz
+Pluginak gehitzeko - ziurtatu edozein plugin zehatz botoiak gehi editorea
+azpitik
+Toolbar buttons - erabiltzen den hitza 'bereizle ' aparteko talde
+botoiak
+Konfiguratzeko botoiak editore aurreratu TinyMCE aurreratua bidez
+plugina
+Nahi dituzun botoiak konfiguratzeko aurreratu editorea bada , instalatu eta
+aktibatu TinyMCE plugin aurreratua
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Testu aberastuko edizio zatiak wp_editor ( erabiltzeko gaitasuna gehitzen du)

@@ -1,0 +1,45 @@
+Excerpt
+Settings
+Rich Text Excerpts
+Rich Text Excerpts Options
+Save Changes
+Post Types
+Choose which post types will use a rich text editor for excerpts
+Editor Options
+Use a meta box
+Choose which Editor is used for excerpts
+Editor Settings
+If you want to disable support for all post types, please disable the plugin
+Post types not selected here will use the regular plain text editor for
+excerpts. If the post type you want is not listed here, it does not
+currently support excerpts - to add support for excerpts to a post type, see
+the Wordpress Codex
+Check this box to put the excerpt in a draggable meta box
+Set the part of the page where the excerpt editor should be shown
+Set the priority of the excerpt editor
+Use the minimal editor configuration used in PressThis
+Use the full version of the editor
+Choose whether to use the full TinyMCE editor, or the “teeny”
+version of the editor.
+Stop removing the <p> and <br> tags when saving and show them in
+the HTML editor This will make it possible to use more advanced coding in
+the HTML editor without the back-end filtering affecting it much. However it
+may behave unexpectedly in rare cases, so test it thoroughly before enabling
+it permanently
+Enable upload media button
+Number of rows to use in the text editor (minimum is 3)
+Toolbar Buttons and Plugins
+For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki
+There is also some documentation on the implementation of TinyMCE in
+Wordpress on the Wordpress Codex
+Button and plugin names should be separated using commas
+Plugins to add - make sure you add any plugin specific buttons to the editor
+below
+Toolbar buttons - use the word ‘separator’ to separate groups of
+buttons
+Configure the buttons for the advanced editor using the TinyMCE Advanced
+plugin
+If you want to configure the buttons for the advanced editor, install and
+activate the TinyMCE Advanced plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Adds rich text editing capability for excerpts using wp_editor()

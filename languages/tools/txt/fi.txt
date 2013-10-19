@@ -1,0 +1,45 @@
+ote
+Asetukset
+Rich Text Otteita
+Rich Text Otteita asetukset
+Tallenna muutokset
+Viesti tyypit
+Valitse mikä viesti tyypit käyttäärikas tekstieditori otteita
+Editorin asetukset
+Käytämeta laatikko
+Valitse, mitkä Editor käytetään otteita
+Editor Settings
+Jos haluat poistaa kaikkien post tyypit , poistaplugin
+Post joita ei valittu tässä käyttääsäännöllisesti tavallinen tekstieditori
+otteita . Josviesti , jota haluat ei ole luettelossa , se ei
+hetkellä tue otteita - lisätä tukea otteita virkaan tyyppi, katso
+Wordpress Codex
+Valitse tämä jos haluat laittaaote vuonnavedettäviä meta laatikko
+Asetaosasivun, jossaote editorin pitäisi näkyä
+Prioriteettiaote toimittaja
+Käytämahdollisimman vähän päätoimittaja kokoonpanon käytetään PressThis
+Käytätäyden versioneditorin
+Valitse, haluatko käyttääkoko TinyMCE editori , tai" pikkuinen "
+versioeditori .
+Lopeta poistamalla<p> ja <br> tunnisteet tallennettaessa ja näyttää niitä
+HTML-editori Tämä mahdollistaa käyttää kehittyneempiä koodaus
+HTML-editori ilmanback-end suodatus vaikuttavat huomattavasti . kuitenkin se
+voi käyttäytyä odottamattomasti harvoin , joten testata sitä huolellisesti , ennen kuin otat
+sen pysyvästi
+Ota ladata media -painiketta
+Rivien käyttäätekstieditorin ( minimi on 3 )
+Toolbar Buttons ja Plugins
+Saat luettelon painikkeet ja lisäosia TinyMCE , katsoTinyMCE wiki
+On myös joitakin asiakirjoja täytäntöönpanosta Hento
+WordpressWordpress Codex
+Painiketta ja plugin nimet tulisi erottaa käyttäen pilkulla
+Plugins lisätä - varmista, että lisäät plugin erityisiä painikkeitaeditor
+alla
+Toolbar -painikkeet - käytäsanaa " erotin " erillisiin ryhmiin
+painikkeet
+Määritäpainikkeetkehittyneen editorin avullaTinyMCE Advanced
+plugin
+Jos haluat määrittääpainikkeetkehittynyt toimittaja, asentaa ja
+aktivoidaTinyMCE Advanced plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Lisää RTF muokkausta valmiudet otteita käyttäen wp_editor ( )

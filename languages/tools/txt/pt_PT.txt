@@ -1,0 +1,45 @@
+Excerto 
+Configurações 
+Ricos Trechos de texto 
+Rich Text Trechos Opções 
+Salvar alterações 
+Publicar Tipos 
+Escolha quais tipos post vai usar um editor de texto rico para trechos 
+Opções do Editor 
+Use uma caixa de meta 
+Escolha qual editor é usado para trechos 
+Configuração do Editor 
+Se você quiser desativar o suporte para todos os tipos de mensagem, por favor, desative o plugin 
+Pós tipos selecionados aqui não vai usar o editor normal de texto simples para 
+trechos. Se o tipo de mensagem que você quer não está aqui, não faz 
+Atualmente suportamos trechos - para adicionar suporte para trechos de um tipo de post, veja 
+o Wordpress Codex 
+Marque esta caixa para colocar o trecho em uma caixa de meta draggable 
+Defina a parte da página onde o editor trecho deve ser mostrada 
+Defina a prioridade do editor trecho 
+Use o editor de configuração mínima usado em PressThis 
+Use a versão completa do editor 
+Escolha se deseja usar o editor TinyMCE completo, ou o "pequenino" 
+versão do editor. 
+Pare de retirar as etiquetas <p> <br> e ao salvar e mostrar-lhes em 
+o editor HTML Isto tornará possível a utilização de uma codificação mais avançados em 
+o editor HTML sem a filtragem de back-end que afetam muito. No entanto 
+pode se comportar de forma inesperada, em casos raros, assim testá-lo completamente antes de ativar 
+permanentemente 
+Ativar botão de upload de mídia 
+Número de linhas para usar no editor de texto (o mínimo é 3) 
+Botões da barra de ferramentas e Plugins 
+Para obter uma lista de botões e plugins em TinyMCE, consulte o wiki TinyMCE 
+Há também alguma documentação sobre a implementação do TinyMCE em 
+Wordpress no Wordpress Codex 
+Botão e plugin nomes devem ser separados por vírgulas 
+Plugins para adicionar - certifique-se de adicionar qualquer plugin botões específicos para o editor 
+abaixo 
+Botões da barra de ferramentas - use 'separador' a palavra para separar grupos de 
+botões 
+Configurar os botões para o editor avançado usando o TinyMCE avançada 
+Plugin 
+Se você quiser configurar os botões para o editor avançado, instalar e 
+ativar o plugin TinyMCE avançada 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Adiciona capacidade de edição de texto rico para trechos usando wp_editor ()

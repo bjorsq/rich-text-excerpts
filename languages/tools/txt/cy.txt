@@ -1,0 +1,45 @@
+Dyfyniad 
+Gosodiadau 
+Dyfyniadau Testun Rich 
+Dyfyniadau Rich Text Opsiynau 
+Cadw Newidiadau 
+Mathau Post 
+Dewiswch pa fathau o gofnod yn defnyddio golygydd testun cyfoethog ar gyfer dyfyniadau 
+Opsiynau Golygydd 
+Defnyddiwch flwch meta 
+Dewiswch pa Golygydd yn cael ei ddefnyddio ar gyfer dyfyniadau 
+Gosodiadau Golygydd 
+Os ydych angen at analluoga cymorth ar gyfer pob math o swydd, os gwelwch yn dda analluoga 'r plugin 
+Bydd y mathau o swydd na chafodd eu dewis yma yn defnyddio'r golygydd testun plaen rheolaidd ar gyfer 
+dyfyniadau. Os nad yw'r math swydd rydych ei eisiau yn rhestru yma, nid yw'n 
+hyn o bryd yn cefnogi dyfyniadau - i ychwanegu cefnogaeth ar gyfer darnau i fath post, gweler 
+y Wordpress Codex 
+Gwiriwch y blwch hwn i roi'r darn mewn blwch meta draggable 
+Gosodwch y rhan y dudalen lle dylai'r golygydd dyfyniad yn cael ei ddangos 
+Gosod blaenoriaeth y golygydd dyfyniad 
+Defnyddiwch y cyfluniad golygydd ychydig iawn a ddefnyddir yn PressThis 
+Defnyddiwch y fersiwn llawn y golygydd 
+Dewis p'un ai i ddefnyddio'r golygydd TinyMCE llawn, neu y "teeny" 
+fersiwn y golygydd. 
+Rhoi'r gorau i gael gwared ar y tagiau <p> a <br> wrth gadw a dangos iddynt yn 
+y golygydd HTML Bydd hyn yn ei gwneud yn bosibl i ddefnyddio codio uwch mewn 
+y golygydd HTML heb y hidlo yn ôl diwedd effeithio arno lawer. Fodd bynnag, 
+Gall ymddwyn yn annisgwyl mewn achosion prin, felly profi yn drylwyr cyn alluogi 
+barhaol 
+Galluogi llwytho botwm cyfryngau 
+Nifer o resi i'w defnyddio yn y golygydd testun (lleiafswm yw 3) 
+Botymau Bar Offer a Ategion 
+Am restr o fotymau a ategion yn TinyMCE, gweler y wiki TinyMCE 
+Mae rhywfaint o ddogfennaeth ar TinyMCE weithredu yn 
+Wordpress Wordpress ar y Codex 
+Dylai enwau Button a plugin yn cael eu gwahanu gan ddefnyddio atalnodau 
+Ategion i ychwanegu - gwnewch yn siŵr eich bod yn ychwanegu unrhyw botymau penodol ategyn at y golygydd 
+isod 
+Botymau bar offer - defnyddio'r gair 'gwahanydd' i grwpiau ar wahân o 
+botymau 
+Ffurfweddu y botymau ar gyfer y golygydd uwch gan ddefnyddio TinyMCE Uwch 
+plugin 
+Os ydych am i ffurfweddu y botymau ar gyfer y golygydd uwch, gosod a 
+activate 'r plugin Uwch TinyMCE 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Ychwanegu gallu golygu testun cyfoethog ar gyfer dyfyniadau gan ddefnyddio wp_editor ()

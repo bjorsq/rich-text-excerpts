@@ -1,0 +1,45 @@
+Ištrauka 
+Nustatymai 
+Raiškiojo teksto ištraukos 
+Raiškiojo teksto ištraukos parinktys 
+Išsaugoti pakeitimus 
+Standartinė tipai 
+Pasirinkite, kuri pranešimas tipai bus naudoti raiškiojo teksto redaktoriaus ištraukos 
+Redaktorius parinktys 
+Naudokite meta langelį 
+Pasirinkite, kuri redaktorius naudojamas ištraukos 
+Redaktorius Nustatymai 
+Jei norite išjungti paramą visų pranešimų tipų, prašome išjungti papildinį 
+Pranešimas tipų nepasirinkote čia bus naudoti įprastą paprastą teksto redaktorių ir 
+ištraukos. Jei pranešimas tipą, kurį norite čia nenurodyta, ji nėra 
+šiuo metu nepalaiko ištraukos - įtraukti paramą ištraukas į pareigas tipą, žr 
+WordPress Codex 
+Pažymėkite šį langelį, jei norite įdėti ištrauką į przeciągane meta langelį 
+Nustatykite puslapio, kuriame ištrauka redaktorius turėtų būti parodyta dalis 
+Nustatykite ištrauka redaktorius pirmenybę 
+Naudokite minimalų redaktorius konfigūracija naudojamas PressThis 
+Naudokite pilną versiją redaktorius 
+Pasirinkite, ar norite naudoti visą TinyMCE redaktorius, arba "smulkutis" 
+portalo redaktorius. 
+Stop pašalinti <P> ir <br> žodžius įrašant ir rodyti juos 
+HTML redaktorių Tai bus galima naudoti daugiau papildomų kodavimo 
+HTML redaktorių be back-end filtravimo juo susijusius daug. Tačiau 
+gali elgtis netikėtai retais atvejais, todėl išbandyti jį kruopščiai prieš įjungdami 
+ji visam laikui 
+Įjungti įkelti žiniasklaidos mygtuką 
+Eilių skaičius naudoti teksto redaktorius (minimalus 3) 
+Įrankių juostos mygtukai ir šakutės 
+Dėl mygtukų ir įskiepių į TinyMCE sąrašo ieškokite TinyMCE wiki 
+Yra taip pat kai dėl TinyMCE įgyvendinimo dokumentacija 
+WordPress WordPress Codex 
+Mygtuką ir įjungti pavadinimai turėtų būti atskirtos kableliais 
+Įskiepiai pridėti - įsitikinkite, kad pridėti įskiepiai konkrečius mygtukus redakcijai 
+žemiau 
+Įrankių juostos mygtukai - naudoti žodį "separatorius", kad atskirų grupių 
+mygtukai 
+Konfigūruoti mygtukus pažangių redaktorius naudojant TinyMCE Advanced 
+įskiepiai 
+Jei norite konfigūruoti mygtukus pažangių redaktorius, įdiegti ir 
+įjungti TinyMCE Advanced įskiepiai 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Prideda raiškiojo teksto redagavimo pajėgumus ištraukų naudojant wp_editor ().

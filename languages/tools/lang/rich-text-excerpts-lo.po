@@ -1,0 +1,195 @@
+# Copyright (C) 2013 Rich Text Excerpts
+# This file is distributed under the same license as the Rich Text Excerpts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rich Text Excerpts 1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/rich-text-excerpts\n"
+"POT-Creation-Date: 2013-10-16 21:26:24+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
+"Language-Team: Google translate <LL@li.org>\n"
+
+#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+msgid "Excerpt"
+msgstr "Excerpt"
+
+#: rich-text-excerpts.php:240
+msgid "Settings"
+msgstr "ຕັ້ງ"
+
+#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: rich-text-excerpts.php:252
+msgid "Rich Text Excerpts"
+msgstr "Excerpts ຂໍ້​ຄວາມ​ອຸ​ດົມ​ສົມ​ບູນ"
+
+#: rich-text-excerpts.php:286
+msgid "Rich Text Excerpts Options"
+msgstr "ຕົວ​ເລືອກ​ຕ່າງໆ​ໃນ​ອຸ​ດົມ​ສົມ​ບູນ​ຕົວ​ຫນັງ​ສື Excerpts"
+
+#: rich-text-excerpts.php:291
+msgid "Save Changes"
+msgstr "ຊ່ວຍ​ປະ​ຢັດ​ການ​ປ່ຽນ​ແປງ"
+
+#: rich-text-excerpts.php:305
+msgid "Post Types"
+msgstr "Post ປະ​ເພດ"
+
+#: rich-text-excerpts.php:312
+msgid "Choose which post types will use a rich text editor for excerpts"
+msgstr "ເລືອກ​ປະ​ເພດ​ທີ່​ຕອບ​ຈະ​ນໍາ​ໃຊ້​ບັນ​ນາ​ທິ​ການ​ບົດ​ຄວາມ​ອຸ​ດົມ​ສົມ​ບູນ​ສໍາ​ລັບ excerpts"
+
+#: rich-text-excerpts.php:321
+msgid "Editor Options"
+msgstr "ຕົວ​ເລືອກ​ຕ່າງໆ​ໃນ​ບັນ​ນາ​ທິ​ການ"
+
+#: rich-text-excerpts.php:328
+msgid "Use a meta box"
+msgstr "ໃຊ້​ປຸ່ມ meta ເປັນ"
+
+#: rich-text-excerpts.php:336
+msgid "Choose which Editor is used for excerpts"
+msgstr "ເລືອກ​ທີ່​ບັນ​ນາ​ທິ​ການ​ແມ່ນ​ສໍາ​ລັບ​ການ​ນໍາ​ໃຊ້ used excerpts"
+
+#: rich-text-excerpts.php:344
+msgid "Editor Settings"
+msgstr "ຕັ້ງ​ບັນ​ນາ​ທິ​ການ"
+
+#: rich-text-excerpts.php:405
+msgid ""
+"If you want to disable support for all post types, please disable the plugin"
+msgstr ""
+"ຖ້າ​ຫາກ​ທ່ານ​ຕ້ອງ​ການ​ທີ່​ຈະ​ປິດ​ການ​ສະ​ຫນັບ​ສະ​ຫນູນ​ສໍາ​ລັບ​ການ​ທຸກ​ປະ​ເພດ​ສະ​ນີ​, ກະ​ລຸ​ນາ​ປິດ​ການ​ໃຊ້​ງານ​ຂອງ plugin"
+
+#: rich-text-excerpts.php:406
+msgid ""
+"Post types not selected here will use the regular plain text editor for "
+"excerpts. If the post type you want is not listed here, it does not "
+"currently support excerpts - to add support for excerpts to a post type, see "
+"the Wordpress Codex"
+msgstr ""
+"ປະ​ເພດ​ຕອບ​ບໍ່​ໄດ້​ຄັດ​ເລືອກ​ເອົາ​ທີ່​ນີ້​ຈະ​ໃຊ້​ບັນ​ນາ​ທິ​ການ​ຫນັງ​ສື​ປົກ​ກະ​ຕິ​ສໍາ​ລັບ​ການ​ທົ່ງ​ພຽງ"
+"excerpts​. ຖ້າ​ຫາກ​ວ່າ​ປະ​ເພດ​ການ​ຕອບ​ທີ່​ທ່ານ​ຕ້ອງ​ການ​ບໍ່​ໄດ້​ລະ​ບຸ​ໄວ້​ທີ່​ນີ້​, ມັນ​ບໍ່​ໄດ້"
+"ປະ​ຈຸ​ບັນ​ສະ​ຫນັບ​ສະ​ຫນູນ excerpts - ເພື່ອ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຕື່ມ​ສໍາ​ລັບ excerpts ເປັນ​ປະ​ເພດ​ນີ​, ເບິ່ງ"
+"ການ​ກົດ​ລະ​ຫັດ Wordpress"
+
+#: rich-text-excerpts.php:417
+msgid "Check this box to put the excerpt in a draggable meta box"
+msgstr "ຫມາຍ​ເອົາ​ຫ້ອງ​ທີ່​ນີ້​ເພື່ອ​ເຮັດ​ໃຫ້ excerpt ໃນ​ການ​ດໍາ​ເນີນ​ທຸ​ຫມາຍ​ໃສ່​ໃນ​ປ່ອງ​ເປັນ draggable"
+
+#: rich-text-excerpts.php:425
+msgid "Set the part of the page where the excerpt editor should be shown"
+msgstr "ກໍາ​ນົດ​ພາກ​ສ່ວນ​ຫນຶ່ງ​ຂອງ​ຫນ້າ​ບັນ​ນາ​ທິ​ການ​ທີ່ excerpt ຄວນ​ໄດ້​ຮັບ​ການ​ສະ​ແດງ​ໃຫ້​ເຫັນ​ໄດ້"
+
+#: rich-text-excerpts.php:432
+msgid "Set the priority of the excerpt editor"
+msgstr "ກໍາ​ນົດ​ບູ​ລິ​ມະ​ສິດ​ຂອງ​ບັນ​ນາ​ທິ​ການ excerpt ໄດ້"
+
+#: rich-text-excerpts.php:443
+msgid "Use the minimal editor configuration used in PressThis"
+msgstr "ການ​ນໍາ​ໃຊ້​ການ​ຕັ້ງ​ຄ່າ​ຂອງ​ບັນ​ນາ​ທິ​ການ​ຫນ້ອຍ​ໃນ​ການ​ນໍາ​ໃຊ້ used PressThis"
+
+#: rich-text-excerpts.php:445
+msgid "Use the full version of the editor"
+msgstr "ການ​ນໍາ​ໃຊ້​ການ​ສະ​ບັບ​ເຕັມ​ທີ່​ຂອງ​ບັນ​ນາ​ທິ​ການ​ໄດ້"
+
+#: rich-text-excerpts.php:446
+msgid ""
+"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"version of the editor."
+msgstr ""
+"ເລືອກ​ທີ່​ຈະ​ບໍ່​ວ່າ​ຈະ​ເປັນ​ການ​ນໍາ​ໃຊ້ TinyMCE ບັນ​ນາ​ທິ​ການ​ໄດ້​ຢ່າງ​ເຕັມ​ທີ່​, ຫຼື 'teeny​'"
+"ສະ​ບັບ​ຂອງ​ບັນ​ນາ​ທິ​ການ​ໄດ້​."
+
+#: rich-text-excerpts.php:464
+msgid ""
+"Stop removing the <p> and <br> tags when saving and show them in "
+"the HTML editor This will make it possible to use more advanced coding in "
+"the HTML editor without the back-end filtering affecting it much. However it "
+"may behave unexpectedly in rare cases, so test it thoroughly before enabling "
+"it permanently"
+msgstr ""
+"ການ​ຢຸດ​ໃຫ້​ຖອນ tags <p> ແລະ <br> ໃນ​ເວ​ລາ​ທີ່​ປະ​ຢັດ​ແລະ​ສະ​ແດງ​ໃຫ້​ເຫັນ​ພວກ​ເຂົາ​ໃນ"
+"ບັນ​ນາ​ທິ​ການ​ຂອງ HTML ນີ້​ຈະ​ເຮັດ​ໃຫ້​ມັນ​ເປັນ​ໄປ​ໄດ້​ທີ່​ຈະ​ນໍາ​ໃຊ້​ເລກ​ລະ​ຫັດ​ກ້າວ​ຫນ້າ​ຫຼາຍ​ໃນ"
+"ບັນ​ນາ​ທິ​ການ​ຂອງ HTML ໂດຍ​ບໍ່​ມີ​ການ​ການ​ກັ່ນ​ຕອງ​ກັບ​ຄືນ​ໄປ​ບ່ອນ​, ໃນ​ຕອນ​ທ້າຍ​ວ່າ​ມັນ​ກະ​ທົບ​ຕໍ່​ຫຼາຍ​. ຢ່າງ​ໃດ​ກໍ​ຕາມ​ມັນ"
+"ອາດ​ຈະ​ປະ​ຕິ​ບັດ​ຕົວ​ໂດຍ​ບໍ່​ຄາດ​ຝັນ​ໃນ​ກໍ​ລະ​ນີ​ທີ່​ຫາ​ຍາກ​, ສະ​ນັ້ນ​ມັນ​ທົດ​ສອບ​ຢ່າງ​ລະ​ອຽດ​ກ່ອນ​ທີ່​ຈະ​ເຮັດ​ໃຫ້"
+"ມັນ​ຢ່າງ​ຖາ​ວອນ"
+
+#: rich-text-excerpts.php:466
+msgid "Enable upload media button"
+msgstr "ເຮັດ​ໃຫ້​ສາ​ມາດ​ອັບ​ປຸ່ມ​ສື່​ມວນ​ຊົນ"
+
+#: rich-text-excerpts.php:467
+msgid "Number of rows to use in the text editor (minimum is 3)"
+msgstr "ຈໍາ​ນວນ​ແຖວ​ເກັດ​ທີ່​ຢູ່​ກັບ​ການ​ນໍາ​ໃຊ້​ໃນ​ບັນ​ນາ​ທິ​ການ​ຫນັງ​ສື​ຂອງ (ຕໍາ​່​ສຸດ​ທີ່ 3​)"
+
+#: rich-text-excerpts.php:468
+msgid "Toolbar Buttons and Plugins"
+msgstr "ປຸ່ມ​ແຖບ​ເຄື່ອງ​ມື​ແລະ plugin"
+
+#: rich-text-excerpts.php:473
+msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
+msgstr "ສໍາ​ລັບ​ບັນ​ຊີ​ລາຍ​ຊື່​ຂອງ​ປຸ່ມ​ແລະ plugins ໃນ TinyMCE ເປັນ​, ເບິ່ງ​ວິ​ກີ TinyMCE ໃນ"
+
+#: rich-text-excerpts.php:473
+msgid ""
+"There is also some documentation on the implementation of TinyMCE in "
+"Wordpress on the Wordpress Codex"
+msgstr ""
+"ນອກ​ນັ້ນ​ຍັງ​ມີ​ເອ​ກະ​ສານ​ກ່ຽວ​ກັບ​ການ​ປະ​ຕິ​ບັດ​ຂອງ TinyMCE ໃນ​ບາງ"
+"Wordpress ຢູ່​ໃນ​ກົດ​ລະ​ຫັດ Wordpress"
+
+#: rich-text-excerpts.php:473
+msgid "Button and plugin names should be separated using commas"
+msgstr "ຊື່​ສາ​ປຸ່ມ​ແລະ plugin ຄວນ​ແຍກ​ການ​ນໍາ​ໃຊ້​ຂັ້ນ​ດ້ວຍ​ຈໍ້າ​ຈຸດ"
+
+#: rich-text-excerpts.php:474
+msgid ""
+"Plugins to add - make sure you add any plugin specific buttons to the editor "
+"below"
+msgstr ""
+"plugins ຫາ​ຕື່ມ​ການ - ເຮັດ​ໃຫ້​ແນ່​ໃຈວ່​າ​ທ່ານ​ຕື່ມ​ໃດໆ​ປຸ່ມ​ສະ​ເພາະ plugin ກັບ​ບັນ​ນາ​ທິ​ການ​ໄດ້"
+"ຂ້າງ​ລຸ່ມ​ນີ້"
+
+#: rich-text-excerpts.php:475
+msgid ""
+"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"buttons"
+msgstr ""
+"ປຸ່ມ​ແຖບ​ເຄື່ອງ​ມື - ການ​ນໍາ​ໃຊ້ 'ແຍກ​' ຄໍາ​ວ່າ​ກຸ່ມ​ຂອງ​ແຍກ​ຕ່າງ​ຫາກ"
+"ປຸ່ມ"
+
+#: rich-text-excerpts.php:482
+msgid ""
+"Configure the buttons for the advanced editor using the TinyMCE Advanced "
+"plugin"
+msgstr ""
+"Configure ປຸ່ມ​ຕ່າງໆ​ສໍາ​ລັບ​ບັນ​ນາ​ທິ​ການ​ພິ​ເສດ​ໂດຍ​ນໍາ​ໃຊ້ TinyMCE ແບບ​ພິ​ເສດ"
+"plugin"
+
+#: rich-text-excerpts.php:484
+msgid ""
+"If you want to configure the buttons for the advanced editor, install and "
+"activate the TinyMCE Advanced plugin"
+msgstr ""
+"ຖ້າ​ຫາກ​ວ່າ​ທ່ານ​ຕ້ອງ​ການ configure ປຸ່ມ​ຕ່າງໆ​ສໍາ​ລັບ​ບັນ​ນາ​ທິ​ການ​ພິ​ເສດ​, ການ​ຕິດ​ຕັ້ງ​ແລະ"
+"ກະ​ຕຸ້ນ​ຂອງ plugin ແບບ​ພິ​ເສດ​ການ TinyMCE"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/rich-text-excerpts/"
+msgstr "http://wordpress.org/extend/plugins/rich-text-excerpts/"
+
+#. Description of the plugin/theme
+msgid "Adds rich text editing capability for excerpts using wp_editor()"
+msgstr "ເພີ້ມ​ຄວາມ​ສາ​ມາດ​ຂອງ​ຄວາມ​ອຸ​ດົມ​ສົມ​ບູນ​ສໍາ​ລັບ​ການ​ດັດ​ແກ້ excerpts ການ​ນໍາ​ໃຊ້ wp_editor ()"
+
+#. Author of the plugin/theme
+msgid "Peter Edwards"
+msgstr "Peter Edwards"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/bjorsq/rich-text-excerpts"
+msgstr "https://github.com/bjorsq/rich-text-excerpts"

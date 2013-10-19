@@ -1,0 +1,45 @@
+Eltiraĵo
+agordoj
+Rich Text Ekstraktoj
+Rich Text Ekstraktoj Agordoj
+Save Changes
+afiŝi Tipoj
+Elektu post tipoj uzos riĉa tekstoredaktilo por elĉerpaĵoj
+redaktanto Agordoj
+Uzu meta skatolo
+Elektu Redaktoro estas uzata por elĉerpaĵoj
+redaktanto agordoj
+Se vi volas malebligi subteno de ĉiuj post tipoj, bonvolu malaktivigi la kromaĵon
+Afiŝu tipoj ne selektis tie uzos la regula tekstoredaktilo por
+ekstraktojn . Se la post tipo vi volas ne estas listigitaj ĉi tie, ĝi ne
+nuntempe apogas elĉerpaĵoj - aldoni subtenon por elĉerpaĵoj al afiŝo tipo, vidi
+la Wordpress Kodekso
+Check this box meti la fragmenton en draggable meta skatolo
+Ŝanĝu la parto de la paĝo kie la ekstrakto redaktoro devus esti montrita
+Ŝanĝu la prioritato de la ekstrakto redaktoro
+Uzu la minimuma redaktanto agordo uzata en PressThis
+Uzu la plenan version de la redaktilo
+Elektu ĉu uzi la plenan TinyMCE redaktoro, aŭ la " Teeny "
+versio de la redaktilo.
+Ĉesu demetante la <p> kaj <br> etikedoj savinte kaj montri ilin en
+la HTML- redaktilo Tio ebligas uzi pli progresinta kodigo en
+la HTML- redaktilo sen la dorso- fino filtrita tuŝas ĝin multe . Tamen ĝi
+eble ili kondutas neatendite en maloftaj kazoj , do testi ĝin ĝisfunde antaŭ ebligante
+ĝi konstante
+Ebligu alŝuti amaskomunikiloj butono
+Nombro de vicoj por uzi en la tekstoredaktilo (minimumo estas 3 )
+Ilobreto Butonoj kaj Kromaĵoj
+Por listo de butonoj kaj kromaĵojn en TinyMCE , vidu la TinyMCE vikio
+Ankaŭ estas iuj dokumentoj pri la efektivigo de TinyMCE en
+Wordpress en la Wordpress Kodekso
+Button kaj kromaĵo nomoj devus esti apartigitaj per komoj
+Kromaĵoj aldoni - certigi vin aldoni ajnan kromaĵo specifajn butonojn al la redaktoro
+malsupre
+Toolbar buttons - uzu la vorton ' separador ' al apartaj grupoj de
+butonoj
+Agordi la butonoj por la progresinta redaktanto uzante la TinyMCE Altnivela
+kromaĵo
+Se vi volas agordi la butonoj por la progresinta redaktoro, instali kaj
+aktivigi la TinyMCE Altnivela kromaĵo
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Aldonas riĉa redaktado kapablo elĉerpaĵoj uzante wp_editor ()

@@ -1,0 +1,45 @@
+Útdráttur 
+Stillingar 
+Ríkur Útdráttur Texti 
+Ríkur brot Texti Valkostir 
+Vista breytingar 
+Efnisgreinar 
+Veldu hvaða efnisgreinar vilja nota ríkur texti ritstjóri fyrir brot 
+Ritstjóri Valkostir 
+Notaðu meta kassi 
+Veldu hvaða Ritstjóri er notað brot 
+Ritstjórastillingar 
+Ef þú vilja til gera óvinnufæran stuðning við allar efnisgreinar, vinsamlegast slökkva á tappi 
+Efnisgreinar ekki valdir hér mun nota reglulega látlaus texti ritstjóri fyrir 
+útdrátta. Ef staða tegund þú vilt er ekki skráð hér, er það ekki 
+styðjum ágrip - til að bæta við stuðning fyrir brot á færslu tegund, sjá 
+Wordpress Codex 
+Hakaðu hér við til að setja útdrátt í draggable meta kassi 
+Stilltu hluta síðunnar þar sem útdráttur ritstjóri ætti að vera sýnt 
+Stilltu forgang á útdrátt ritstjóri 
+Notaðu lágmarks ritstjóri stillingar notað í PressThis 
+Notaðu fullu útgáfuna af ritstjóra 
+Veldu hvort þú vilt nota fullt tinymce ritstjóri, eða "teeny" 
+útgáfa af ritstjóra. 
+Hættu að fjarlægja P og sækja merki þegar sparnaður og sýna þeim í 
+HTML ritstjóri Þetta mun gera það mögulegt að nota fleiri háþróaður kóða í 
+HTML ritstjóri án bak-endir sía áhrif það mikið. Samt sem áður 
+getur hegða óvænt í mjög sjaldgæfum tilvikum, svo prófa það rækilega áður en þú kveikir 
+það varanlega 
+Virkja hlaða fjölmiðla hnappinn 
+Fjölda lína til að nota í textaritlinum (Lágmark er 3) 
+Toolbar Buttons og Plugins 
+Fyrir lista yfir hnappa og viðbætur í tinymce, sjá tinymce wiki 
+Það er einnig nokkur skjöl um framkvæmd tinymce í 
+Wordpress á Wordpress Codex 
+Hnappinn og tappi nöfn ættu að vera aðskilin með kommum 
+Plugins til að bæta - að tryggja að þú bæta við tappi sérstakar hnappa til ritstjóra 
+neðan 
+Tækjastikuhnappar - nota 'skiltákn orðið' til að aðgreina hópa 
+hnappar 
+Stilla hnappur fyrir háþróaður ritstjóri með tinymce Advanced 
+tappi 
+Ef þú vilt stilla takka fyrir háþróaður ritstjóri, setja upp og 
+virkja tinymce Advanced tappi 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Bætir ríkur texta útgáfa hæfileiki fyrir brot með wp_editor()

@@ -1,0 +1,45 @@
+Kutipan 
+Setelan 
+Sugih teks ngutip 
+Sugih teks ngutip Pilihan 
+Simpen Kaca 
+Kirim Promo Promo lan Komersial 
+Milih jinis kirim bakal nggunakake sugih editor teks kanggo ngutip 
+Editor Pilihan 
+Nganggo kotak a meta 
+Milih Editor digunakake kanggo ngutip 
+Editor Setelan 
+Yen sampeyan pengin mateni support kanggo kabeh jinis kirim, please mateni plugin sing 
+Posting jinis sing kapilih ing kene ora bakal nggunakake reguler kosong editor teks kanggo 
+ngutip. Yen Tipe kirim pengin durung kadaftar ing kéné, iku ora 
+saiki ndhukung ngutip - kanggo nambah support ngutip menyang Tipe kirim, waca 
+Codex WordPress 
+Centhang kothak iki kanggo nyelehake Kutipan ing kothak draggable meta 
+Setel bagean ing kaca endi editor Kutipan kudu ditampilake 
+Setel prioritas ing editor Kutipan 
+Gunakake paling tithik konfigurasi editor digunakake ing PressThis 
+Gunakake versi lengkap ing editor 
+Milih arep nggunakake lengkap editor TinyMCE, utawa "teeny" 
+versi editor. 
+Stop njabut tags <p> lan <br> nalika nyimpen lan nuduhake wong ing 
+ing editor HTML iki bakal wis bisa nggunakake werna liyane majeng ing 
+ing editor HTML tanpa filter bali-mburi nggowo pengaruh kanggo dadi akeh. Nanging iku 
+uga nindakake ndadak ing arang kasus, supaya nyoba iku sak tenane sadurunge Nerjemahake isoh 
+iku permanen 
+Aktifake upload tombol media 
+Jumlah larik kanggo nggunakake ing teks editor (minimal iku 3) 
+Tombol Toolbar lan Plugins 
+Kanggo dhaptar tombol lan Plugins ing TinyMCE, waca Wikipedia TinyMCE 
+Ana uga sawetara dokumentasi ing implementasine saka TinyMCE ing 
+Wordpress neng Codex WordPress 
+Tombol lan plugin jeneng kudu dipisahake nganggo koma 
+Plugins kanggo nambah - priksa manawa sampeyan bisa nambah sembarang plugin tombol tartamtu menyang editor 
+ngisor 
+Tombol Toolbar - nggunakake 'separator' tembung kanggo kapisah kelompok 
+tombol 
+Ngatur tombol kanggo pilihan editor nggunakake Linuwih TinyMCE 
+plugin 
+Yen sampeyan pengin ngatur tombol kanggo editor lanjut, nginstal lan 
+ngaktifake TinyMCE plugin Advanced 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Nambah sugih teks editing kemampuan kanggo ngutip nggunakake wp_editor ()

@@ -1,0 +1,45 @@
+uittreksel
+instellings
+Ryk teks Uittreksels
+Ryk teks Uittreksels Options
+red Wysigings
+Post Tipes
+Kies watter tipe sal 'n ryk teks editor gebruik vir uittreksels
+redakteur Options
+Gebruik 'n meta box
+Kies watter Editor gebruik word vir uittreksels
+Editor -instellings
+As jy wil ondersteuning vir alle post tipes te skakel , aktiveer die prop
+Post tipes nie hier geselekteer sal die gereelde plain text editor gebruik vir
+uittreksels . As die post tipe wat jy wil hê, is nie hier gelys is , is dit nie
+ondersteun tans uittreksels - ondersteuning vir uittreksels te voeg tot 'n post tipe, sien
+die Wordpress Codex
+Bevestig hierdie boks om die uittreksel te sit in 'n skuif aanvaarde meta box
+Stel die deel van die bladsy waar die uittreksel redakteur moet getoon word
+Stel die prioriteit van die uittreksel redakteur
+Gebruik die redakteur minimale verstellings gebruik word in PressThis
+Gebruik die volledige weergawe van die redakteur
+Kies of die volle TinyMCE redakteur, of die " Teeny " te gebruik
+weergawe van die redakteur .
+Stop die verwydering van die <p> en <br> tags toe te spaar en wys hulle in
+die HTML redakteur Dit sal dit moontlik maak om meer gevorderde kodering in te gebruik
+die HTML redakteur sonder die back-end filters wat dit baie . Maar dit
+onverwags optree in seldsame gevalle , so toets dit deeglik voor sodat
+dit permanent
+In staat stel om media oplaai knoppie
+Aantal rye te gebruik in die teks editor (minimum van 3 )
+Knoppies en proppe
+Vir 'n lys van knoppies en plugins in TinyMCE , sien die TinyMCE wiki
+Daar is ook 'n paar dokumentasie oor die implementering van TinyMCE in
+Wordpress op die Wordpress Codex
+Button en prop name moet geskei word deur kommas
+Plugins te voeg - maak seker dat jy enige plugin spesifieke knoppies aan die redakteur
+onder
+Knoppies - gebruik die woord " skeiding " tot afsonderlike groepe
+knoppies
+Die instel van die knoppies vir die gevorderde redakteur met behulp van die TinyMCE Gevorderde
+plugin
+As jy wil hê dat die knoppies op te stel vir die gevorderde redakteur, installeer en
+aktiveer die TinyMCE Advanced plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Voeg ryk teks redigering vermoë vir uittreksels gebruik wp_editor ( )

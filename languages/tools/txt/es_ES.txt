@@ -1,0 +1,45 @@
+Extracto 
+Configuración 
+Fragmentos de texto enriquecido 
+Rich Extractos texto Opciones 
+Guardar cambios 
+Publique Tipos 
+Elegir qué tipo de destino se utilice un editor de texto enriquecido para extractos 
+Opciones del editor 
+Utilice una caja de meta 
+Elegir qué editor se utiliza para extractos 
+Configuración del editor 
+Si desea desactivar el soporte para todo tipo de correos, por favor, desactivar el plugin 
+Tipos post no seleccionados aquí se utiliza el editor de texto normal para 
+extractos. Si el tipo de mensaje que desea no está aquí, no lo hace 
+Actualmente apoyo parcial - para añadir soporte para extractos de un tipo de correos, ver 
+el Wordpress Codex 
+Marque esta casilla para poner el extracto en una caja de meta arrastrable 
+Ajuste la parte de la página en el editor de pasaje se debe mostrar 
+Establecer la prioridad del editor extracto 
+Utilice la configuración mínima editor utilizado en PressThis 
+Utilice la versión completa del editor 
+Seleccione si desea utilizar el editor TinyMCE completo, o el "pequeñito" 
+Versión del editor. 
+Detener la eliminación de las etiquetas <p> e imágenes al guardar y mostrarlos en 
+el editor HTML Esto hará que sea posible el uso de codificación más avanzadas en 
+el editor de HTML sin el filtrado de fondo que afectan mucho. Sin embargo, 
+puede comportarse inesperadamente en casos raros, por lo que probarlo a fondo antes de activar 
+permanentemente 
+Habilitar subir botón multimedia 
+Número de filas que se utilice en el editor de texto (como mínimo es 3) 
+Toolbar Buttons Plug-ins 
+Para obtener una lista de botones y plugins de TinyMCE, consulte la wiki TinyMCE 
+También hay algo de documentación sobre la aplicación de TinyMCE en 
+Wordpress Wordpress en el Codex 
+Nombres de los botones y el plug-in deben separarse con comas 
+Plugins para agregar - asegúrese de agregar los botones específicos plugin para el editor 
+abajo 
+Botones de la barra de herramientas - usan la palabra 'separador' para separar grupos de 
+botones 
+Configurar los botones del editor avanzado con el TinyMCE avanzada 
+Plugin 
+Si desea configurar los botones para el editor avanzado, instalar y 
+activar el plugin TinyMCE Advanced 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Añade rica capacidad de edición de texto para extractos utilizando wp_editor ()

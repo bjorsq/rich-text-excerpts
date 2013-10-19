@@ -1,0 +1,45 @@
+Estratto 
+Impostazioni 
+Estratti Rich Text 
+RTF Estratti Opzioni 
+Salva le modifiche 
+Posta Tipi 
+Scegliere quali tipi postali utilizzeranno un editor di testo ricco di estratti 
+Opzioni editor 
+Utilizzare una casella di meta 
+Scegliere quale Editor viene utilizzato per stralci 
+Impostazioni dell'editor 
+Se si desidera disattivare il supporto per tutti i tipi di messaggio, si prega di disattivare il plugin 
+Tipi di messaggio non selezionati qui sarà utilizzare l'editor di testo normale per 
+estratti. Se il tipo di messaggio che si desidera non è elencato qui, non lo fa 
+attualmente sostenere estratti - per aggiungere il supporto per stralci di un tipo di messaggio, vedere 
+l'Wordpress Codex 
+Seleziona questa casella per mettere il brano in una scatola meta trascinabile 
+Impostare la parte della pagina in cui deve essere visualizzato l'editor estratto 
+Impostare la priorità del redattore estratto 
+Utilizzare l'Editor di configurazione minimale utilizzato in PressThis 
+Utilizzare la versione completa del redattore 
+Scegliere se utilizzare l'editor TinyMCE piena, oppure la "teeny" 
+versione dell'editor. 
+Fermare la rimozione dei <p> ​​e <br> durante il salvataggio e mostrare loro in 
+l'editor HTML In questo modo sarà possibile utilizzare la codifica più avanzati in 
+l'editor HTML senza il filtraggio di back-end che interessano molto. Tuttavia essa 
+può comportarsi in modo inaspettato, in rari casi, in modo da testarlo a fondo prima di abilitare 
+esso permanentemente 
+Attiva pulsante multimediale caricare 
+Numero di righe da usare nell'editor di testo (minimo è di 3) 
+Pulsanti della barra degli strumenti e Plugin 
+Per un elenco di pulsanti e plugins in TinyMCE, vedere il wiki TinyMCE 
+C'è anche un po 'di documentazione sulla realizzazione di TinyMCE in 
+Wordpress sul Wordpress Codex 
+Nomi dei pulsanti e plug devono essere separati da virgole 
+Plugin per aggiungere - assicuratevi di aggiungere eventuali pulsanti specifici di plugin per l'editor 
+sotto 
+Pulsanti della barra degli strumenti - usano la parola 'separatore' per separare gruppi di
+pulsanti 
+Configurare i pulsanti per l'editor avanzato con il TinyMCE avanzata 
+plugin di 
+Se si desidera configurare i pulsanti per l'editor avanzato, installare e 
+attivare il plugin di TinyMCE avanzata 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Aggiunge ricca capacità di editing di testo per stralci utilizzando wp_editor ()

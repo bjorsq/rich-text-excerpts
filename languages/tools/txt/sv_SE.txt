@@ -1,0 +1,45 @@
+Utdrag 
+Inställningar 
+RTF Utdrag 
+RTF Utdrag Alternativ 
+Spara ändringar 
+Post Typer 
+Välj vilka inlägg typer kommer att använda en rik textredigerare för utdrag 
+Redigeringsalternativ 
+Använd en meta box 
+Välj vilka Editor används för utdrag 
+Editor Inställningar 
+Om du vill inaktivera stöd för alla inlägg typer, vänligen avaktivera plugin 
+Post typer som inte valts här kommer att använda vanlig textredigerare för 
+utdrag. Om inlägget typ du önskar inte finns här, det gör det inte 
+stöder för närvarande utdrag - att lägga till stöd för utdrag till ett inlägg typ, se 
+Wordpress Codex 
+Markera rutan för att sätta utdrag i en dragbar meta box 
+Ställ den del av sidan där utdrag redaktör ska visas 
+Ställ in prioriteten för utdrag redaktör 
+Använd den minimala redaktör konfiguration som används i PressThis 
+Använd den fullständiga versionen av editorn 
+Välj om du vill använda hela TinyMCE editor, eller "pyttelitet" 
+version av editorn. 
+Sluta ta bort <p> och sälja taggar när du sparar och visar dem i 
+HTML-editor Detta kommer att göra det möjligt att använda mer avancerade kodning i 
+HTML-editor utan back-end filtrering påverkar det mycket. Men det 
+kan uppträda oväntat i sällsynta fall, så testa den noggrant innan du aktiverar 
+det permanent 
+Aktivera knappen Skicka media 
+Antal rader som ska användas i textredigeraren (minimum är 3) 
+Toolbar Buttons och plugins 
+För en lista över knappar och plugins i TinyMCE, se TinyMCE wiki 
+Det finns också viss dokumentation om genomförandet av TinyMCE i 
+Wordpress på Wordpress Codex 
+Knapp och plugin namn bör separeras med kommatecken 
+Insticksmoduler för att - se till att du lägger några plugin specifika knappar till redaktören 
+nedan 
+Verktygsknappar - använda ordet "separator" till separata grupper av 
+knappar 
+Konfigurera knapparna för avancerad redigerare använder TinyMCE Advanced 
+plugin 
+Om du vill konfigurera knapparna för avancerad editor, installera och 
+aktivera TinyMCE Advanced plugin 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Lägger rik förmåga textredigering för utdrag med wp_editor ()

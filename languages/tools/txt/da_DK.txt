@@ -1,0 +1,45 @@
+uddrag
+Indstillinger
+RTF Uddrag
+RTF Uddrag Options
+Gem ændringer
+Indlæg Typer
+Vælg hvilken post- typer vil bruge en RTF -editor for uddrag
+Redigeringsindstillinger
+Brug en meta boks
+Vælg hvilken Editor bruges til uddrag
+Editor-indstillinger
+Hvis du ønsker at deaktivere støtte til alle indlæg typer , skal du deaktivere plugin
+Indlæg typer, der ikke er valgt her, vil bruge de regelmæssige almindelig teksteditor for
+uddrag. Hvis stillingen , du vil ikke findes her, er det ikke
+understøtter i øjeblikket uddrag - for at tilføje understøttelse af uddrag en post type se
+Wordpress Codex
+Check denne boks for at sætte uddrag i en trækbart meta boks
+Sæt den del af den side, hvor uddrag editor skal vises
+Indstil prioritet uddrag editor
+Bruge den minimale editor konfiguration, der anvendes i PressThis
+Brug den fulde version af editoren
+Vælg om du vil bruge den fulde TinyMCE editor, eller " teeny "
+version af editoren.
+Stop fjerne <p> <br> tags , når du gemmer og viser dem i
+HTML editor Dette vil gøre det muligt at anvende mere avancerede kodning i
+HTML -editor , uden back-end filtrering påvirker det meget . Men det
+kan opføre sig uventet i sjældne tilfælde , så teste det grundigt, før du aktiverer
+den permanent
+Aktiver upload medieknap
+Antal rækker til brug i teksteditoren (minimum er 3 )
+Toolbar Buttons og Plugins
+For en liste over knapper og plugins i TinyMCE , se TinyMCE wiki
+Der er også noget dokumentation om gennemførelsen af ​​TinyMCE i
+Wordpress på Wordpress Codex
+Knap og plugin navne skal adskilles med kommaer
+Plugins til at tilføje - sørg for at tilføje plugin bestemte knapper til redaktøren
+nedenfor
+Toolbar -knapper - bruge ordet " separator " for at adskille grupper af
+knapper
+Konfigurer knapper til den avancerede editor bruger TinyMCE Advanced
+plugin
+Hvis du ønsker at konfigurere knapperne for den avancerede editor , installere og
+aktivere TinyMCE Advanced plugin
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Tilføjer RTF redigering kapacitet til uddrag hjælp wp_editor ()

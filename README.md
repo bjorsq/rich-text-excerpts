@@ -62,6 +62,19 @@ Changelog
 ### 1.0
 * Wordpress submission after initial development on bitbucket.
 
+Translations
+------------
+
+The plugin has been translated (using [Google translate](http://translate.google.com/)) into the following languages:
+
+Afrikaans (af), Albanian (al), Arabic (ar), Basque (eu), Belarusian (be_BY), Bulgarian (bg_BG), Bosnian (bs_BA), Catalan (ca), Chinese (zh_CN), Croatian (hr), Czech (cs_CZ), Danish (da_DK), Dutch (nl_NL), Esperanto (eo), Estonian (et), Finnish (fi), French (fr_FR), Gaeilge (ga), Galician (gl_ES), Georgian (ge_GE), German (de_DE), Greek (el_GR), Hebrew (he_IL), Hindi (hi_IN), Hungarian (hu_HU), Icelandic (is_IS), Indonesian (id_ID), Italian (it_IT), Japanese (ja), Javanese (jv_JV), Kannada (kn_IN), Khmer (km_KH), Korean (ko_KR), Lao (lo), Latvian (lv), Lithuanian (lt_LT), Macedonian (mk_MK), Malay (ms_MY), Norwegian (nb_NO), Persian (fa_IR), Polish (pl_PL), Portuguese (pt_PT), Romanian (ro_RO), Russian (ru_RU), Serbian (sr_RS), Slovak (sk_SK), Slovenian (sl_SI), Spanish (es_ES), Swedish (sv_SE), Tamil (ta_LK), Thai (th), Turkish (tr), Ukranian (uk), Urdu (ur), Vietnamese (vi), Welsh (cy).
+
+If you can trnaslate the plugin into another language not listed here, or if you use any of these languages and can check them, please feed back in either the wordpress support forum or on github.
+
+https://github.com/bjorsq/rich-text-excerpts
+
+I am using some tools (in the tools subdirectory in languages) to generate these files automatically.
+
 Contribute
 ----------
 

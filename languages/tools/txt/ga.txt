@@ -1,0 +1,45 @@
+Sliocht 
+Socruithe 
+Sleachta Rich Text 
+Sleachta Rich Text Roghanna 
+Sábháil Athruithe 
+Cineálacha Post 
+Roghnaigh ina mbeidh cineálacha post úsáid eagarthóir téacs saibhir le haghaidh sleachta 
+Roghanna Eagarthóra 
+Bain úsáid as bosca meta 
+Roghnaigh Eagarthóir úsáidtear le haghaidh sleachta 
+Socruithe Eagarthóir 
+Más mian leat tacaíocht do gach cineál poist a chur ar ceal, le do thoil dhíchumasú an breiseán 
+Beidh cineálacha Post nár roghnaíodh anseo úsáid a bhaint as an eagarthóir téacs plain rialta do 
+sleachta. Mura bhfuil an cineál iar mian leat liostaithe anseo, ní chuireann sé 
+tacú faoi láthair sleachta - tacaíocht a thabhairt do sleachta a chur le cineál post, féach 
+an Codex Wordpress 
+Seiceáil an bosca seo a chur ar an sliocht i meta bosca draggable 
+Socraigh an chuid den leathanach áit ar cheart an eagarthóir sliocht a thaispeáint 
+Socraigh mar thosaíocht ag an eagarthóir sliocht 
+Bain úsáid as an eagarthóir chumraíocht íosta a úsáidtear i PressThis 
+Bain úsáid as an leagan iomlán ar an eagarthóir 
+Roghnaigh cé acu a bhaint as an eagarthóir TinyMCE lán, nó an "teeny" 
+leagan an eagarthóir. 
+Stop a bhaint de na <p> agus clibeanna irish nuair a shábháil agus iad a thaispeáint i 
+an eagarthóir HTML Cinnteoidh sé seo gur féidir a úsáid códú chun cinn níos mó i 
+an eagarthóir HTML gan scagadh ar ais-deireadh difear sé i bhfad. Mar sin féin é 
+Is féidir iad féin a iompar gan súil i gcásanna neamhchoitianta, mar sin tástáil sé go maith roimh a chumasú 
+sé buan 
+Cumasaigh uaslódáil cnaipe meáin 
+Líon na rónna a úsáid sa eagarthóir téacs (Tá íosmhéid 3) 
+Buttons Toolbar agus Forlíontáin 
+Chun liosta de na cnaipí agus plugins i TinyMCE, féach ar an vicí TinyMCE 
+Tá roinnt cáipéisí ar chur i bhfeidhm TinyMCE i ann freisin 
+Wordpress ar an Codex Wordpress 
+Ba chóir go cnaipe agus plugin ainmneacha a dheighilt ag baint úsáide as camóga 
+Forlíontáin a chur leis - a dhéanamh cinnte go bhfuil tú aon cnaipí ar leith plugin chur leis an eagarthóir 
+thíos 
+Cnaipí Toolbar - úsáid a bhaint as an focal 'deighilteoir' do ghrúpa ar leith de 
+cnaipí 
+Cumraigh na cnaipí don eagarthóir chun cinn ag baint úsáide as an Ard TinyMCE 
+plugin 
+Más mian leat a chumrú na cnaipí don eagarthóir chun cinn, a shuiteáil agus a 
+ghníomhachtú an Ard plugin TinyMCE 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Adds cumas eagarthóireacht téacs saibhir le haghaidh sleachta ag baint úsáide as wp_editor ()

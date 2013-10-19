@@ -1,0 +1,45 @@
+Výňatok 
+Nastavenie 
+Rich Text Výňatky 
+RTF výňatky možnosti 
+Uložiť zmeny 
+Príspevok typy 
+Vyberte si, ktoré typy príspevok bude používať editor formátovaného textu úryvky 
+Možnosti editora 
+Pomocou meta okno 
+Vyberte si, ktoré Editor sa používa pre ukážky 
+Editor nastavení 
+Ak chcete zakázať podporu všetkých príspevkov typov, zakážte plugin 
+Príspevok typy nie sú tu vybrané používať pravidelne editora obyčajného textu pre 
+výňatky. Pokiaľ po požadovaný typ tu nie je uvedený, nie je 
+V súčasnej dobe podporujeme ukážky - pridať podporu pre výpisy z poštového typu, pozri 
+Wordpress Codex 
+Zaškrtnite, ak chcete vložiť úryvok v meta pretiahnuť poľa 
+Nastavte časť stránky, kde by mal byť výpis editor uvedené 
+Nastaviť prioritu výňatok editora 
+Použite minimálny editora konfigurácie použitej v PressThis 
+Použite plnú verziu editora 
+Vyberte, či chcete použiť plnú TinyMCE editor, alebo "malinký" 
+verzia editora. 
+Zastaviť odstránenie <p> a <br> tagy pri ukladaní a zobraziť ich v 
+HTML editor Vďaka tomu bude možné použiť pokročilejšie kódovanie v 
+HTML editor bez back-end filtrovanie, ktoré ju ovplyvňujú mnoho. Avšak to 
+môže správať neočakávane vo vzácnych prípadoch, tak poriadne otestovať pred povolením 
+trvalo 
+Povoliť tlačidlo Odoslať médium 
+Počet riadkov pre použitie v textovom editore (minimum je 3) 
+Toolbar Buttons a zásuvných modulov 
+Pre zoznam tlačidiel a pluginy v TinyMCE, pozri TinyMCE wiki 
+Tam je tiež nejaký dokumentácie o vykonávaní TinyMCE v 
+Wordpress na Wordpress kódexu 
+Button a plugin mená by mali byť oddelené čiarkami 
+Pluginy pre pridanie - uistite sa, že pridať nejaké pluginy špeciálne tlačidlá k editoru 
+nižšie 
+Tlačidlá na paneli nástrojov - používať slovo "oddeľovač" do samostatných skupín 
+tlačidla 
+Konfigurácia tlačidiel pre pokročilých editore pomocou TinyMCE Advanced 
+plugin 
+Ak chcete nakonfigurovať tlačidlá pre pokročilé editora inštaláciu a 
+aktivovať TinyMCE Advanced plugin 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Pridá RTF editačné schopnosti pre ukážky použitia wp_editor()

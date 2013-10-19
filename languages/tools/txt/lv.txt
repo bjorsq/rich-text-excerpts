@@ -1,0 +1,45 @@
+Izvilkums 
+Iestatījumi 
+Rich Text Izvilkumi 
+Rich Text Izvilkumi opcijas 
+Saglabāt izmaiņas 
+Post veidi 
+Izvēlieties, kuras post veidi būs izmantot bagātināta teksta redaktors fragmentāri 
+Redaktora opcijas 
+Izmantojiet meta kastē 
+Izvēlieties, kuras redaktors izmanto fragmentāri 
+Redaktors iestatījumi 
+Ja jūs vēlaties atspējot atbalstu visās pasta veidu, lūdzu atslēgt spraudnis 
+Post veidi nav izvēlētas šeit izmantos regulāru teksta redaktors 
+fragmentāri. Ja pēc veida jūs vēlaties, nav šajā sarakstā, tas nav 
+pašlaik atbalsta fragmentus - lai pievienotu atbalstu fragmentu ar pasta tipam, skatiet 
+WordPress Codex 
+Pārbaudiet šo lodziņu, lai izrakstu ar draggable meta kastē 
+Uzstādīt daļu lapā, kurā izraksts redaktors ir parādīts 
+Noteikt prioritāti izrakstā redaktoru 
+Izmanto minimālais redaktora konfigurācija izmanto PressThis 
+Izmantojiet pilno versiju redaktoru 
+Izvēlieties, vai izmantot pilnu TinyMCE redaktoru, vai "maziņš" 
+versija redaktoru. 
+Pietura novēršot <p> un video tagus, saglabājot un parādīt tos 
+HTML redaktors Tas dos iespēju izmantot vairāk uzlabotas kodēšanas 
+HTML redaktoru bez back-end filtrēšanu ietekmē to daudz. Tomēr tas 
+var uzvesties negaidīti retos gadījumos, lai pārbaudītu to rūpīgi pirms ļaujot 
+tā neatgriezeniski 
+Ieslēgt augšupielādēt multivides taustiņu 
+Rindu skaits izmantot teksta redaktoru (minimums ir 3) 
+Rīkjoslas pogas un plug-in 
+Par sarakstu ar pogām un plugins, kas TinyMCE, skatiet TinyMCE wiki 
+Ir arī daži īstenošanas TinyMCE dokumentācijā 
+WordPress uz WordPress kodeksā 
+Pogu un spraudnis nosaukumi ir jāatdala, izmantojot komatus 
+Plugins pievienot - pārliecinieties, ka jums pievienot jebkuru spraudnis īpašas pogas redaktoram 
+zemāk 
+Rīkjoslas pogas - izmantot vārdu "atdalītāju" uz atsevišķām grupām 
+pogas 
+Konfigurēt pogas uzlabotas redaktoru, izmantojot TinyMCE Advanced 
+spraudnis 
+Ja vēlaties konfigurēt pogas uzlabotas redaktoru, uzstādīt un 
+aktivizētu TinyMCE Advanced spraudnis 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Pievieno bagātināta teksta rediģēšanas iespējas par fragmentāri, izmantojot wp_editor ()

@@ -1,0 +1,45 @@
+Alıntı 
+Ayarlar 
+Zengin Metin alıntılar 
+Zengin Metin alıntılar Seçenekleri 
+Değişiklikleri Kaydet 
+Türleri Mesaj 
+Sonrası türleri alıntılar için bir zengin metin editörü kullanmak hangi seçin 
+Düzenleyici Seçenekleri 
+Bir meta kutuyu kullanın 
+Alıntılar için kullanıldığı Editor 
+Editör Ayarları 
+Tüm sonrası türleri için destek devre dışı bırakmak istiyorsanız, eklenti devre dışı lütfen 
+Burada seçilen değil Mesaj türleri için normal düz metin editörü kullanacağız 
+alıntılar. İstediğiniz sonrası sini buraya listede yoksa, değil mi 
+Şu anda alıntılar destek - bir yazı tipine alıntılar desteği eklemek için, bkz 
+Wordpress Codex 
+Bir sürüklenebilir meta kutusuna alıntı koymak için bu kutuyu işaretleyin 
+Alıntı editörü gösterilmesi gereken Sayfanın en parçası ayarlayın 
+Alıntı editörü önceliğini belirleyin 
+PressThis kullanılan Minimal editörün yapılandırma kullanın 
+Editörün bütün sürümünü kullanın 
+Tam TinyMCE editör, ya da "ufacık" kullanmayı seçin 
+editör sürümü. 
+Kaydederken <p> ve <br> etiketleri kaldırarak durdurmak ve bunları göstermek 
+HTML editörü Bu sayede daha gelişmiş kodlama kullanmak yapacak 
+kadar çok etkileyen arka uç filtreleme olmadan HTML editörü. Ancak 
+nadir durumlarda beklenmedik şekilde davranabilir, bu nedenle etkinleştirmeden önce iyice test 
+kalıcı 
+Ortam düğmesi yüklemek etkinleştirin 
+Metin editörü kullanmak için satır sayısı (en az 3 olan) 
+Araç Çubuğu Düğmeleri ve Eklentiler 
+TinyMCE düğmeleri ve eklentileri listesi için, TinyMCE sayfasını inceleyebilirsiniz 
+Içinde TinyMCE uygulanmasına ilişkin bazı belgeler de var 
+Wordpress Kodeksi wordpress 
+Düğme ve eklenti adları virgül ile ayrılmalıdır 
+Eğer Editöre herhangi bir eklenti özel düğmeleri eklemek emin olun - eklemek için Eklentiler 
+altında 
+Araç çubuğu düğmeleri - ayrı gruplara kelime 'ayırıcı' kullanın 
+düğmeleri 
+TinyMCE Gelişmiş kullanarak gelişmiş editörü için düğmeleri yapılandırma 
+eklentisi 
+Eğer gelişmiş editörü için düğmeleri yapılandırmak istiyorsanız, yükleme ve 
+TinyMCE Gelişmiş eklenti etkinleştirmek 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Wp_editor () kullanarak alıntılar için zengin metin düzenleme yeteneği ekler.

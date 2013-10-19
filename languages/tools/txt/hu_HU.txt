@@ -1,0 +1,45 @@
+Szemelvény 
+Beállítások 
+Rich Text Részletek 
+Rich Text Részletek beállításai 
+Változtatások mentése 
+Hozzászólás típusok 
+Válassza ki, melyik üzenet típusokat fogja használni a rich text szerkesztőt részletek 
+Szerkesztő beállításai 
+Használjon meta doboz 
+Válassza ki, melyik szerkesztő használt részleteket 
+Szerkesztő beállításai 
+Ha azt szeretné, hogy letiltja az összes üzenet típusú, kapcsold ki a plugin 
+Hozzászólás típus nincs kiválasztva itt fogja használni a szokásos egyszerű szövegszerkesztő 
+részletek. Ha a poszt kívánt típust nem szerepel itt, akkor nem 
+Jelenleg az részletek - támogatást adni a részletek utáni típus, lásd 
+A Wordpress Codex 
+Jelölje be ezt, hogy a kivonat egy mozgatható meta doboz 
+A részét, amelyet az oldalra, ahol a részlet editor kell mutatni 
+Prioritásának beállítása a részlet szerkesztő 
+A minimális konfiguráció szerkesztő használt PressThis 
+A teljes verzió a szerkesztő 
+Válassza ki, hogy használja a teljes TinyMCE szerkesztő, vagy a "pici" 
+változata a szerkesztő. 
+Állítsa eltávolítása <p> és <br> címkék mentésekor és mutasd meg 
+A HTML-szerkesztő Ez teszi lehetővé, hogy több fejlett kódolás 
+A HTML-szerkesztő nélkül back-end szűrés érintő sokkal. Azonban 
+várttól eltérő módon viselkedhetnek ritka esetekben, így kipróbálni alaposan engedélyezése előtt 
+véglegesen 
+Engedélyezze feltöltés média gomb 
+Sorok számát, hogy használja a szövegszerkesztő (minimum 3) 
+Eszköztár gombok és Plugins 
+A listát a gombok és dugó a TinyMCE, lásd a TinyMCE wiki 
+Van még néhány dokumentumot végrehajtásáról szóló TinyMCE-ben 
+Wordpress a Wordpress Codex 
+Button és plugin-neveket kell választani vesszővel 
+Plugins hozzá - győződjön meg róla, hozzá semmilyen bővítmény speciális gombokat a szerkesztőnek 
+alatt 
+Eszköztár gombok - használd a "elválasztó" külön csoportok 
+gombok 
+Állítsa be a gombok a fejlett szerkesztő a TinyMCE Advanced 
+bővítmény 
+Ha szeretné beállítani a gombokat a fejlett szerkesztő, telepítése és 
+aktiválja a TinyMCE Advanced bővítmény 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Ad gazdag szövegszerkesztő képessége szemelvények felhasználásával wp_editor ()

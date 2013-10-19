@@ -1,0 +1,45 @@
+Fragment 
+Ustawienia 
+Bogate Fragmenty tekstu 
+Bogate opcje Fragmenty tekstu 
+Zapisz zmiany 
+Napisz Typy 
+Wybierz, które typy post będzie użyć edytora tekstu do fragmentów 
+Opcje edytora 
+Użyj pola meta 
+Wybierz co Editor służy do fragmentów 
+Ustawienia edytora 
+Jeśli chcesz wyłączyć obsługę wszystkich typów post, proszę wyłączyć wtyczkę 
+Nie wybrane typy post tutaj będzie regularny zwykły edytor tekstu dla 
+fragmenty. Jeśli wiadomość typu nie ma na liście, to nie 
+obsługuje obecnie fragmenty - aby dodać wsparcie dla fragmentów do postu typu, patrz
+Wordpress Codex 
+Zaznacz to pole, aby umieścić fragment w przeciągalne polu meta 
+Ustaw część strony, gdzie redaktorem fragment należy zamieścić 
+Ustaw priorytet edytorze wypis 
+Użyj minimalnej konfiguracji edytora używanego w PressThis 
+Korzystanie z pełnej wersji edytora 
+Wybierz, czy chcesz korzystać z pełnej edytora TinyMCE, lub "malusieńki" 
+wersja edytora. 
+Zatrzymaj usunięcie <p> <br> tagi podczas zapisywania i pokazać je w 
+edytor HTML temu będzie można korzystać z bardziej zaawansowanych kodowania w 
+edytor HTML bez zaplecza filtrowania wpływających go dużo. Jednak to 
+może zachowywać się niestabilnie w rzadkich przypadkach, aby przetestować go dokładnie przed włączeniem 
+na stałe 
+Włącz przesyłanie przycisk multimedialny 
+Liczba wierszy do wykorzystania w edytorze tekstu (minimum 3) 
+Przyciski paska narzędzi i Wtyczki 
+Listę przycisków i wtyczek w TinyMCE, zobacz wiki TinyMCE 
+Istnieje także dokumentacja z realizacji TinyMCE w 
+Wordpress na Wordpress Codex 
+Przycisk i plugin nazwy powinny być oddzielone przecinkami 
+Wtyczki do dodania - upewnij się dodawać żadnych wtyczek określone przyciski do redakcji 
+poniżej 
+Przyciski paska narzędzi - używać słowa "separator" do poszczególnych grup 
+Przyciski 
+Konfigurowanie przycisków za pomocą zaawansowanego edytora TinyMCE Zaawansowane 
+plugin 
+Jeśli chcesz skonfigurować przyciski na zaawansowanym edytorze, instalacji i 
+włączyć wtyczkę zaawansowane TinyMCE 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Dodaje bogate możliwości edycji tekstu dla fragmentów wykorzystujących wp_editor ()

@@ -1,0 +1,45 @@
+Petikan 
+Tetapan 
+Petikan Teks Kaya 
+Petikan Teks Kaya Pilihan 
+Simpan Perubahan 
+Post Jenis 
+Memilih jenis pos akan menggunakan editor teks kaya untuk petikan 
+Pilihan Editor 
+Menggunakan kotak meta 
+Pilih yang Editor digunakan untuk petikan 
+Tetapan Editor 
+Jika anda ingin untuk melumpuhkan sokongan untuk semua jenis pos, sila mematikan plugin 
+Jenis Post tidak dipilih di sini akan menggunakan editor teks biasa untuk 
+petikan. Jika jenis post yang anda mahu tidak disenaraikan di sini, ia tidak 
+menyokong petikan - untuk menambah sokongan untuk petikan kepada jenis pos, melihat 
+yang Wordpress Kolej 
+Semak kotak ini untuk meletakkan petikan dalam kotak meta boleh diseret 
+Menetapkan sebahagian daripada laman di mana editor petikan hendaklah ditunjukkan
+Tetapkan keutamaan editor petikan 
+Gunakan konfigurasi editor minimum digunakan dalam PressThis 
+Gunakan versi penuh editor 
+Pilih sama ada untuk menggunakan editor TinyMCE penuh, atau "pemudi" 
+versi editor. 
+Hentikan membuang <p> dan perbandingan tag apabila menyimpan dan menunjukkan kepada mereka di 
+editor HTML Ini akan membuat ia mungkin untuk menggunakan kod yang lebih maju dalam 
+editor HTML tanpa penapisan back-end yang menjejaskan ia banyak. Walau bagaimanapun ia 
+boleh berkelakuan tidak disangka-sangka dalam kes-kes yang jarang berlaku, jadi menguji dengan teliti sebelum membolehkan 
+ia tetap 
+Membolehkan upload butang media 
+Bilangan baris untuk digunakan dalam editor teks (minimum 3) 
+Butang Toolbar dan Plugins 
+Untuk senarai butang dan plugin di TinyMCE, lihat wiki TinyMCE yang 
+Terdapat juga beberapa dokumen mengenai pelaksanaan TinyMCE dalam 
+Wordpress di Wordpress Kolej 
+Butang dan plugin nama perlu diasingkan dengan menggunakan koma 
+Plugins untuk menambah - pastikan anda menambah mana-mana butang plugin tertentu kepada editor 
+di bawah 
+Butang Toolbar - menggunakan 'pemisah' perkataan kepada kumpulan-kumpulan yang berasingan 
+butang 
+Konfigurasi butang untuk editor maju menggunakan TinyMCE Advanced 
+plugin 
+Jika anda mahu untuk menetapkan butang untuk editor maju, memasang dan 
+mengaktifkan plugin Advanced TinyMCE 
+http://wordpress.org/extend/plugins/rich-text-excerpts/ 
+Menambah teks kaya keupayaan untuk menyunting petikan menggunakan wp_editor ()

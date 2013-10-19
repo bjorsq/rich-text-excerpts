@@ -1,0 +1,45 @@
+fragment
+Cilësimet
+Fragmente pasur tekst
+Fragmente Rich Text Options
+Save Changes
+Post Llojet
+Zgjidhni cilat lloje post do të përdorni një editor teksti për të pasur fragmente
+Opsionet e Redaktorit
+Përdorim nje kuti meta
+Zgjidhni cilat Editor është përdorur për fragmente
+Cilësimet Editor
+Nëse ju doni të çaktivizoni mbështetje për të gjitha llojet post, ju lutemi disable plugin
+Llojet Post nuk përzgjedhur këtu do të përdorin plain text editor rregullt për
+fragmente . Nëselloji mesazhin që ju doni nuk është i listuar këtu , kjo nuk e bën
+aktualisht mbështesin fragmente - për të shtuar mbështetjen për fragmente të një lloji të postës , shih
+Codex Wordpress
+Kontrolloni këtë kuti për të vënë në një kuti fragment meta draggable
+Set pjesë të faqes kuredaktori Fragmenti duhet të tregohet
+Set prioritet e redaktorit ekstrakt
+Përdor konfigurimin minimal editor përdoret në PressThis
+Përdorni versionin e plotë e redaktorit
+Zgjidhni nëse të përdorni redaktor të plotë TinyMCE , ose " vockël "
+versionin e redaktorit .
+Stop hequr <P> dhe <br> kur kursim dhe të tregojnë ato në
+editor HTML Kjo do të bëjë të mundur për të përdorur kodim më të avancuar në
+editor HTML pa prapa-fund filtrimin e prekin atë shumë . Megjithatë kjo
+papritur mund të sillen në raste të rralla , kështu provuar atë tërësisht para se të mundësuar
+të përhershme
+Aktivizo ngarkoni butonin media
+Numri i rreshtave për të përdorur në editor teksti (minimumi është 3 )
+Toolbar Buttons dhe Shtojca
+Për një listë e butonave dhe plugins në TinyMCE , shihni wiki TinyMCE
+Ka edhe disa dokumente mbi zbatimin e TinyMCE në
+Wordpress në Codex Wordpress
+Button dhe plugin emrat duhet të ndahen duke përdorur presje
+Plugins për të shtuar - sigurohuni që keni të shtoni ndonjë butonat plugin specifike për redaktorit
+poshtë
+Toolbar Buttons - përdorin ' ndarës ' fjala e grupeve të veçanta të
+buttons
+Konfiguro butonat për redaktor të avancuar duke përdorur të avancuara TinyMCE
+plugin
+Nëse ju doni të konfiguroni butonat për redaktor të avancuar , instalojë dhe
+të aktivizuar plugin TinyMCE avancuar
+http://wordpress.org/extend/plugins/rich-text-excerpts/
+Shton aftësinë për të pasur redaktimi tekst për fragmente përdorur wp_editor ()
