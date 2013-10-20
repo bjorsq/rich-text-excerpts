@@ -67,10 +67,12 @@ class RichTextExcerpts {
 		 */
 		add_action( 'admin_menu', array( __CLASS__, 'add_plugin_admin_menu' ) );
 		add_action( 'admin_init', array( __CLASS__, 'register_plugin_options' ) );
+
 		 /**
 		  * add a link to the settings page from the plugins page
 		  */
-		add_filter( 'plugin_action_links', array( __CLASS__, 'add_settings_page_link'), 10, 2 );
+		add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array( __CLASS__, 'add_settings_page_link'), 10, 2 );
+
 		/**
 		 * register text domain
 		 */
@@ -189,9 +191,15 @@ class RichTextExcerpts {
 			"textarea_rows" => $plugin_options['editor_settings']['textarea_rows'],
 			"teeny" => ($plugin_options['editor_type'] === "teeny")? true: false
 		);
-		/* "echo" the editor */
-		$excerpt = apply_filters( 'format_to_edit', $excerpt );
-		wp_editor($excerpt, 'excerpt', $options );
+		/* get decoded content for the editor */
+		$excerpt = html_entity_decode($excerpt);
+		/**
+		 * this will decode numeric entities
+		 * @see http://wordpress.org/support/topic/special-characters-show-as-their-character-codes
+		 */
+		$excerpt = wp_kses_decode_entities($excerpt);
+		/* output editor */
+		wp_editor( $excerpt, 'excerpt', $options );
 		if (!$plugin_options['metabox']['use']) {
 			/* finish wrapping */
 			print('</div></div>');
