@@ -23,7 +23,7 @@ The plugin utilises three action hooks:
 
 http://core.trac.wordpress.org/ticket/19173
 
-The editing box for excerpts uses [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) to create a rich text editor. You can set the options for the rich text editor in the plugin options page (in the Wordpress  Settings menu).
+The editing box for excerpts uses [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) to create a rich text editor. You can set the options for the rich text editor in the plugin options page (in the Wordpress Settings menu).
 
 The plugin also contains two filters which act on the "teeny" MCE editor instance which is used by default. The plugins and buttons used by the minimal editor can also be customised on the plugin options page. 
 
@@ -35,9 +35,9 @@ The plugin also contains two filters which act on the "teeny" MCE editor instanc
 
 If you want to use excerpts in pages, add this to your theme's `functions.php` file:
 
-`add_post_type_support('pages', 'excerpt');`
+`add_post_type_support('page', 'excerpt');`
 
-See [add_post_type_support](add_post_type_support) in the Codex for details.
+See [add_post_type_support](http://codex.wordpress.org/Function_Reference/add_post_type_support) in the Codex for details.
  
 If you want to use excerpts in Custom Post Types, do it when you create them using the `supports` array in the arguments for [register_post_type](http://codex.wordpress.org/Function_Reference/register_post_type).
 
@@ -76,24 +76,18 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 
 1. A screenshot showing the rich text editor in a post excerpt
 
+== Contribute ==
+
+Please contribute to the development of this plugin by using it and reporting issues via the Wordpress plugins forum. If you are using it successfully, please post a review and rate the plugin.
+
+I'm maintaining this plugin on Github:
+
+https://github.com/bjorsq/rich-text-excerpts
+
 == Translations ==
 
 The plugin has been translated (using [Google translate](http://translate.google.com/)) into the following languages:
 
 Afrikaans (af), Albanian (al), Arabic (ar), Basque (eu), Belarusian (be_BY), Bulgarian (bg_BG), Bosnian (bs_BA), Catalan (ca), Chinese (zh_CN), Croatian (hr), Czech (cs_CZ), Danish (da_DK), Dutch (nl_NL), Esperanto (eo), Estonian (et), Finnish (fi), French (fr_FR), Gaeilge (ga), Galician (gl_ES), Georgian (ge_GE), German (de_DE), Greek (el_GR), Hebrew (he_IL), Hindi (hi_IN), Hungarian (hu_HU), Icelandic (is_IS), Indonesian (id_ID), Italian (it_IT), Japanese (ja), Javanese (jv_JV), Kannada (kn_IN), Khmer (km_KH), Korean (ko_KR), Lao (lo), Latvian (lv), Lithuanian (lt_LT), Macedonian (mk_MK), Malay (ms_MY), Norwegian (nb_NO), Persian (fa_IR), Polish (pl_PL), Portuguese (pt_PT), Romanian (ro_RO), Russian (ru_RU), Serbian (sr_RS), Slovak (sk_SK), Slovenian (sl_SI), Spanish (es_ES), Swedish (sv_SE), Tamil (ta_LK), Thai (th), Turkish (tr), Ukranian (uk), Urdu (ur), Vietnamese (vi), Welsh (cy).
 
-If you can trnaslate the plugin into another language not listed here, or if you use any of these languages and can check them, please feed back in either the wordpress support forum or on github.
-
-https://github.com/bjorsq/rich-text-excerpts
-
-I am using some tools (in the tools subdirectory in languages) to generate these files automatically.
-
-== Contribute ==
-
-Please contribute to the development of this plugin by using it and reporting issues via the Wordpress plugins forum. If you are using it successfully, please post a review and rate the plugin.
-
-I've switched to using git for source code maintenance, so fi you want to contribute by fixing anything, suggesting enancements, or even coding them yourself, please fork the project at github and get stuck in:
-
-https://github.com/bjorsq/rich-text-excerpts
-
-If you can translate this plugin, please get in touch - there is a POT file with the plugin for translators to use. I've made translations using Google translate, but not sure if these are any good - any edits on thes to improve them are welcome.
+If you can translate this plugin, or improve on the existing translations, please get in touch either through the [Wordpress support forum](http://wordpress.org/support/plugin/rich-text-excerpts) or via [GitHub](https://github.com/bjorsq/rich-text-excerpts)
