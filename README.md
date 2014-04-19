@@ -39,6 +39,10 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 Changelog
 ---------
 
+### 1.3.2
+* Updated Polish translation thanks to [alcoholdenat](https://github.com/alcoholdenat)
+* Updated main plugin file to make it follow the [Wordpress Coding standards](http://make.wordpress.org/core/handbook/coding-standards/php/) more closely.
+
 ### 1.3.1
 * added extra CSS styles to the editor, incorporated from [this forum post](http://wordpress.org/support/topic/better-look-with-a-few-extra-lines-of-code)
 * re-built translations to reflect new admin options, and incorporated the changes suggested by Johan Pirlouit in [this forum post](http://wordpress.org/support/topic/french-translation-updated-and-a-few-other-minor-things-fixed)
@@ -79,9 +83,10 @@ https://github.com/bjorsq/rich-text-excerpts
 Translations
 ------------
 
-The plugin has been translated (using [Google translate](http://translate.google.com/)) into the following languages:
+If you can translate this plugin, or improve on the existing translations (most of which were made using [Google translate](http://translate.google.com/)), please get in touch either through the [Wordpress support forum](http://wordpress.org/support/plugin/rich-text-excerpts) or via [GitHub](https://github.com/bjorsq/rich-text-excerpts).
+
+Many thanks to [alcoholdenat](https://github.com/alcoholdenat) for an updated Polish translation (in 1.3.2 release).
+
+### Available Languages
 
 Afrikaans (af), Albanian (al), Arabic (ar), Basque (eu), Belarusian (be_BY), Bulgarian (bg_BG), Bosnian (bs_BA), Catalan (ca), Chinese (zh_CN), Croatian (hr), Czech (cs_CZ), Danish (da_DK), Dutch (nl_NL), Esperanto (eo), Estonian (et), Finnish (fi), French (fr_FR), Gaeilge (ga), Galician (gl_ES), Georgian (ge_GE), German (de_DE), Greek (el_GR), Hebrew (he_IL), Hindi (hi_IN), Hungarian (hu_HU), Icelandic (is_IS), Indonesian (id_ID), Italian (it_IT), Japanese (ja), Javanese (jv_JV), Kannada (kn_IN), Khmer (km_KH), Korean (ko_KR), Lao (lo), Latvian (lv), Lithuanian (lt_LT), Macedonian (mk_MK), Malay (ms_MY), Norwegian (nb_NO), Persian (fa_IR), Polish (pl_PL), Portuguese (pt_PT), Romanian (ro_RO), Russian (ru_RU), Serbian (sr_RS), Slovak (sk_SK), Slovenian (sl_SI), Spanish (es_ES), Swedish (sv_SE), Tamil (ta_LK), Thai (th), Turkish (tr), Ukranian (uk), Urdu (ur), Vietnamese (vi), Welsh (cy).
-
-If you can translate this plugin, or improve on the existing translations, please get in touch either through the [Wordpress support forum](http://wordpress.org/support/plugin/rich-text-excerpts) or via [GitHub](https://github.com/bjorsq/rich-text-excerpts)
-
