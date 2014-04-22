@@ -2,7 +2,7 @@
 Plugin Name: Rich Text Excerpts
 Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
-Author: Peter Edwards
+Author: Peter Edwards <pete@bjorsq.net>
 Author URI: https://github.com/bjorsq/rich-text-excerpts
 Version: 1.3.2
 License: GPLv3
@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
 	 */
 	check_editor_options = function()
 	{
-		if ($('#rich_text_excerpts_options-editor_type-teeny').prop('checked')) {
+		if ( $('#rich_text_excerpts_options-editor_type-teeny').prop('checked') ) {
 			$('#editor_type_teeny_options').show();
 			$('#editor_type_tiny_options').hide();
 		} else {
@@ -46,9 +46,9 @@ jQuery(document).ready(function($){
 	 */
 	check_post_type_options = function()
 	{
-		if ($('.rte-post-types').length) {
-			if (!$('.rte-post-types:checked').length) {
-				if (lastchecked === false) {
+		if ( $('.rte-post-types').length ) {
+			if ( ! $('.rte-post-types:checked').length ) {
+				if ( lastchecked === false ) {
 					$('.rte-post-types:first').attr('checked', 'checked');
 				} else {
 					lastchecked.attr('checked', 'checked');
@@ -60,13 +60,13 @@ jQuery(document).ready(function($){
 		}
 	},
 
-	/** 
-	 * function to show the meta box settings field if this is the method chosen to 
+	/**
+	 * function to show the meta box settings field if this is the method chosen to
 	 * add the excerpt editor.
 	 */
 	check_metabox_settings = function()
 	{
-		if ($('#rte-use-metabox').prop("checked")) {
+		if ( $('#rte-use-metabox').prop("checked") ) {
 			$('#rte-metabox-settings').show();
 		} else {
 			$('#rte-metabox-settings').hide();
@@ -75,7 +75,7 @@ jQuery(document).ready(function($){
 
 	/**
 	 * TinyMCE doesn't handle being moved in the DOM.  Destroy the
-	 * editor instances at the start of a sort and recreate 
+	 * editor instances at the start of a sort and recreate
 	 * them afterwards.
 	 * From a comment by devesine on the TRAC ticket:
 	 * http://core.trac.wordpress.org/ticket/19173
@@ -86,27 +86,26 @@ jQuery(document).ready(function($){
 		postbox = $(event.target);
 		textarea = postbox.find('textarea.wp-editor-area');
 
-		textarea.each(function(index, element) {
+		textarea.each( function( index, element ) {
 			var editor, is_active;
 
 			editor = tinyMCE.EditorManager.get(element.id);
 			is_active = $(this).parents('.tmce-active').length;
 
-			if (creatingEditor) {
-				if (!editor && is_active) {
+			if ( creatingEditor ) {
+				if ( ! editor && is_active ) {
 					tinyMCE.execCommand('mceAddControl', true, element.id);
 				}
-			}
-			else {
-				if (editor && is_active) {
+			} else {
+				if ( editor && is_active ) {
 					editor.save();
 					tinyMCE.execCommand('mceRemoveControl', true, element.id);
-				}	   
-			} 
+				}
+			}
 		});
 	};
 	/* add event handlers and setup the form */
-	if ($('#rich_text_excerpts_options_form').length) {
+	if ( $('#rich_text_excerpts_options_form').length ) {
 
 		/* add a handler to the radio buttons used for editor type selection */
 		$('.rte-options-editor-type').on('click', function(){
@@ -132,11 +131,11 @@ jQuery(document).ready(function($){
 
 	/**
 	 * this removes the click.postboxes handler added by wordpress to the .postbox h3
-	 * for the rich text excerpt editor when it is placed in a static metabox (the 
+	 * for the rich text excerpt editor when it is placed in a static metabox (the
 	 * postbox class is used for formatting only). Only invoked if the editor is added
 	 * using edit_page_form and edit_form_advanced hooks to make the editor static.
 	 */
-	if ($('.rich-text-excerpt-static').length) {
+	if ( $('.rich-text-excerpt-static').length ) {
 		/* turn off javascript on postbox heading - leave a little time for it to be added first */
 		window.setTimeout(function(){jQuery('.rich-text-excerpt-static h3').unbind('click.postboxes');},500);
 	}
@@ -146,7 +145,7 @@ jQuery(document).ready(function($){
 	 * From a comment by devesine on the TRAC ticket:
 	 * http://core.trac.wordpress.org/ticket/19173
 	 */
-	if ($('.rte-wrap-metabox').length) {
+	if ( $('.rte-wrap-metabox').length ) {
 		$('#poststuff').on('sortstart', function(event) {
 			_triggerAllEditors(event, false);
 		}).on('sortstop', function(event) {

@@ -3,17 +3,17 @@
   "version": "0.0.1",
   "description": "Wordpress plugin which adds rich text editing capability for excerpts using wp_editor()",
   "repository": {
-    "type": "git",
-    "url": "git@github.com:bjorsq/rich-text-excerpts.git"
+  "type": "git",
+  "url": "git@github.com:bjorsq/rich-text-excerpts.git"
   },
   "author": "Peter Edwards <Peter.Edwards@p-2.biz>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bjorsq/rich-text-excerpts/issues"
+  "url": "https://github.com/bjorsq/rich-text-excerpts/issues"
   },
   "homepage": "https://github.com/bjorsq/rich-text-excerpts",
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-po2mo": "*"
+  "grunt": "~0.4.2",
+  "grunt-po2mo": "*"
   }
 }

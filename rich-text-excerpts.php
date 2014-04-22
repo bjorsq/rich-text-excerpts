@@ -3,7 +3,7 @@
 Plugin Name: Rich Text Excerpts
 Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
-Author: Peter Edwards
+Author: Peter Edwards <pete@bjorsq.net>
 Author URI: https://github.com/bjorsq/rich-text-excerpts
 Version: 1.3.2
 Text Domain: rich-text-excerpts
@@ -33,7 +33,7 @@ class Rich_Text_Excerpts {
 	public static function register()
 	{
 		/**
-		 * adds an action to remove the default meta box 
+		 * adds an action to remove the default meta box
 		 * just after it is added to the page
 		 */
 		add_action( 'add_meta_boxes', array( __CLASS__, 'remove_excerpt_meta_box' ), 1, 1 );
@@ -312,15 +312,15 @@ class Rich_Text_Excerpts {
 		add_settings_section(
 			'post-type-options',
 			__('Post Types', 'rich-text-excerpts'),
-			array( __CLASS__, 'options_section_text' ), 
+			array( __CLASS__, 'options_section_text' ),
 			'rte'
 		);
 				
 		add_settings_field(
-			'supported_post_types', 
-			__('Choose which post types will use a rich text editor for excerpts', 'rich-text-excerpts'), 
-			array( __CLASS__, 'options_setting_post_types' ), 
-			'rte', 
+			'supported_post_types',
+			__('Choose which post types will use a rich text editor for excerpts', 'rich-text-excerpts'),
+			array( __CLASS__, 'options_setting_post_types' ),
+			'rte',
 			'post-type-options'
 		);
 
@@ -328,31 +328,32 @@ class Rich_Text_Excerpts {
 		add_settings_section(
 			'editor-options',
 			__('Editor Options', 'rich-text-excerpts'),
-			array( __CLASS__, 'options_section_text' ), 
+			array( __CLASS__, 'options_section_text' ),
 			'rte'
 		);
 
 		add_settings_field(
-			'metabox', 
-			__('Use a meta box', 'rich-text-excerpts'), 
-			array( __CLASS__, 'options_setting_metabox' ), 
-			'rte', 
+			'metabox',
+			__('Use a meta box', 'rich-text-excerpts'),
+			array( __CLASS__, 'options_setting_metabox' ),
+			'rte',
 			'editor-options'
 		);
 
 		add_settings_field(
-			'editor_type', 
-			__('Choose which Editor is used for excerpts', 'rich-text-excerpts'), 
-			array( __CLASS__, 'options_setting_editor_type' ), 
-			'rte', 
+			'editor_type',
+			__('Choose which Editor is used for excerpts', 'rich-text-excerpts'),
+			array( __CLASS__, 'options_setting_editor_type' ),
+			'rte',
 			'editor-options'
 		);
+
 		/* settings for editor */
 		add_settings_field(
-			'editor_settings', 
-			__('Editor Settings', 'rich-text-excerpts'), 
-			array( __CLASS__, 'options_editor_settings' ), 
-			'rte', 
+			'editor_settings',
+			__('Editor Settings', 'rich-text-excerpts'),
+			array( __CLASS__, 'options_editor_settings' ),
+			'rte',
 			'editor-options'
 		);
 	}
@@ -394,7 +395,7 @@ class Rich_Text_Excerpts {
 	 * settings section text
 	 */
 	public static function options_section_text()
-	{ 
+	{
 		echo "";
 	}
 
@@ -402,7 +403,7 @@ class Rich_Text_Excerpts {
 	 * post type support settings
 	 */
 	public static function options_setting_post_types()
-	{ 
+	{
 		$options = self::get_plugin_options();
 		$post_types = get_post_types( array( "public" => true ), 'objects' );
 		foreach ( $post_types as $post_type ) {
@@ -421,17 +422,20 @@ class Rich_Text_Excerpts {
 	public static function options_setting_metabox()
 	{
 		$options = self::get_plugin_options();
+
 		/* whether or not to use a metabox for excerpts */
 		$chckd = $options["metabox"]["use"]? ' checked="checked"': '';
-		printf('<p class="rte-use-metabox-input"><input class="rte-metabox" type="checkbox" name="rich_text_excerpts_options[metabox][use]" id="rte-use-metabox" value="1"%s /> <label for="rte-use-metabox">%s</label></p>', $chckd, __('Check this box to put the excerpt in a draggable meta box', 'rich-text-excerpts'));
-		print('<div id="rte-metabox-settings">');
+		printf( '<p class="rte-use-metabox-input"><input class="rte-metabox" type="checkbox" name="rich_text_excerpts_options[metabox][use]" id="rte-use-metabox" value="1"%s /> <label for="rte-use-metabox">%s</label></p>', $chckd, __('Check this box to put the excerpt in a draggable meta box', 'rich-text-excerpts') );
+		print( '<div id="rte-metabox-settings">' );
+
 		/* metabox context settings */
-		print('<p><label for="rte-metabox-context"><select name="rich_text_excerpts_options[metabox][context]">' );
-		foreach ( array('normal', 'advanced', 'side' ) as $context ) {
+		print( '<p><label for="rte-metabox-context"><select name="rich_text_excerpts_options[metabox][context]">' );
+		foreach ( array( 'normal', 'advanced', 'side' ) as $context ) {
 			$sel = ( $options['metabox']['context'] == $context ) ? ' selected="selected"' : '';
 			printf( '<option value="%s"%s>%s</option>', $context, $sel, $context );
 		}
 		printf( '</select> %s</p>', __('Set the part of the page where the excerpt editor should be shown', 'rich-text-excerpts') );
+
 		/* metabox priority settings */
 		print( '<p><label for="rte-metabox-priority"><select name="rich_text_excerpts_options[metabox][priority]">' );
 		foreach (array('high', 'core', 'default', 'low') as $priority) {
@@ -446,7 +450,7 @@ class Rich_Text_Excerpts {
 	 * editor type radios
 	 */
 	public static function options_setting_editor_type()
-	{ 
+	{
 		$options = self::get_plugin_options();
 		$chckd = ( "teeny" === $options["editor_type"] ) ? ' checked="checked"': '';
 		printf( '<p><label for="rich_text_excerpts_options-editor_type-teeny"><input type="radio" name="rich_text_excerpts_options[editor_type]" id="rich_text_excerpts_options-editor_type-teeny" class="rte-options-editor-type" value="teeny"%s /> %s</label></p>', $chckd, __('Use the minimal editor configuration used in PressThis', 'rich-text-excerpts') );
@@ -467,7 +471,7 @@ class Rich_Text_Excerpts {
 	 * @see http://codex.wordpress.org/Function_Reference/wp_editor
 	 */
 	public static function options_editor_settings()
-	{ 
+	{
 		$options = self::get_plugin_options();
 		$chckd = ( $options['editor_settings']['wpautop'] ) ? '' : ' checked="checked"';
 		printf( '<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][wpautop]" id="rich_text_excerpts_options-editor_settings-wpautop" value="0"%s /> <label for="rich_text_excerpts_options-editor_settings-wpautop">%s.</label></p>', $chckd, __('Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in the HTML editor This will make it possible to use more advanced coding in the HTML editor without the back-end filtering affecting it much. However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently', 'rich-text-excerpts') );
@@ -498,12 +502,12 @@ class Rich_Text_Excerpts {
 	/**
 	 * takes a string of comma-separated arguments and splits it into an array
 	 */
-	public static function get_mce_array($inputStr = '')
+	public static function get_mce_array( $inputStr = '' )
 	{
 		if ( "" === trim($inputStr) ) {
 			return array();
 		} else {
-			return self::cleanup_array( explode(',', $inputStr) );
+			return self::cleanup_array( explode( ',', $inputStr ) );
 		}
 	}
 
@@ -511,7 +515,7 @@ class Rich_Text_Excerpts {
 	 * removes empty elements from an array
 	 * Always returns an array, no matter what is passed to it
 	 */
-	public static function cleanup_array($arr = array())
+	public static function cleanup_array( $arr = array() )
 	{
 		$output = array();
 		if ( is_array( $arr ) && count( $arr ) ) {
@@ -531,15 +535,17 @@ class Rich_Text_Excerpts {
 	 */
 	public static function validate_rich_text_excerpts_options( $plugin_options )
 	{
-		//print_r($plugin_options);exit;
 		/* get defaults as a fallabck for missing values */
 		$defaults = self::get_default_plugin_options();
+
 		/* make sure supported post types is an array */
 		if ( ! isset( $plugin_options['supported_post_types'] ) || ! is_array($plugin_options['supported_post_types'] ) ) {
 			$plugin_options['supported_post_types'] = $defaults['supported_post_types'];
 		}
+
 		/* see if the editor is being embedded in a metabox */
 		$plugin_options['metabox']['use'] = (isset($plugin_options['metabox']['use']) && $plugin_options['metabox']['use'] == "1")? true: false;
+
 		/* check context is an allowed value */
 		if ( ! isset( $plugin_options['metabox']['context'] ) ) {
 			$plugin_options['metabox']['context'] = $defaults['metabox']['context'];
@@ -548,6 +554,7 @@ class Rich_Text_Excerpts {
 				$plugin_options['metabox']['context'] = $defaults['metabox']['context'];
 			}
 		}
+
 		/* check priority is an allowed value */
 		if ( ! isset( $plugin_options['metabox']['priority'] ) ) {
 			$plugin_options['metabox']['priority'] = $defaults['metabox']['priority'];
@@ -556,37 +563,45 @@ class Rich_Text_Excerpts {
 				$plugin_options['metabox']['priority'] = $defaults['metabox']['priority'];
 			}
 		}
+
 		/* make sure editor type is one of the allowed types */
 		if ( ! isset( $plugin_options['editor_type'] ) || ! in_array( $plugin_options['editor_type'], array( 'teeny','tiny' ) ) ) {
 			$plugin_options['editor_type'] = $defaults['editor_type'];
 		}
+
 		/* make sure there are some editor settings */
 		if ( ! isset( $plugin_options['editor_settings'] ) ) {
 			$plugin_options['editor_settings'] = $defaults['editor_settings'];
 		} else {
+
 			/* make sure wpautop is set, and a boolean value */
 			if ( ! isset( $plugin_options['editor_settings']['wpautop'] ) ) {
 				$plugin_options['editor_settings']['wpautop'] = $defaults['editor_settings']['wpautop'];
 			} else {
 				$plugin_options['editor_settings']['wpautop'] = (bool) $plugin_options['editor_settings']['wpautop'];
 			}
+
 			/* make sure media_buttons is set, and a boolean value */
 			if ( ! isset( $plugin_options['editor_settings']['media_buttons'] ) ) {
 				$plugin_options['editor_settings']['media_buttons'] = $defaults['editor_settings']['media_buttons'];
 			} else {
 				$plugin_options['editor_settings']['media_buttons'] = (bool) $plugin_options['editor_settings']['media_buttons'];
 			}
+
 			/* make sure textarea_rows is set, and is an integer greater than 3 */
 			$plugin_options['editor_settings']['textarea_rows'] = ( isset( $plugin_options['editor_settings']['textarea_rows'] ) ) ? intval( $plugin_options['editor_settings']['textarea_rows'] ): $defaults['editor_settings']['textarea_rows'];
 			if ( $plugin_options['editor_settings']['textarea_rows'] < 3 ) {
 				$plugin_options['editor_settings']['textarea_rows'] = 3;
 			}
+
 			/* make sure plugins and buttons are set, and are arrays */
 			if ( ! isset( $plugin_options['editor_settings']['plugins'] ) ) {
 				$plugin_options['editor_settings']['plugins'] = $defaults['editor_settings']['plugins'];
 			} else {
+
 				/* if this is a string, we are coming from the settings form */
 				if ( ! is_array( $plugin_options['editor_settings']['plugins'] ) ) {
+
 					/* tidy up the string and make sure we end up with an array */
 					if ( "" === trim( $plugin_options['editor_settings']['plugins'] ) ) {
 						$plugin_options['editor_settings']['plugins'] = array();
@@ -600,8 +615,10 @@ class Rich_Text_Excerpts {
 			if ( ! isset( $plugin_options['editor_settings']['buttons'] ) ) {
 				$plugin_options['editor_settings']['buttons'] = $defaults['editor_settings']['buttons'];
 			} else {
+
 				/* if this is a string, we are coming from the settings form */
 				if ( ! is_array( $plugin_options['editor_settings']['buttons'] ) ) {
+
 					/* tidy up the string and make sure we end up with an array */
 					if ( "" === trim( $plugin_options['editor_settings']['buttons'] ) ) {
 						$plugin_options['editor_settings']['buttons'] = array();
@@ -612,6 +629,7 @@ class Rich_Text_Excerpts {
 					$plugin_options['editor_settings']['buttons'] = self::cleanup_array( $plugin_options['editor_settings']['buttons'] );
 				}
 			}
+			
 			/* if the buttons array is empty, reset both buttons and plugins to the default value */
 			if ( ! count( $plugin_options['editor_settings']['buttons'] ) ) {
 				$plugin_options['editor_settings']['buttons'] = $defaults['editor_settings']['buttons'];
