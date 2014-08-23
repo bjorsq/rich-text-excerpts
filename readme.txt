@@ -3,7 +3,7 @@ Contributors: bjorsq
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ2WC8UHFMEQ
 Tags: excerpt, editor, TinyMCE, formatting
 Requires at least: 3.3
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: 1.3.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -48,7 +48,9 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 * Updated Polish translation thanks to [alcoholdenat](https://github.com/alcoholdenat).
 * Updated main plugin files to make them follow the [Wordpress Coding standards](http://make.wordpress.org/core/handbook/coding-standards/php/).
 * Added Grunt build for language file compilation.
-* Bumped "Tested up to" value to Wordpress 3.9 and updated screnshot.
+* Bumped "Tested up to" value to Wordpress 4.0 and updated screnshot.
+* Split javascript into two files and changed javascript and css inclusion strategy.
+* Added an option to set the height of the editor.
 
 = 1.3.1 =
 * added extra CSS styles to the editor, incorporated from [this forum post](http://wordpress.org/support/topic/better-look-with-a-few-extra-lines-of-code).

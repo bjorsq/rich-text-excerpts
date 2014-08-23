@@ -189,6 +189,7 @@ class Rich_Text_Excerpts {
 			"media_buttons" => $plugin_options['editor_settings']['media_buttons'],
 			"textarea_name" => 'excerpt',
 			"textarea_rows" => $plugin_options['editor_settings']['textarea_rows'],
+			"editor_height" => $plugin_options['editor_settings']['editor_height'],
 			"teeny"         => ( "teeny" === $plugin_options['editor_type'] )? true : false
 		);
 		/* get decoded content for the editor */
@@ -261,9 +262,11 @@ class Rich_Text_Excerpts {
 		$options_page = add_submenu_page( 'options-general.php', __( 'Rich Text Excerpts', 'rich-text-excerpts' ), __( 'Rich Text Excerpts', 'rich-text-excerpts' ), "manage_options", "rich_text_excerpts_options", array( __CLASS__, "plugin_options_page" ) );
 		/**
 		 * Use the admin_print_scripts action to add scripts.
-		 * Script is needed on both the theme options page and post/page editor
+		 * Admin script is only needed on plugin admin page, but editor script is needed on all pages
+		 * which include the editor
 		 */
-		add_action( 'admin_print_scripts', array( __CLASS__, 'plugin_admin_scripts' ) );
+		add_action( 'admin_print_scripts-' . $options_page, array( __CLASS__, 'plugin_admin_scripts' ) );
+		add_action( 'admin_print_scripts', array( __CLASS__, 'plugin_editor_scripts' ) );
 		/**
 		 * Use the admin_print_styles action to add CSS.
 		 * CSS is needed for the post/page editor only
@@ -280,11 +283,25 @@ class Rich_Text_Excerpts {
 	}
 	
 	/**
+	 * add script to admin for plugin options
+	 */
+	public static function plugin_editor_scripts()
+	{
+		$screen = get_current_screen();
+		if ( self::post_type_supported( $screen->post_type ) ) {
+			wp_enqueue_script('RichTextExcerptsEditorScript', plugins_url('rich-text-excerpts-editor.js', __FILE__), array('jquery'));
+		}
+	}
+
+	/**
 	 * add css to admin for editor formatting
 	 */
 	public static function plugin_admin_styles()
 	{
-		wp_enqueue_style('RichTextExcerptsAdminCSS', plugins_url('rich-text-excerpts.css', __FILE__));
+		$screen = get_current_screen();
+		if ( self::post_type_supported( $screen->post_type ) ) {
+			wp_enqueue_style('RichTextExcerptsAdminCSS', plugins_url('rich-text-excerpts.css', __FILE__));
+		}
 	}
 
 	/**
@@ -385,6 +402,7 @@ class Rich_Text_Excerpts {
 				"wpautop" => true,
 				"media_buttons" => false,
 				"textarea_rows" => 3,
+				"editor_height" => 150,
 				"buttons" => array('bold', 'italic', 'underline', 'separator','pastetext', 'pasteword', 'removeformat', 'separator', 'charmap', 'blockquote', 'separator', 'bullist', 'numlist', 'separator', 'justifyleft', 'justifycenter', 'justifyright', 'separator', 'undo', 'redo', 'separator', 'link', 'unlink'),
 				"plugins" => array('charmap', 'paste')
 			)
@@ -412,7 +430,7 @@ class Rich_Text_Excerpts {
 				printf( '<p class="rte-post-types-inputs"><input class="rte-post-types" type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type->name, $post_type->name, $chckd, $post_type->name, $post_type->labels->name );
 			}
 		}
-		printf('<div class="rte-post-types-error"></p>%s</p></div>', __('If you want to disable support for all post types, please disable the plugin', 'rich-text-excerpts'));
+		printf('<div style="background-color: rgb(255, 255, 224);border:1px solid rgb(230, 219, 85); border-radius:3px;	color: rgb(51, 51, 51);	padding: 4px 0.5em;	display:none;"></p>%s</p></div>', __('If you want to disable support for all post types, please disable the plugin', 'rich-text-excerpts'));
 		printf('<p>%s<br /><a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a></p>', __('Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see the Wordpress Codex', 'rich-text-excerpts'));
 	}
 
@@ -429,18 +447,29 @@ class Rich_Text_Excerpts {
 		print( '<div id="rte-metabox-settings">' );
 
 		/* metabox context settings */
+		$contexts = array(
+			'normal'   => __('normal', 'rich-text-excerpts'),
+			'advanced' => __('advanced', 'rich-text-excerpts'),
+			'side'     => __('side', 'rich-text-excerpts')
+		);
 		print( '<p><label for="rte-metabox-context"><select name="rich_text_excerpts_options[metabox][context]">' );
-		foreach ( array( 'normal', 'advanced', 'side' ) as $context ) {
-			$sel = ( $options['metabox']['context'] == $context ) ? ' selected="selected"' : '';
-			printf( '<option value="%s"%s>%s</option>', $context, $sel, $context );
+		foreach ( $contexts as $context => $label ) {
+			$sel = ( $options['metabox']['context'] == $context ) ? ' selected' : '';
+			printf( '<option value="%s"%s>%s</option>', $context, $sel, $label );
 		}
 		printf( '</select> %s</p>', __('Set the part of the page where the excerpt editor should be shown', 'rich-text-excerpts') );
 
 		/* metabox priority settings */
+		$priorities = array(
+			'high'    => __('high', 'rich-text-excerpts'),
+			'core'    => __('core', 'rich-text-excerpts'),
+			'default' => __('default', 'rich-text-excerpts'),
+			'low'     => __('low', 'rich-text-excerpts')
+		);
 		print( '<p><label for="rte-metabox-priority"><select name="rich_text_excerpts_options[metabox][priority]">' );
-		foreach (array('high', 'core', 'default', 'low') as $priority) {
-			$sel = ( $options['metabox']['priority'] == $priority ) ? ' selected="selected"' : '';
-			printf( '<option value="%s"%s>%s</option>', $priority, $sel, $priority);
+		foreach ( $priorities as $priority => $label ) {
+			$sel = ( $options['metabox']['priority'] == $priority ) ? ' selected' : '';
+			printf( '<option value="%s"%s>%s</option>', $priority, $sel, $label);
 		}
 		printf( '</select> %s</p>', __('Set the priority of the excerpt editor', 'rich-text-excerpts') );
 		print( '</div>' );
@@ -478,6 +507,7 @@ class Rich_Text_Excerpts {
 		$chckd = ( $options['editor_settings']['media_buttons'] ) ? 'checked="checked"' : '';
 		printf( '<p><input type="checkbox" name="rich_text_excerpts_options[editor_settings][media_buttons]" id="rich_text_excerpts_options-editor_settings-media_buttons"%s /> <label for="rich_text_excerpts_options-editor_settings-media_buttons">%s</label></p>', $chckd, __('Enable upload media button', 'rich-text-excerpts') );
 		printf( '<p><input type="text" length="2" name="rich_text_excerpts_options[editor_settings][textarea_rows]" id="rich_text_excerpts_options-editor_settings-textarea_rows" value="%d" /> <label for="rich_text_excerpts_options-editor_settings-textarea_rows">%s</label></p>', intVal($options['editor_settings']['textarea_rows']), __('Number of rows to use in the text editor (minimum is 3)', 'rich-text-excerpts') );
+		printf( '<p><input type="text" length="4" name="rich_text_excerpts_options[editor_settings][editor_height]" id="rich_text_excerpts_options-editor_settings-editor_height" value="%d" /> <label for="rich_text_excerpts_options-editor_settings-editor_height">%s</label></p>', intVal($options['editor_settings']['editor_height']), __('Height of editor in pixels (between 50 and 5000)', 'rich-text-excerpts') );
 		printf( '<p><strong>%s</strong></p>', __('Toolbar Buttons and Plugins', 'rich-text-excerpts') );
 		/**
 		 * settings for teeny text editor
@@ -592,6 +622,12 @@ class Rich_Text_Excerpts {
 			$plugin_options['editor_settings']['textarea_rows'] = ( isset( $plugin_options['editor_settings']['textarea_rows'] ) ) ? intval( $plugin_options['editor_settings']['textarea_rows'] ): $defaults['editor_settings']['textarea_rows'];
 			if ( $plugin_options['editor_settings']['textarea_rows'] < 3 ) {
 				$plugin_options['editor_settings']['textarea_rows'] = 3;
+			}
+
+			/* make sure editor_height is set, and is an integer greater between 50 and 5000 */
+			$plugin_options['editor_settings']['editor_height'] = ( isset( $plugin_options['editor_settings']['editor_height'] ) ) ? intval( $plugin_options['editor_settings']['editor_height'] ): $defaults['editor_settings']['editor_height'];
+			if ( $plugin_options['editor_settings']['editor_height'] < 50 || $plugin_options['editor_settings']['editor_height'] > 5000 ) {
+				$plugin_options['editor_settings']['editor_height'] = $defaults['editor_settings']['editor_height'];
 			}
 
 			/* make sure plugins and buttons are set, and are arrays */

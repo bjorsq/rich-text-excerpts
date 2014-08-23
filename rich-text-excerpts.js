@@ -73,37 +73,6 @@ jQuery(document).ready(function($){
 		}
 	},
 
-	/**
-	 * TinyMCE doesn't handle being moved in the DOM.  Destroy the
-	 * editor instances at the start of a sort and recreate
-	 * them afterwards.
-	 * From a comment by devesine on the TRAC ticket:
-	 * http://core.trac.wordpress.org/ticket/19173
-	 */
-	_triggerAllEditors = function(event, creatingEditor) {
-		var postbox, textarea;
-
-		postbox = $(event.target);
-		textarea = postbox.find('textarea.wp-editor-area');
-
-		textarea.each( function( index, element ) {
-			var editor, is_active;
-
-			editor = tinyMCE.EditorManager.get(element.id);
-			is_active = $(this).parents('.tmce-active').length;
-
-			if ( creatingEditor ) {
-				if ( ! editor && is_active ) {
-					tinyMCE.execCommand('mceAddControl', true, element.id);
-				}
-			} else {
-				if ( editor && is_active ) {
-					editor.save();
-					tinyMCE.execCommand('mceRemoveControl', true, element.id);
-				}
-			}
-		});
-	};
 	/* add event handlers and setup the form */
 	if ( $('#rich_text_excerpts_options_form').length ) {
 
@@ -129,27 +98,4 @@ jQuery(document).ready(function($){
 		check_post_type_options();
 	}
 
-	/**
-	 * this removes the click.postboxes handler added by wordpress to the .postbox h3
-	 * for the rich text excerpt editor when it is placed in a static metabox (the
-	 * postbox class is used for formatting only). Only invoked if the editor is added
-	 * using edit_page_form and edit_form_advanced hooks to make the editor static.
-	 */
-	if ( $('.rich-text-excerpt-static').length ) {
-		/* turn off javascript on postbox heading - leave a little time for it to be added first */
-		window.setTimeout(function(){jQuery('.rich-text-excerpt-static h3').unbind('click.postboxes');},500);
-	}
-
-	/**
-	 * these functions will be invoked if the editor is placed inside a draggable metabox
-	 * From a comment by devesine on the TRAC ticket:
-	 * http://core.trac.wordpress.org/ticket/19173
-	 */
-	if ( $('.rte-wrap-metabox').length ) {
-		$('#poststuff').on('sortstart', function(event) {
-			_triggerAllEditors(event, false);
-		}).on('sortstop', function(event) {
-			_triggerAllEditors(event, true);
-		});
-	}
 });
