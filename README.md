@@ -34,7 +34,32 @@ If you want to use excerpts in pages, add this to your theme's `functions.php` f
 
 See [add_post_type_support](http://codex.wordpress.org/Function_Reference/add_post_type_support) in the Codex for details.
  
-If you want to use excerpts in Custom Post Types, do it when you create them using the `supports` array in the arguments for [register_post_type](http://codex.wordpress.org/Function_Reference/register_post_type).
+If you want to use excerpts in Custom Post Types, do it when you create them using the `supports` array in the arguments for [register_post_type](http://codex.wordpress.org/Function_Reference/register_post_type) or use a plugin like [Types](http://wordpress.org/plugins/types/).
+
+Frequently Asked Questions
+--------------------------
+
+### I activated the plugin, but the rich text editor isn't working for [pages|custom post types] - why?
+
+This plugin has a settings page where you can configure which post types use a rich text editor for their excerpts - by default only posts will use the rich text editor. The post types displayed on the settings page are only those which support excerpts, so if you don't see your post type here, it doesn't support manual excerpts.
+
+### My excerpts don't appear on my site with the formatting I apply using the editor - why?
+
+This plugin only adds the ability to edit excerpts in the Wordpress admin area using a Rich Text editor. How these excerpts are displayed on your site, or whether they are displayed at all, is the responsibility of the theme you are using.
+
+Most themes will use the 'correct' way of displaying hand-crafted excerpts, which is to call `get_the_excerpt()` outside the wordpress 'loop', or `the_excerpt()` inside the loop. However, there are other wordpress functons which can be used to get excerpts, such as [`wp_trim_excerpt()`](http://codex.wordpress.org/Function_Reference/wp_trim_excerpt), which will generate an excerpt from the post content rather than using the excerpt field. Themes could also remove all formatting and shortcodes from excerpts.
+
+### My excerpts contain shortcodes, but they aren't showing up on my site - why?
+
+Again, the way excerpts are displayed on your site, or whether they are displayed at all, is the responsibility of the theme you are using (and not this plugin).
+
+If you have access to the theme files, there are a number of ways you can process shortcodes in excerpts, depending on the method used to display them in the theme. For instance, if the excerpt is added to pages/posts using `the_excerpt()`, you could change this to `echo do_shortcode(get_the_excerpt())`. Another approach would be to try the techniques outlined here:
+
+http://stephanieleary.com/2010/02/using-shortcodes-everywhere/
+
+### I'm using another plugin which alters excertps in the Wordpress Admin area, and this plugin disables these features - can this be fixed?
+
+Other plugins which enhance the excerpt editor in some way will probably have issues with this plugin, as it removes and re-adds the excerpt editor meta box. The best solution would be to encourage the developers of the other plugin to utilise a rich text editor in their plugin (it isn't hard!).
 
 Changelog
 ---------

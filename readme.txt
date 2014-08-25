@@ -8,7 +8,7 @@ Stable tag: 1.3.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
-A Wordpress plugin which swaps out the textarea used for excerpts with a TinyMCE editor instance.
+A Wordpress plugin which enables Rich Text editing in excerpts for any post type which supports them.
 
 == Description ==
 
@@ -40,6 +40,38 @@ If you want to use excerpts in pages, add this to your theme's `functions.php` f
 See [add_post_type_support](http://codex.wordpress.org/Function_Reference/add_post_type_support) in the Codex for details.
  
 If you want to use excerpts in Custom Post Types, do it when you create them using the `supports` array in the arguments for [register_post_type](http://codex.wordpress.org/Function_Reference/register_post_type).
+
+== Frequently Asked Questions ==
+
+= I activated the plugin, but the rich text editor isn't working for [pages|custom post types] - why? =
+
+This plugin has a settings page where you can configure which post types use a rich text editor for their excerpts - by default only posts will use the rich text editor. The post types displayed on the settings page are only those which support excerpts, so if you don't see your post type here, it doesn't support manual excerpts.
+
+If you want to use excerpts in pages, add this to your theme's `functions.php` file:
+
+`add_post_type_support('page', 'excerpt');`
+
+See [add_post_type_support](http://codex.wordpress.org/Function_Reference/add_post_type_support) in the Codex for details.
+ 
+If you want to use excerpts in Custom Post Types, do it when you create them using the `supports` array in the arguments for [register_post_type](http://codex.wordpress.org/Function_Reference/register_post_type), or use a plugin like [Types](http://wordpress.org/plugins/types/).
+
+= My excerpts don't appear on my site with the formatting I apply using the editor - why? =
+
+This plugin only adds the ability to edit excerpts in the Wordpress admin area using a Rich Text editor. How these excerpts are displayed on your site, or whether they are displayed at all, is the responsibility of the theme you are using.
+
+Most themes will use the 'correct' way of displaying hand-crafted excerpts, which is to call `get_the_excerpt()` outside the wordpress 'loop', or `the_excerpt()` inside the loop. However, there are other wordpress functons which can be used to get excerpts, such as [`wp_trim_excerpt()`](http://codex.wordpress.org/Function_Reference/wp_trim_excerpt), which will generate an excerpt from the post content rather than using the excerpt field. Themes could also remove all formatting and shortcodes from excerpts.
+
+= My excerpts contain shortcodes, but they aren't showing up on my site - why? =
+
+Again, the way excerpts are displayed on your site, or whether they are displayed at all, is the responsibility of the theme you are using (and not this plugin).
+
+If you have access to the theme files, there are a number of ways you can process shortcodes in excerpts, depending on the method used to display them in the theme. For instance, if the excerpt is added to pages/posts using `the_excerpt()`, you could change this to `echo do_shortcode(get_the_excerpt())`. Another approach would be to try the techniques outlined here:
+
+http://stephanieleary.com/2010/02/using-shortcodes-everywhere/
+
+= I'm using another plugin which alters excertps in the Wordpress Admin area, and this plugin disables these features - can this be fixed? =
+
+Other plugins which enhance the excerpt editor in some way will probably have issues with this plugin, as it removes and re-adds the excerpt editor meta box. The best solution would be to encourage the developers of the other plugin to utilise a rich text editor in their plugin (it isn't hard!).
 
 
 == Changelog ==
@@ -102,7 +134,7 @@ If you can translate this plugin, or improve on the existing translations (most 
 
 Many thanks to [alcoholdenat](https://github.com/alcoholdenat) for an updated Polish translation (in the 1.3.2 release).
 
-=== Available Languages ===
+= Available Languages =
 
 Afrikaans (af), Albanian (al), Arabic (ar), Basque (eu), Belarusian (be_BY), Bulgarian (bg_BG), Bosnian (bs_BA), Catalan (ca), Chinese (zh_CN), Croatian (hr), Czech (cs_CZ), Danish (da_DK), Dutch (nl_NL), Esperanto (eo), Estonian (et), Finnish (fi), French (fr_FR), Gaeilge (ga), Galician (gl_ES), Georgian (ge_GE), German (de_DE), Greek (el_GR), Hebrew (he_IL), Hindi (hi_IN), Hungarian (hu_HU), Icelandic (is_IS), Indonesian (id_ID), Italian (it_IT), Japanese (ja), Javanese (jv_JV), Kannada (kn_IN), Khmer (km_KH), Korean (ko_KR), Lao (lo), Latvian (lv), Lithuanian (lt_LT), Macedonian (mk_MK), Malay (ms_MY), Norwegian (nb_NO), Persian (fa_IR), Polish (pl_PL), Portuguese (pt_PT), Romanian (ro_RO), Russian (ru_RU), Serbian (sr_RS), Slovak (sk_SK), Slovenian (sl_SI), Spanish (es_ES), Swedish (sv_SE), Tamil (ta_LK), Thai (th), Turkish (tr), Ukranian (uk), Urdu (ur), Vietnamese (vi), Welsh (cy).
 
