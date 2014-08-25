@@ -1,4 +1,4 @@
-# Copyright (C) 2013 Rich Text Excerpts
+# Copyright (C) 2014 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
@@ -8,57 +8,55 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-08-23 21:26:24+00:00\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 "Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+#: rich-text-excerpts.php:158 rich-text-excerpts.php:181
 msgid "Excerpt"
 msgstr "Trích đoạn "
 
-#: rich-text-excerpts.php:240
+#: rich-text-excerpts.php:250
 msgid "Settings"
 msgstr "Cài đặt "
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:252
+#: rich-text-excerpts.php:262
 msgid "Rich Text Excerpts"
 msgstr "Trích Rich Text "
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:312
 msgid "Rich Text Excerpts Options"
 msgstr "Rich Text Trích Tùy chọn "
 
-#: rich-text-excerpts.php:291
+#: rich-text-excerpts.php:317
 msgid "Save Changes"
 msgstr "Lưu Thay đổi "
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:331
 msgid "Post Types"
 msgstr "Gửi các loại "
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:338
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr "Chọn loại bài viết sẽ sử dụng một trình soạn thảo văn bản phong phú cho những đoạn trích "
 
-#: rich-text-excerpts.php:321
+#: rich-text-excerpts.php:347
 msgid "Editor Options"
 msgstr "Các tùy chọn biên tập viên "
 
-#: rich-text-excerpts.php:328
+#: rich-text-excerpts.php:354
 msgid "Use a meta box"
 msgstr "Sử dụng một hộp meta "
 
-#: rich-text-excerpts.php:336
+#: rich-text-excerpts.php:362
 msgid "Choose which Editor is used for excerpts"
 msgstr "Chọn Editor được sử dụng cho những đoạn trích "
 
-#: rich-text-excerpts.php:344
+#: rich-text-excerpts.php:371
 msgid "Editor Settings"
 msgstr "Cài đặt trình biên tập "
 
-#: rich-text-excerpts.php:405
+#: rich-text-excerpts.php:433
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
@@ -76,65 +74,69 @@ msgstr ""
 "hiện đang hỗ trợ trích đoạn - để hỗ trợ thêm cho các trích đoạn cho một loại bài, xem "
 "Wordpress Codex "
 
-#: rich-text-excerpts.php:417
+#: rich-text-excerpts.php:446
 msgid "Check this box to put the excerpt in a draggable meta box"
 msgstr "Kiểm tra hộp này để đưa các trích đoạn trong một hộp siêu kéo "
 
-#: rich-text-excerpts.php:425
+#: rich-text-excerpts.php:460
 msgid "Set the part of the page where the excerpt editor should be shown"
 msgstr "Thiết lập một phần của trang web mà các biên tập viên trích đoạn sẽ được hiển thị "
 
-#: rich-text-excerpts.php:432
+#: rich-text-excerpts.php:474
 msgid "Set the priority of the excerpt editor"
 msgstr "Thiết lập các ưu tiên của trình biên tập đoạn trích "
 
-#: rich-text-excerpts.php:443
+#: rich-text-excerpts.php:485
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr "Sử dụng cấu hình biên tập tối thiểu được sử dụng trong PressThis "
 
-#: rich-text-excerpts.php:445
+#: rich-text-excerpts.php:487
 msgid "Use the full version of the editor"
 msgstr "Sử dụng phiên bản đầy đủ của các biên tập viên "
 
-#: rich-text-excerpts.php:446
+#: rich-text-excerpts.php:488
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
 "Chọn để sử dụng trình biên tập TinyMCE đầy đủ, hoặc 'teeny' "
 "phiên bản của trình biên tập. "
 
-#: rich-text-excerpts.php:464
+#: rich-text-excerpts.php:506
 msgid ""
-"Stop removing the <p> and <br> tags when saving and show them in "
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"Ngăn chặn loại bỏ các <p> và <br> khi lưu và hiển thị chúng trong "
+"Ngăn chặn loại bỏ các &lt;p&gt; và &lt;br&gt; khi lưu và hiển thị chúng trong "
 "trình biên tập HTML này sẽ làm cho nó có thể sử dụng mã hóa tiên tiến hơn trong "
 "trình biên tập HTML mà không có bộ lọc phía sau ảnh hưởng đến nó nhiều. Tuy nhiên nó "
 "có thể hành xử bất ngờ trong trường hợp hiếm hoi, vì vậy kiểm tra kỹ trước khi kích hoạt "
 "nó vĩnh viễn "
 
-#: rich-text-excerpts.php:466
+#: rich-text-excerpts.php:508
 msgid "Enable upload media button"
 msgstr "Kích hoạt nút phương tiện truyền thông tải lên "
 
-#: rich-text-excerpts.php:467
+#: rich-text-excerpts.php:509
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr "Số hàng để sử dụng trong trình soạn thảo văn bản (tối thiểu là 3) "
 
-#: rich-text-excerpts.php:468
+#: rich-text-excerpts.php:510
+msgid "Height of editor in pixels (between 50 and 5000)"
+msgstr "Chiều cao của biên tập ảnh (từ 50 đến 5000)"
+
+#: rich-text-excerpts.php:511
 msgid "Toolbar Buttons and Plugins"
 msgstr "Các nút trên thanh công cụ và Plugins "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr "Đối với một danh sách các nút và bổ sung trong TinyMCE, xem wiki TinyMCE "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
@@ -142,11 +144,11 @@ msgstr ""
 "Ngoài ra còn có một số tài liệu về việc thực hiện TinyMCE trong "
 "Wordpress trên Wordpress Codex "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "Button and plugin names should be separated using commas"
 msgstr "Nút và plugin tên nên được tách ra sử dụng dấu phẩy "
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:517
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
@@ -154,15 +156,15 @@ msgstr ""
 "Bổ sung thêm - chắc chắn rằng bạn thêm bất kỳ nút cắm cụ thể cho các biên tập viên "
 "dưới đây "
 
-#: rich-text-excerpts.php:475
+#: rich-text-excerpts.php:518
 msgid ""
-"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
-"Các nút trên thanh công cụ - sử dụng từ 'tách' cho các nhóm riêng biệt của "
+"Các nút trên thanh công cụ - sử dụng từ 'separator' cho các nhóm riêng biệt của "
 "nút "
 
-#: rich-text-excerpts.php:482
+#: rich-text-excerpts.php:525
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
@@ -170,7 +172,7 @@ msgstr ""
 "Cấu hình các nút để chỉnh sửa và nâng cao bằng cách sử dụng TinyMCE nâng cao "
 "Plugin "
 
-#: rich-text-excerpts.php:484
+#: rich-text-excerpts.php:527
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

@@ -1,4 +1,4 @@
-# Copyright (C) 2013 Rich Text Excerpts
+# Copyright (C) 2014 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
@@ -8,63 +8,61 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-08-23 21:26:24+00:00\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 "Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+#: rich-text-excerpts.php:158 rich-text-excerpts.php:181
 msgid "Excerpt"
 msgstr "Sliocht "
 
-#: rich-text-excerpts.php:240
+#: rich-text-excerpts.php:250
 msgid "Settings"
 msgstr "Socruithe "
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:252
+#: rich-text-excerpts.php:262
 msgid "Rich Text Excerpts"
 msgstr "Sleachta Rich Text "
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:312
 msgid "Rich Text Excerpts Options"
 msgstr "Sleachta Rich Text Roghanna "
 
-#: rich-text-excerpts.php:291
+#: rich-text-excerpts.php:317
 msgid "Save Changes"
 msgstr "Sábháil Athruithe "
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:331
 msgid "Post Types"
 msgstr "Cineálacha Post "
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:338
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr "Roghnaigh ina mbeidh cineálacha post úsáid eagarthóir téacs saibhir le haghaidh sleachta "
 
-#: rich-text-excerpts.php:321
+#: rich-text-excerpts.php:347
 msgid "Editor Options"
 msgstr "Roghanna Eagarthóra "
 
-#: rich-text-excerpts.php:328
+#: rich-text-excerpts.php:354
 msgid "Use a meta box"
 msgstr "Bain úsáid as bosca meta "
 
-#: rich-text-excerpts.php:336
+#: rich-text-excerpts.php:362
 msgid "Choose which Editor is used for excerpts"
 msgstr "Roghnaigh Eagarthóir úsáidtear le haghaidh sleachta "
 
-#: rich-text-excerpts.php:344
+#: rich-text-excerpts.php:371
 msgid "Editor Settings"
 msgstr "Socruithe Eagarthóir "
 
-#: rich-text-excerpts.php:405
+#: rich-text-excerpts.php:433
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
 "Más mian leat tacaíocht do gach cineál poist a chur ar ceal, le do thoil dhíchumasú an breiseán "
 
-#: rich-text-excerpts.php:406
+#: rich-text-excerpts.php:434
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -76,65 +74,69 @@ msgstr ""
 "tacú faoi láthair sleachta - tacaíocht a thabhairt do sleachta a chur le cineál post, féach "
 "an Codex Wordpress "
 
-#: rich-text-excerpts.php:417
+#: rich-text-excerpts.php:446
 msgid "Check this box to put the excerpt in a draggable meta box"
-msgstr "Seiceáil an bosca seo a chur ar an sliocht i meta bosca draggable "
+msgstr ""
 
-#: rich-text-excerpts.php:425
+#: rich-text-excerpts.php:460
 msgid "Set the part of the page where the excerpt editor should be shown"
-msgstr "Socraigh an chuid den leathanach áit ar cheart an eagarthóir sliocht a thaispeáint "
+msgstr ""
 
-#: rich-text-excerpts.php:432
+#: rich-text-excerpts.php:474
 msgid "Set the priority of the excerpt editor"
 msgstr "Socraigh mar thosaíocht ag an eagarthóir sliocht "
 
-#: rich-text-excerpts.php:443
+#: rich-text-excerpts.php:485
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr "Bain úsáid as an eagarthóir chumraíocht íosta a úsáidtear i PressThis "
 
-#: rich-text-excerpts.php:445
+#: rich-text-excerpts.php:487
 msgid "Use the full version of the editor"
 msgstr "Bain úsáid as an leagan iomlán ar an eagarthóir "
 
-#: rich-text-excerpts.php:446
+#: rich-text-excerpts.php:488
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
-"Roghnaigh cé acu a bhaint as an eagarthóir TinyMCE lán, nó an 'teeny' "
+"Roghnaigh cé acu a bhaint as an eagarthóir TinyMCE lán, nó an &ldquo;teeny&rdquo; "
 "leagan an eagarthóir. "
 
-#: rich-text-excerpts.php:464
+#: rich-text-excerpts.php:506
 msgid ""
-"Stop removing the <p> and <br> tags when saving and show them in "
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"Stop a bhaint de na <p> agus clibeanna irish nuair a shábháil agus iad a thaispeáint i "
+"Stop a bhaint de na &lt;p&gt; agus clibeanna irish nuair a shábháil agus iad a thaispeáint i "
 "an eagarthóir HTML Cinnteoidh sé seo gur féidir a úsáid códú chun cinn níos mó i "
 "an eagarthóir HTML gan scagadh ar ais-deireadh difear sé i bhfad. Mar sin féin é "
 "Is féidir iad féin a iompar gan súil i gcásanna neamhchoitianta, mar sin tástáil sé go maith roimh a chumasú "
 "sé buan "
 
-#: rich-text-excerpts.php:466
+#: rich-text-excerpts.php:508
 msgid "Enable upload media button"
 msgstr "Cumasaigh uaslódáil cnaipe meáin "
 
-#: rich-text-excerpts.php:467
+#: rich-text-excerpts.php:509
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr "Líon na rónna a úsáid sa eagarthóir téacs (Tá íosmhéid 3) "
 
-#: rich-text-excerpts.php:468
+#: rich-text-excerpts.php:510
+msgid "Height of editor in pixels (between 50 and 5000)"
+msgstr "Airde an eagarthóir i pixel (idir 50 agus 5000)"
+
+#: rich-text-excerpts.php:511
 msgid "Toolbar Buttons and Plugins"
 msgstr "Buttons Toolbar agus Forlíontáin "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr "Chun liosta de na cnaipí agus plugins i TinyMCE, féach ar an vicí TinyMCE "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
@@ -142,11 +144,11 @@ msgstr ""
 "Tá roinnt cáipéisí ar chur i bhfeidhm TinyMCE i ann freisin "
 "Wordpress ar an Codex Wordpress "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "Button and plugin names should be separated using commas"
 msgstr "Ba chóir go cnaipe agus plugin ainmneacha a dheighilt ag baint úsáide as camóga "
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:517
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
@@ -154,15 +156,15 @@ msgstr ""
 "Forlíontáin a chur leis - a dhéanamh cinnte go bhfuil tú aon cnaipí ar leith plugin chur leis an eagarthóir "
 "thíos "
 
-#: rich-text-excerpts.php:475
+#: rich-text-excerpts.php:518
 msgid ""
-"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
-"Cnaipí Toolbar - úsáid a bhaint as an focal 'deighilteoir' do ghrúpa ar leith de "
+"Cnaipí Toolbar - úsáid a bhaint as an focal &lsquo;separator&rsquo; do ghrúpa ar leith de "
 "cnaipí "
 
-#: rich-text-excerpts.php:482
+#: rich-text-excerpts.php:525
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
@@ -170,7 +172,7 @@ msgstr ""
 "Cumraigh na cnaipí don eagarthóir chun cinn ag baint úsáide as an Ard TinyMCE "
 "plugin "
 
-#: rich-text-excerpts.php:484
+#: rich-text-excerpts.php:527
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

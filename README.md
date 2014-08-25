@@ -44,7 +44,7 @@ Changelog
 * Updated main plugin files to make them follow the [Wordpress Coding standards](http://make.wordpress.org/core/handbook/coding-standards/php/).
 * Added Grunt build for language file compilation.
 * Bumped "Tested up to" value to Wordpress 4.0 and updated screnshot.
-* Split javascript into two files and changed javascript and css inclusion strategy.
+* Split javascript into two files and changed javascript and css inclusion strategy in response to [this forum post](http://wordpress.org/support/topic/js-injection-in-back-end).
 * Added an option to set the height of the editor.
 
 ### 1.3.1

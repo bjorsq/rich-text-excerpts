@@ -1,4 +1,4 @@
-# Copyright (C) 2013 Rich Text Excerpts
+# Copyright (C) 2014 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
@@ -8,63 +8,61 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-08-23 21:26:24+00:00\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 "Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+#: rich-text-excerpts.php:158 rich-text-excerpts.php:181
 msgid "Excerpt"
 msgstr "발췌 록 "
 
-#: rich-text-excerpts.php:240
+#: rich-text-excerpts.php:250
 msgid "Settings"
 msgstr "설정 "
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:252
+#: rich-text-excerpts.php:262
 msgid "Rich Text Excerpts"
 msgstr "서식있는 텍스트 발췌 "
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:312
 msgid "Rich Text Excerpts Options"
 msgstr "서식있는 텍스트 발췌 옵션 "
 
-#: rich-text-excerpts.php:291
+#: rich-text-excerpts.php:317
 msgid "Save Changes"
 msgstr "변경 사항을 저장 "
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:331
 msgid "Post Types"
 msgstr "유형을 게시 "
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:338
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr "포스트 유형 발췌를 위해 서식있는 텍스트 편집기를 사용하는 선택 "
 
-#: rich-text-excerpts.php:321
+#: rich-text-excerpts.php:347
 msgid "Editor Options"
 msgstr "편집기 옵션 "
 
-#: rich-text-excerpts.php:328
+#: rich-text-excerpts.php:354
 msgid "Use a meta box"
 msgstr "메타 상자를 사용하여 "
 
-#: rich-text-excerpts.php:336
+#: rich-text-excerpts.php:362
 msgid "Choose which Editor is used for excerpts"
 msgstr "발췌에 사용되는 에디터 선택 "
 
-#: rich-text-excerpts.php:344
+#: rich-text-excerpts.php:371
 msgid "Editor Settings"
 msgstr "편집기 설정 "
 
-#: rich-text-excerpts.php:405
+#: rich-text-excerpts.php:433
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
 "당신은 모든 게시물 유형에 대한 지원을 사용하지 않으려면 플러그인을 비활성화하십시오 "
 
-#: rich-text-excerpts.php:406
+#: rich-text-excerpts.php:434
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -76,65 +74,69 @@ msgstr ""
 "현재 발췌 지원 - 포스트 형식으로 발췌에 대한 지원을 추가하려면, "
 "워드 프레스 분과 "
 
-#: rich-text-excerpts.php:417
+#: rich-text-excerpts.php:446
 msgid "Check this box to put the excerpt in a draggable meta box"
 msgstr "드래그 메타 상자에서 발췌를 넣어하려면이 확인란을 선택 "
 
-#: rich-text-excerpts.php:425
+#: rich-text-excerpts.php:460
 msgid "Set the part of the page where the excerpt editor should be shown"
 msgstr "발췌 편집기가 표시되어야 페이지의 일부를 설정 "
 
-#: rich-text-excerpts.php:432
+#: rich-text-excerpts.php:474
 msgid "Set the priority of the excerpt editor"
 msgstr "발췌 편집기의 우선 순위를 설정 "
 
-#: rich-text-excerpts.php:443
+#: rich-text-excerpts.php:485
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr "PressThis에 사용되는 최소한의 편집 구성을 사용 "
 
-#: rich-text-excerpts.php:445
+#: rich-text-excerpts.php:487
 msgid "Use the full version of the editor"
 msgstr "편집기의 전체 버전을 사용 "
 
-#: rich-text-excerpts.php:446
+#: rich-text-excerpts.php:488
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
-"전체 TinyMCE를 편집기, 또는 '조그마한'를 사용할지 여부를 선택합니다 "
+"전체 TinyMCE를 편집기, 또는 'teeny'를 사용할지 여부를 선택합니다 "
 "편집기의 버전입니다. "
 
-#: rich-text-excerpts.php:464
+#: rich-text-excerpts.php:506
 msgid ""
-"Stop removing the <p> and <br> tags when saving and show them in "
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"저장할 때 <P> 및 중앙 태그를 제거 중지하고 그들을 표시 "
+"저장할 때 &lt;p&gt; 및 중앙 태그를 제거 중지하고 그들을 표시 "
 "HTML 편집기 이렇게하면 고급 코딩을 사용하는 것 "
 "많이 영향을 미치는 백엔드 필터링하지 않고 HTML 편집기. 그러나 "
 "드문 경우 예상치 않게 작동 할 수 있습니다, 그래서 사용하기 전에 철저하게 테스트 "
 "그것은 영구적으로 "
 
-#: rich-text-excerpts.php:466
+#: rich-text-excerpts.php:508
 msgid "Enable upload media button"
 msgstr "미디어 버튼을 업로드 할 수 있습니다 "
 
-#: rich-text-excerpts.php:467
+#: rich-text-excerpts.php:509
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr "텍스트 편집기에서 사용하는 행의 수 (최소 3) "
 
-#: rich-text-excerpts.php:468
+#: rich-text-excerpts.php:510
+msgid "Height of editor in pixels (between 50 and 5000)"
+msgstr "픽셀 에디터의 높이 (50 ~ 5000 사이)"
+
+#: rich-text-excerpts.php:511
 msgid "Toolbar Buttons and Plugins"
 msgstr "도구 모음 버튼 및 플러그인 "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr "TinyMCE를있는 버튼과 플러그인의 목록은 TinyMCE를 위키를 참조하십시오 "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
@@ -142,11 +144,11 @@ msgstr ""
 "에서 TinyMCE를의 구현에 대한 몇 가지 문서가있다 "
 "워드 프레스 코덱스에 워드 프레스 "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "Button and plugin names should be separated using commas"
 msgstr "버튼 플러그인 이름은 쉼표를 사용하여 구분해야합니다 "
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:517
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
@@ -154,15 +156,15 @@ msgstr ""
 "에디터 어떤 플러그인 특정 버튼을 추가해야합니다 - 추가하는 플러그인 "
 "이하 "
 
-#: rich-text-excerpts.php:475
+#: rich-text-excerpts.php:518
 msgid ""
-"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
-"도구 모음 버튼 - 별도의 그룹으로 단어를 '분리'를 사용 "
+"도구 모음 버튼 - 별도의 그룹으로 단어를 'separator'를 사용 "
 "버튼 "
 
-#: rich-text-excerpts.php:482
+#: rich-text-excerpts.php:525
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
@@ -170,7 +172,7 @@ msgstr ""
 "TinyMCE를 고급을 사용하여 고급 편집기의 버튼을 구성 "
 "플러그인 "
 
-#: rich-text-excerpts.php:484
+#: rich-text-excerpts.php:527
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

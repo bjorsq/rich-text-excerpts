@@ -395,7 +395,7 @@ class Rich_Text_Excerpts {
 			"editor_type" => "teeny",
 			"metabox" => array(
 				"use" => true,
-				"context" => 'advanced',
+				"context" => 'normal',
 				"priority" => 'high'
 			),
 			"editor_settings" => array(
@@ -430,7 +430,7 @@ class Rich_Text_Excerpts {
 				printf( '<p class="rte-post-types-inputs"><input class="rte-post-types" type="checkbox" name="rich_text_excerpts_options[supported_post_types][]" id="supported_post_types-%s" value="%s"%s /> <label for="supported_post_types-%s">%s</label></p>', $post_type->name, $post_type->name, $chckd, $post_type->name, $post_type->labels->name );
 			}
 		}
-		printf('<div style="background-color: rgb(255, 255, 224);border:1px solid rgb(230, 219, 85); border-radius:3px;	color: rgb(51, 51, 51);	padding: 4px 0.5em;	display:none;"></p>%s</p></div>', __('If you want to disable support for all post types, please disable the plugin', 'rich-text-excerpts'));
+		printf('<div class="rte-post-types-error" style="background-color: rgb(255, 255, 224);border:1px solid rgb(230, 219, 85); border-radius:3px;	color: rgb(51, 51, 51);	padding: 4px 0.5em;	display:none;"></p>%s</p></div>', __('If you want to disable support for all post types, please disable the plugin', 'rich-text-excerpts'));
 		printf('<p>%s<br /><a href="http://codex.wordpress.org/Function_Reference/add_post_type_support">add_post_type_support()</a></p>', __('Post types not selected here will use the regular plain text editor for excerpts. If the post type you want is not listed here, it does not currently support excerpts - to add support for excerpts to a post type, see the Wordpress Codex', 'rich-text-excerpts'));
 	}
 
@@ -448,30 +448,32 @@ class Rich_Text_Excerpts {
 
 		/* metabox context settings */
 		$contexts = array(
-			'normal'   => __('normal', 'rich-text-excerpts'),
-			'advanced' => __('advanced', 'rich-text-excerpts'),
-			'side'     => __('side', 'rich-text-excerpts')
+			'normal',
+			'advanced',
+			'side'
 		);
 		print( '<p><label for="rte-metabox-context"><select name="rich_text_excerpts_options[metabox][context]">' );
-		foreach ( $contexts as $context => $label ) {
+		foreach ( $contexts as $context ) {
 			$sel = ( $options['metabox']['context'] == $context ) ? ' selected' : '';
-			printf( '<option value="%s"%s>%s</option>', $context, $sel, $label );
+			printf( '<option value="%s"%s>%s</option>', $context, $sel, $context );
 		}
 		printf( '</select> %s</p>', __('Set the part of the page where the excerpt editor should be shown', 'rich-text-excerpts') );
+		//print('<input type="hidden" name="rich_text_excerpts_options[metabox][context]" value="normal" />');
 
 		/* metabox priority settings */
 		$priorities = array(
-			'high'    => __('high', 'rich-text-excerpts'),
-			'core'    => __('core', 'rich-text-excerpts'),
-			'default' => __('default', 'rich-text-excerpts'),
-			'low'     => __('low', 'rich-text-excerpts')
+			'high',
+			'core',
+			'default',
+			'low'
 		);
 		print( '<p><label for="rte-metabox-priority"><select name="rich_text_excerpts_options[metabox][priority]">' );
-		foreach ( $priorities as $priority => $label ) {
+		foreach ( $priorities as $priority ) {
 			$sel = ( $options['metabox']['priority'] == $priority ) ? ' selected' : '';
-			printf( '<option value="%s"%s>%s</option>', $priority, $sel, $label);
+			printf( '<option value="%s"%s>%s</option>', $priority, $sel, $priority);
 		}
 		printf( '</select> %s</p>', __('Set the priority of the excerpt editor', 'rich-text-excerpts') );
+		//print('<input type="hidden" name="rich_text_excerpts_options[metabox][priority]" value="high" />');
 		print( '</div>' );
 	}
 

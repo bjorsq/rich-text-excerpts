@@ -71,7 +71,7 @@ jQuery(document).ready(function($){
 		} else {
 			$('#rte-metabox-settings').hide();
 		}
-	},
+	};
 
 	/* add event handlers and setup the form */
 	if ( $('#rich_text_excerpts_options_form').length ) {

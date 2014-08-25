@@ -1,4 +1,4 @@
-# Copyright (C) 2013 Rich Text Excerpts
+# Copyright (C) 2014 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
@@ -8,63 +8,61 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-08-23 21:26:24+00:00\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 "Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+#: rich-text-excerpts.php:158 rich-text-excerpts.php:181
 msgid "Excerpt"
 msgstr "Alıntı "
 
-#: rich-text-excerpts.php:240
+#: rich-text-excerpts.php:250
 msgid "Settings"
 msgstr "Ayarlar "
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:252
+#: rich-text-excerpts.php:262
 msgid "Rich Text Excerpts"
 msgstr "Zengin Metin alıntılar "
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:312
 msgid "Rich Text Excerpts Options"
 msgstr "Zengin Metin alıntılar Seçenekleri "
 
-#: rich-text-excerpts.php:291
+#: rich-text-excerpts.php:317
 msgid "Save Changes"
 msgstr "Değişiklikleri Kaydet "
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:331
 msgid "Post Types"
 msgstr "Türleri Mesaj "
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:338
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr "Sonrası türleri alıntılar için bir zengin metin editörü kullanmak hangi seçin "
 
-#: rich-text-excerpts.php:321
+#: rich-text-excerpts.php:347
 msgid "Editor Options"
 msgstr "Düzenleyici Seçenekleri "
 
-#: rich-text-excerpts.php:328
+#: rich-text-excerpts.php:354
 msgid "Use a meta box"
 msgstr "Bir meta kutuyu kullanın "
 
-#: rich-text-excerpts.php:336
+#: rich-text-excerpts.php:362
 msgid "Choose which Editor is used for excerpts"
 msgstr "Alıntılar için kullanıldığı Editor "
 
-#: rich-text-excerpts.php:344
+#: rich-text-excerpts.php:371
 msgid "Editor Settings"
 msgstr "Editör Ayarları "
 
-#: rich-text-excerpts.php:405
+#: rich-text-excerpts.php:433
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
 "Tüm sonrası türleri için destek devre dışı bırakmak istiyorsanız, eklenti devre dışı lütfen "
 
-#: rich-text-excerpts.php:406
+#: rich-text-excerpts.php:434
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -76,65 +74,69 @@ msgstr ""
 "Şu anda alıntılar destek - bir yazı tipine alıntılar desteği eklemek için, bkz "
 "Wordpress Codex "
 
-#: rich-text-excerpts.php:417
+#: rich-text-excerpts.php:446
 msgid "Check this box to put the excerpt in a draggable meta box"
 msgstr "Bir sürüklenebilir meta kutusuna alıntı koymak için bu kutuyu işaretleyin "
 
-#: rich-text-excerpts.php:425
+#: rich-text-excerpts.php:460
 msgid "Set the part of the page where the excerpt editor should be shown"
 msgstr "Alıntı editörü gösterilmesi gereken Sayfanın en parçası ayarlayın "
 
-#: rich-text-excerpts.php:432
+#: rich-text-excerpts.php:474
 msgid "Set the priority of the excerpt editor"
 msgstr "Alıntı editörü önceliğini belirleyin "
 
-#: rich-text-excerpts.php:443
+#: rich-text-excerpts.php:485
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr "PressThis kullanılan Minimal editörün yapılandırma kullanın "
 
-#: rich-text-excerpts.php:445
+#: rich-text-excerpts.php:487
 msgid "Use the full version of the editor"
 msgstr "Editörün bütün sürümünü kullanın "
 
-#: rich-text-excerpts.php:446
+#: rich-text-excerpts.php:488
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
-"Tam TinyMCE editör, ya da 'ufacık' kullanmayı seçin "
+"Tam TinyMCE editör, ya da 'teeny' kullanmayı seçin "
 "editör sürümü. "
 
-#: rich-text-excerpts.php:464
+#: rich-text-excerpts.php:506
 msgid ""
-"Stop removing the <p> and <br> tags when saving and show them in "
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"Kaydederken <p> ve <br> etiketleri kaldırarak durdurmak ve bunları göstermek "
+"Kaydederken &lt;p&gt; ve &lt;br&gt; etiketleri kaldırarak durdurmak ve bunları göstermek "
 "HTML editörü Bu sayede daha gelişmiş kodlama kullanmak yapacak "
 "kadar çok etkileyen arka uç filtreleme olmadan HTML editörü. Ancak "
 "nadir durumlarda beklenmedik şekilde davranabilir, bu nedenle etkinleştirmeden önce iyice test "
 "kalıcı "
 
-#: rich-text-excerpts.php:466
+#: rich-text-excerpts.php:508
 msgid "Enable upload media button"
 msgstr "Ortam düğmesi yüklemek etkinleştirin "
 
-#: rich-text-excerpts.php:467
+#: rich-text-excerpts.php:509
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr "Metin editörü kullanmak için satır sayısı (en az 3 olan) "
 
-#: rich-text-excerpts.php:468
+#: rich-text-excerpts.php:510
+msgid "Height of editor in pixels (between 50 and 5000)"
+msgstr "Piksel editörü yüksekliği (50 ve 5000 arasında)"
+
+#: rich-text-excerpts.php:511
 msgid "Toolbar Buttons and Plugins"
 msgstr "Araç Çubuğu Düğmeleri ve Eklentiler "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr "TinyMCE düğmeleri ve eklentileri listesi için, TinyMCE sayfasını inceleyebilirsiniz "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
@@ -142,11 +144,11 @@ msgstr ""
 "Içinde TinyMCE uygulanmasına ilişkin bazı belgeler de var "
 "Wordpress Kodeksi wordpress "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "Button and plugin names should be separated using commas"
 msgstr "Düğme ve eklenti adları virgül ile ayrılmalıdır "
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:517
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
@@ -154,15 +156,15 @@ msgstr ""
 "Eğer Editöre herhangi bir eklenti özel düğmeleri eklemek emin olun - eklemek için Eklentiler "
 "altında "
 
-#: rich-text-excerpts.php:475
+#: rich-text-excerpts.php:518
 msgid ""
-"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
-"Araç çubuğu düğmeleri - ayrı gruplara kelime 'ayırıcı' kullanın "
+"Araç çubuğu düğmeleri - ayrı gruplara kelime 'separator' kullanın "
 "düğmeleri "
 
-#: rich-text-excerpts.php:482
+#: rich-text-excerpts.php:525
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
@@ -170,7 +172,7 @@ msgstr ""
 "TinyMCE Gelişmiş kullanarak gelişmiş editörü için düğmeleri yapılandırma "
 "eklentisi "
 
-#: rich-text-excerpts.php:484
+#: rich-text-excerpts.php:527
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

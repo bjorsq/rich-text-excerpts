@@ -47,9 +47,9 @@ If you want to use excerpts in Custom Post Types, do it when you create them usi
 = 1.3.2 =
 * Updated Polish translation thanks to [alcoholdenat](https://github.com/alcoholdenat).
 * Updated main plugin files to make them follow the [Wordpress Coding standards](http://make.wordpress.org/core/handbook/coding-standards/php/).
-* Added Grunt build for language file compilation.
+* Added Grunt build for language file compilation (git repo only).
 * Bumped "Tested up to" value to Wordpress 4.0 and updated screnshot.
-* Split javascript into two files and changed javascript and css inclusion strategy.
+* Split javascript into two files and changed javascript and css inclusion strategy in response to [this forum post](http://wordpress.org/support/topic/js-injection-in-back-end).
 * Added an option to set the height of the editor.
 
 = 1.3.1 =

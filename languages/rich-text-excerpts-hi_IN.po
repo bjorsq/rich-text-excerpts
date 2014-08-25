@@ -1,4 +1,4 @@
-# Copyright (C) 2013 Rich Text Excerpts
+# Copyright (C) 2014 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
@@ -8,63 +8,61 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-08-23 21:26:24+00:00\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 "Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+#: rich-text-excerpts.php:158 rich-text-excerpts.php:181
 msgid "Excerpt"
 msgstr "अंश "
 
-#: rich-text-excerpts.php:240
+#: rich-text-excerpts.php:250
 msgid "Settings"
 msgstr "सेटिंग्स "
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:252
+#: rich-text-excerpts.php:262
 msgid "Rich Text Excerpts"
 msgstr "रिच टेक्स्ट अंशः "
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:312
 msgid "Rich Text Excerpts Options"
 msgstr "रिच टेक्स्ट अंशः विकल्प "
 
-#: rich-text-excerpts.php:291
+#: rich-text-excerpts.php:317
 msgid "Save Changes"
 msgstr "परिवर्तन सहेजें "
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:331
 msgid "Post Types"
 msgstr "प्रकार पोस्ट "
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:338
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr "पोस्ट प्रकार के कुछ अंश के लिए एक अमीर पाठ संपादक का उपयोग करेगा जो चुनें "
 
-#: rich-text-excerpts.php:321
+#: rich-text-excerpts.php:347
 msgid "Editor Options"
 msgstr "संपादक विकल्प "
 
-#: rich-text-excerpts.php:328
+#: rich-text-excerpts.php:354
 msgid "Use a meta box"
 msgstr "एक मेटा बॉक्स का उपयोग करें "
 
-#: rich-text-excerpts.php:336
+#: rich-text-excerpts.php:362
 msgid "Choose which Editor is used for excerpts"
 msgstr "कुछ अंशः के लिए प्रयोग किया जाता है जो संपादक चुनें "
 
-#: rich-text-excerpts.php:344
+#: rich-text-excerpts.php:371
 msgid "Editor Settings"
 msgstr "संपादक सेटिंग्स "
 
-#: rich-text-excerpts.php:405
+#: rich-text-excerpts.php:433
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
 "आप सभी पोस्ट के प्रकार के लिए समर्थन अक्षम करना चाहते हैं, प्लगइन को अक्षम कर दें "
 
-#: rich-text-excerpts.php:406
+#: rich-text-excerpts.php:434
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -76,65 +74,69 @@ msgstr ""
 "वर्तमान में कुछ अंशः समर्थन - एक पोस्ट टाइप करने के लिए कुछ अंशः के लिए समर्थन जोड़ने के लिए, देखने "
 "WordPress के कोडेक्स "
 
-#: rich-text-excerpts.php:417
+#: rich-text-excerpts.php:446
 msgid "Check this box to put the excerpt in a draggable meta box"
 msgstr "एक draggable मेटा बॉक्स में अंश डालने के लिए इस बक्से को चिह्नित करें "
 
-#: rich-text-excerpts.php:425
+#: rich-text-excerpts.php:460
 msgid "Set the part of the page where the excerpt editor should be shown"
 msgstr "अंश संपादक दिखाया जाना चाहिए जहां पृष्ठ का हिस्सा सेट "
 
-#: rich-text-excerpts.php:432
+#: rich-text-excerpts.php:474
 msgid "Set the priority of the excerpt editor"
 msgstr "अंश संपादक की प्राथमिकता सेट "
 
-#: rich-text-excerpts.php:443
+#: rich-text-excerpts.php:485
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr "PressThis में इस्तेमाल न्यूनतम संपादक विन्यास का प्रयोग करें "
 
-#: rich-text-excerpts.php:445
+#: rich-text-excerpts.php:487
 msgid "Use the full version of the editor"
 msgstr "संपादक के पूर्ण संस्करण का उपयोग करें "
 
-#: rich-text-excerpts.php:446
+#: rich-text-excerpts.php:488
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
 "पूर्ण TinyMCE संपादक, या 'नन्हा' का उपयोग करने के लिए कि क्या चुनें "
 "संपादक का संस्करण. "
 
-#: rich-text-excerpts.php:464
+#: rich-text-excerpts.php:506
 msgid ""
-"Stop removing the <p> and <br> tags when saving and show them in "
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"जब बचत <p> और सभी टैग हटाने बंद करो और उन्हें दिखाने "
+"जब बचत &lt;p&gt; और सभी टैग हटाने बंद करो और उन्हें दिखाने "
 "एचटीएमएल संपादक यह संभव अधिक उन्नत कोडन में उपयोग करने के लिए कर देगा "
 "इसके बारे में ज्यादा प्रभावित करने वाले पीछे के अंत छानने के बिना HTML संपादक. हालांकि यह "
 "दुर्लभ मामलों में अप्रत्याशित रूप से व्यवहार कर सकते हैं, तो सक्षम करने से पहले अच्छी तरह से यह परीक्षण "
 "यह स्थायी रूप से "
 
-#: rich-text-excerpts.php:466
+#: rich-text-excerpts.php:508
 msgid "Enable upload media button"
 msgstr "मीडिया बटन अपलोड सक्षम "
 
-#: rich-text-excerpts.php:467
+#: rich-text-excerpts.php:509
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr "पाठ संपादक में उपयोग करने के लिए पंक्तियों की संख्या (न्यूनतम 3 है) "
 
-#: rich-text-excerpts.php:468
+#: rich-text-excerpts.php:510
+msgid "Height of editor in pixels (between 50 and 5000)"
+msgstr "पिक्सल में संपादक की ऊँचाई (50 और 5000 के बीच)"
+
+#: rich-text-excerpts.php:511
 msgid "Toolbar Buttons and Plugins"
 msgstr "पट्टी बटन और प्लगइन्स "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr "TinyMCE में बटन और प्लग इन की सूची के लिए, TinyMCE विकी देखना "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
@@ -142,11 +144,11 @@ msgstr ""
 "में TinyMCE के कार्यान्वयन पर कुछ दस्तावेज भी है "
 "WordPress के कोडेक्स पर Wordpress "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "Button and plugin names should be separated using commas"
 msgstr "बटन और प्लगइन के नाम अल्पविराम का उपयोग कर अलग किया जाना चाहिए "
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:517
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
@@ -154,15 +156,15 @@ msgstr ""
 "आप संपादक के लिए किसी भी प्लगइन विशिष्ट बटन जोड़ने के लिए सुनिश्चित करें - जोड़ने के लिए प्लगइन्स "
 "नीचे "
 
-#: rich-text-excerpts.php:475
+#: rich-text-excerpts.php:518
 msgid ""
-"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
-"टूलबार बटन - का अलग अलग समूह से शब्द 'विभाजक' का उपयोग "
+"टूलबार बटन - का अलग अलग समूह से शब्द &lsquo;separator&rsquo; का उपयोग "
 "बटन "
 
-#: rich-text-excerpts.php:482
+#: rich-text-excerpts.php:525
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
@@ -170,7 +172,7 @@ msgstr ""
 "TinyMCE उन्नत का उपयोग कर उन्नत संपादक के लिए बटन कॉन्फ़िगर "
 "प्लगइन "
 
-#: rich-text-excerpts.php:484
+#: rich-text-excerpts.php:527
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

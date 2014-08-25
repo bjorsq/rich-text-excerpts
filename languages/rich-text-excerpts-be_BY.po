@@ -1,4 +1,4 @@
-# Copyright (C) 2013 Rich Text Excerpts
+# Copyright (C) 2014 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
@@ -8,63 +8,62 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-08-23 21:26:24+00:00\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 "Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+#: rich-text-excerpts.php:158 rich-text-excerpts.php:181
 msgid "Excerpt"
 msgstr "вытрымка"
 
-#: rich-text-excerpts.php:240
+#: rich-text-excerpts.php:250
 msgid "Settings"
 msgstr "Налады"
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:252
+#: rich-text-excerpts.php:262
 msgid "Rich Text Excerpts"
 msgstr "Багатыя Урыўкі тэксту"
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:312
 msgid "Rich Text Excerpts Options"
 msgstr "Rich Text Вытрымкі Опцыі"
 
-#: rich-text-excerpts.php:291
+#: rich-text-excerpts.php:317
 msgid "Save Changes"
 msgstr "захаваць змены"
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:331
 msgid "Post Types"
 msgstr "паведамленне тыпы"
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:338
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr "Выберыце, якія тыпы паведамленні будзе выкарыстоўваць тэкставы рэдактар ​​для вытрымкі"
 
-#: rich-text-excerpts.php:321
+#: rich-text-excerpts.php:347
 msgid "Editor Options"
 msgstr "параметры рэдактара"
 
-#: rich-text-excerpts.php:328
+#: rich-text-excerpts.php:354
 msgid "Use a meta box"
 msgstr "Выкарыстоўвайце мета скрынцы"
 
-#: rich-text-excerpts.php:336
+#: rich-text-excerpts.php:362
 msgid "Choose which Editor is used for excerpts"
 msgstr "Выберыце, якой рэдактар ​​выкарыстоўваецца для вытрымкі"
 
-#: rich-text-excerpts.php:344
+#: rich-text-excerpts.php:371
 msgid "Editor Settings"
 msgstr "налады рэдактара"
 
-#: rich-text-excerpts.php:405
+#: rich-text-excerpts.php:433
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
 "Калі вы хочаце адключыць падтрымку ўсіх тыпаў паведамлення, калі ласка , адключыце убудова"
 
-#: rich-text-excerpts.php:406
+#: rich-text-excerpts.php:434
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -76,65 +75,69 @@ msgstr ""
 "ў цяперашні час падтрымліваюць вытрымкі - дадаць падтрымку вытрымкі на пасаду тыпу см."
 "WordPress Кодэкс"
 
-#: rich-text-excerpts.php:417
+#: rich-text-excerpts.php:446
 msgid "Check this box to put the excerpt in a draggable meta box"
 msgstr "Гэты сцяжок , каб паставіць вытрымку ў перацягваць скрынкі мета"
 
-#: rich-text-excerpts.php:425
+#: rich-text-excerpts.php:460
 msgid "Set the part of the page where the excerpt editor should be shown"
 msgstr "Усталюйце частка старонкі, дзе ўрывак рэдактара павінна быць паказана"
 
-#: rich-text-excerpts.php:432
+#: rich-text-excerpts.php:474
 msgid "Set the priority of the excerpt editor"
 msgstr "Ўсталяваць прыярытэт вытрымкі рэдактара"
 
-#: rich-text-excerpts.php:443
+#: rich-text-excerpts.php:485
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr "Выкарыстоўвайце мінімальнай канфігурацыі , якія выкарыстоўваюцца ў рэдактары PressThis"
 
-#: rich-text-excerpts.php:445
+#: rich-text-excerpts.php:487
 msgid "Use the full version of the editor"
 msgstr "Выкарыстоўвайце поўную версію рэдактара"
 
-#: rich-text-excerpts.php:446
+#: rich-text-excerpts.php:488
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
-"Выберыце , ці варта выкарыстоўваць поўны рэдактар ​​TinyMCE , або ' маленькая '"
+"Выберыце , ці варта выкарыстоўваць поўны рэдактар ​​TinyMCE , або &ldquo;teeny&rdquo;"
 "версія рэдактара ."
 
-#: rich-text-excerpts.php:464
+#: rich-text-excerpts.php:506
 msgid ""
-"Stop removing the <p> and <br> tags when saving and show them in "
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"Спыніць выдаленне <p> і інструменты тэгі пры захаванні і паказаць іх у"
+"Спыніць выдаленне &lt;p&gt; і інструменты тэгі пры захаванні і паказаць іх у"
 "HTML рэдактар ​​Гэта зробіць магчымым выкарыстанне больш прасунутых кадавання ў"
 "HTML рэдактара без фонавых фільтрацыі , якія ўплываюць на яго шмат . Аднак гэта"
 "можа паводзіць сябе непрадказальным ў рэдкіх выпадках , так што праверыць яго старанна перад уключэннем"
 "яго ўвесь час"
 
-#: rich-text-excerpts.php:466
+#: rich-text-excerpts.php:508
 msgid "Enable upload media button"
 msgstr "Ўключыць загружаць мультымедыйныя кнопкі"
 
-#: rich-text-excerpts.php:467
+#: rich-text-excerpts.php:509
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr "Лік радкоў для выкарыстання ў тэкставым рэдактары ( мінімум 3 )"
 
-#: rich-text-excerpts.php:468
+#: rich-text-excerpts.php:510
+msgid "Height of editor in pixels (between 50 and 5000)"
+msgstr "Вышыня рэдактара ў пікселях (ад 50 да 5000)"
+
+#: rich-text-excerpts.php:511
 msgid "Toolbar Buttons and Plugins"
 msgstr "Кнопкі панэлі інструментаў і убудоў"
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr "Спіс кнопак і убудоў ў TinyMCE см. TinyMCE вікі"
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
@@ -142,11 +145,11 @@ msgstr ""
 "Існуе таксама некаторая дакументацыя аб ажыццяўленні ў TinyMCE"
 "Wordpress на WordPress Кодэкс"
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "Button and plugin names should be separated using commas"
 msgstr "Батан і ўбудова імёны павінны быць падзеленыя коскамі"
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:517
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
@@ -154,15 +157,15 @@ msgstr ""
 "Убудовы дадаць - пераканайцеся , што вы дадаць любы убудова пэўныя кнопкі у рэдакцыю"
 "ніжэй"
 
-#: rich-text-excerpts.php:475
+#: rich-text-excerpts.php:518
 msgid ""
-"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
-"Кнопкі на панэлі інструментаў - выкарыстоўваць ' падзельнік ' слова асобных групах"
+"Кнопкі на панэлі інструментаў - выкарыстоўваць &lsquo;separator&rsquo; слова асобных групах"
 "кнопкі"
 
-#: rich-text-excerpts.php:482
+#: rich-text-excerpts.php:525
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
@@ -170,7 +173,7 @@ msgstr ""
 "Настройка кнопкі для выкарыстання пашыранага рэдактара TinyMCE Пашыраны"
 "убудова"
 
-#: rich-text-excerpts.php:484
+#: rich-text-excerpts.php:527
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

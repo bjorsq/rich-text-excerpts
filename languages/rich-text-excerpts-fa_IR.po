@@ -1,4 +1,4 @@
-# Copyright (C) 2013 Rich Text Excerpts
+# Copyright (C) 2014 Rich Text Excerpts
 # This file is distributed under the same license as the Rich Text Excerpts package.
 msgid ""
 msgstr ""
@@ -8,63 +8,61 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-08-23 21:26:24+00:00\n"
 "Last-Translator: Peter Edwards <pete@bjorsq.net>\n"
 "Language-Team: Google translate <LL@li.org>\n"
 
-#: rich-text-excerpts.php:156 rich-text-excerpts.php:179
+#: rich-text-excerpts.php:158 rich-text-excerpts.php:181
 msgid "Excerpt"
 msgstr "برگزیدن و جدا کردن "
 
-#: rich-text-excerpts.php:240
+#: rich-text-excerpts.php:250
 msgid "Settings"
 msgstr "تنظیمات "
 
-#. #-#-#-#-#  plugin.pot (Rich Text Excerpts 1.3)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
-#: rich-text-excerpts.php:252
+#: rich-text-excerpts.php:262
 msgid "Rich Text Excerpts"
 msgstr "گزیده ای متن غنی "
 
-#: rich-text-excerpts.php:286
+#: rich-text-excerpts.php:312
 msgid "Rich Text Excerpts Options"
 msgstr "ریچ متن گزیده ای تنظیمات "
 
-#: rich-text-excerpts.php:291
+#: rich-text-excerpts.php:317
 msgid "Save Changes"
 msgstr "ذخیره تغییرات "
 
-#: rich-text-excerpts.php:305
+#: rich-text-excerpts.php:331
 msgid "Post Types"
 msgstr "ارسال انواع "
 
-#: rich-text-excerpts.php:312
+#: rich-text-excerpts.php:338
 msgid "Choose which post types will use a rich text editor for excerpts"
 msgstr "را انتخاب کنید که نوع پست به یک ویرایشگر متن غنی برای استفاده از گزیده ای "
 
-#: rich-text-excerpts.php:321
+#: rich-text-excerpts.php:347
 msgid "Editor Options"
 msgstr "گزینه های ویرایشگر "
 
-#: rich-text-excerpts.php:328
+#: rich-text-excerpts.php:354
 msgid "Use a meta box"
 msgstr "استفاده از یک جعبه متا "
 
-#: rich-text-excerpts.php:336
+#: rich-text-excerpts.php:362
 msgid "Choose which Editor is used for excerpts"
 msgstr "را انتخاب کنید که ویرایشگر برای گزیده ای استفاده می شود "
 
-#: rich-text-excerpts.php:344
+#: rich-text-excerpts.php:371
 msgid "Editor Settings"
 msgstr "تنظیمات ویرایشگر "
 
-#: rich-text-excerpts.php:405
+#: rich-text-excerpts.php:433
 msgid ""
 "If you want to disable support for all post types, please disable the plugin"
 msgstr ""
 "اگر شما می خواهید برای غیر فعال کردن پشتیبانی از تمام انواع پست، لطفا به غیر فعال کردن افزونه "
 
-#: rich-text-excerpts.php:406
+#: rich-text-excerpts.php:434
 msgid ""
 "Post types not selected here will use the regular plain text editor for "
 "excerpts. If the post type you want is not listed here, it does not "
@@ -76,65 +74,69 @@ msgstr ""
 "در حال حاضر حمایت از گزیده ای - برای اضافه کردن پشتیبانی برای گزیده ای یک نوع پست، "
 "مستندات وردپرس "
 
-#: rich-text-excerpts.php:417
+#: rich-text-excerpts.php:446
 msgid "Check this box to put the excerpt in a draggable meta box"
 msgstr "این جعبه برای قرار دادن گزیده ای در یک جعبه متا draggable "
 
-#: rich-text-excerpts.php:425
+#: rich-text-excerpts.php:460
 msgid "Set the part of the page where the excerpt editor should be shown"
 msgstr "تنظیم بخشی از صفحه که در آن ویرایشگر گزیده ای باید نشان داده شود "
 
-#: rich-text-excerpts.php:432
+#: rich-text-excerpts.php:474
 msgid "Set the priority of the excerpt editor"
 msgstr "به تنظیم اولویت ویرایشگر گزیده ای "
 
-#: rich-text-excerpts.php:443
+#: rich-text-excerpts.php:485
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr "استفاده از تنظیمات ویرایشگر حداقل مورد استفاده در PressThis "
 
-#: rich-text-excerpts.php:445
+#: rich-text-excerpts.php:487
 msgid "Use the full version of the editor"
 msgstr "با استفاده از نسخه کامل ویرایشگر "
 
-#: rich-text-excerpts.php:446
+#: rich-text-excerpts.php:488
 msgid ""
-"Choose whether to use the full TinyMCE editor, or the “teeny” "
+"Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
-"را انتخاب کنید که آیا برای استفاده از ویرایشگر TinyMCE کامل، و یا 'کوچک' "
+"را انتخاب کنید که آیا برای استفاده از ویرایشگر TinyMCE کامل، و یا 'teeny' "
 "نسخه از ویرایشگر. "
 
-#: rich-text-excerpts.php:464
+#: rich-text-excerpts.php:506
 msgid ""
-"Stop removing the <p> and <br> tags when saving and show them in "
+"Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
 "the HTML editor without the back-end filtering affecting it much. However it "
 "may behave unexpectedly in rare cases, so test it thoroughly before enabling "
 "it permanently"
 msgstr ""
-"توقف از بین بردن <P> برچسبهای و <br> هنگام ذخیره و آنها را در نشان می دهد "
+"توقف از بین بردن P برچسبهای و BR هنگام ذخیره و آنها را در نشان می دهد "
 "ویرایشگر HTML این را می توان به استفاده از برنامه نویسی پیشرفته تر در "
 "ویرایشگر HTML بدون فیلتر به عقب پایان مؤثر بر آن بسیار است. با این حال آن "
 "ممکن است به طور غیر منتظره در موارد نادر رفتار می کنند، به طوری که آن را به طور کامل قبل از فراهم شدن تست "
 "آن به طور دائم "
 
-#: rich-text-excerpts.php:466
+#: rich-text-excerpts.php:508
 msgid "Enable upload media button"
 msgstr "فعال کردن دکمه رسانه ها به آپلود "
 
-#: rich-text-excerpts.php:467
+#: rich-text-excerpts.php:509
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr "تعداد ردیف برای استفاده در ویرایشگر متن (حداقل 3) "
 
-#: rich-text-excerpts.php:468
+#: rich-text-excerpts.php:510
+msgid "Height of editor in pixels (between 50 and 5000)"
+msgstr "ارتفاع مدیر پیکسل (بین 50 و 5000)"
+
+#: rich-text-excerpts.php:511
 msgid "Toolbar Buttons and Plugins"
 msgstr "دکمه های نوار ابزار و پلاگین "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr "برای یک لیست از دکمه ها و پلاگین در ویرایشگر tinymce، TinyMCE به ویکی مراجعه کنید "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
@@ -142,11 +144,11 @@ msgstr ""
 "نیز وجود دارد برخی از اسناد را در اجرای ویرایشگر tinymce در "
 "وردپرس در وردپرس مستندات "
 
-#: rich-text-excerpts.php:473
+#: rich-text-excerpts.php:516
 msgid "Button and plugin names should be separated using commas"
 msgstr "نامهای پلاگین را فشار دهید و باید با استفاده از کاما از هم جدا "
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:517
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
@@ -154,15 +156,15 @@ msgstr ""
 "پلاگین برای اضافه کردن - مطمئن شوید که شما هیچ دکمه ای پلاگین خاص اضافه کردن به سردبیر "
 "در زیر "
 
-#: rich-text-excerpts.php:475
+#: rich-text-excerpts.php:518
 msgid ""
-"Toolbar buttons - use the word ‘separator’ to separate groups of "
+"Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
-"دکمه های نوار ابزار - استفاده از کلمه 'جدا' به گروه های جداگانه ای از "
+"دکمه های نوار ابزار - استفاده از کلمه 'separator' به گروه های جداگانه ای از "
 "دکمه ها "
 
-#: rich-text-excerpts.php:482
+#: rich-text-excerpts.php:525
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
@@ -170,7 +172,7 @@ msgstr ""
 "پیکربندی دکمه برای ویرایشگر پیشرفته با استفاده از پیشرفته TinyMCE به "
 "پلاگین "
 
-#: rich-text-excerpts.php:484
+#: rich-text-excerpts.php:527
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"
