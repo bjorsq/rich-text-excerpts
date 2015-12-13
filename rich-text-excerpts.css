@@ -41,3 +41,10 @@ div.rich-text-excerpt .wp-editor-container{
 div.rich-text-excerpt td.mceIframeContainer {
 	background: #ffffff;
 }
+#richtext_excerpt_editor_metabox div.inside {
+  padding: 0;
+  margin-top: 0px;
+}
+#wp-excerpt-editor-container {
+  border-width: 1px 0 0 0;
+}
