@@ -77,6 +77,7 @@ Other plugins which enhance the excerpt editor in some way will probably have is
 == Changelog ==
 
 = 1.3.3 =
+* Incorporated *some* of the suggestions in [this forum post](https://wordpress.org/support/topic/css-to-remove-space) about the padding around the editor
 * Bumped "Tested up to" value to Wordpress 4.4.
 
 = 1.3.2 =
