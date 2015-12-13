@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards <pete@bjorsq.net>
 Author URI: https://github.com/bjorsq/rich-text-excerpts
-Version: 1.3.2
+Version: 1.3.3
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify

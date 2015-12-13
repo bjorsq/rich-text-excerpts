@@ -77,25 +77,25 @@ msgstr ""
 msgid "Set the part of the page where the excerpt editor should be shown"
 msgstr ""
 
-#: rich-text-excerpts.php:474
+#: rich-text-excerpts.php:475
 msgid "Set the priority of the excerpt editor"
 msgstr ""
 
-#: rich-text-excerpts.php:485
+#: rich-text-excerpts.php:487
 msgid "Use the minimal editor configuration used in PressThis"
 msgstr ""
 
-#: rich-text-excerpts.php:487
+#: rich-text-excerpts.php:489
 msgid "Use the full version of the editor"
 msgstr ""
 
-#: rich-text-excerpts.php:488
+#: rich-text-excerpts.php:490
 msgid ""
 "Choose whether to use the full TinyMCE editor, or the &ldquo;teeny&rdquo; "
 "version of the editor."
 msgstr ""
 
-#: rich-text-excerpts.php:506
+#: rich-text-excerpts.php:508
 msgid ""
 "Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in "
 "the HTML editor This will make it possible to use more advanced coding in "
@@ -104,55 +104,55 @@ msgid ""
 "it permanently"
 msgstr ""
 
-#: rich-text-excerpts.php:508
+#: rich-text-excerpts.php:510
 msgid "Enable upload media button"
 msgstr ""
 
-#: rich-text-excerpts.php:509
+#: rich-text-excerpts.php:511
 msgid "Number of rows to use in the text editor (minimum is 3)"
 msgstr ""
 
-#: rich-text-excerpts.php:510
+#: rich-text-excerpts.php:512
 msgid "Height of editor in pixels (between 50 and 5000)"
 msgstr ""
 
-#: rich-text-excerpts.php:511
+#: rich-text-excerpts.php:513
 msgid "Toolbar Buttons and Plugins"
 msgstr ""
 
-#: rich-text-excerpts.php:516
+#: rich-text-excerpts.php:518
 msgid "For a list of buttons and plugins in TinyMCE, see the TinyMCE wiki"
 msgstr ""
 
-#: rich-text-excerpts.php:516
+#: rich-text-excerpts.php:518
 msgid ""
 "There is also some documentation on the implementation of TinyMCE in "
 "Wordpress on the Wordpress Codex"
 msgstr ""
 
-#: rich-text-excerpts.php:516
+#: rich-text-excerpts.php:518
 msgid "Button and plugin names should be separated using commas"
 msgstr ""
 
-#: rich-text-excerpts.php:517
+#: rich-text-excerpts.php:519
 msgid ""
 "Plugins to add - make sure you add any plugin specific buttons to the editor "
 "below"
 msgstr ""
 
-#: rich-text-excerpts.php:518
+#: rich-text-excerpts.php:520
 msgid ""
 "Toolbar buttons - use the word &lsquo;separator&rsquo; to separate groups of "
 "buttons"
 msgstr ""
 
-#: rich-text-excerpts.php:525
+#: rich-text-excerpts.php:527
 msgid ""
 "Configure the buttons for the advanced editor using the TinyMCE Advanced "
 "plugin"
 msgstr ""
 
-#: rich-text-excerpts.php:527
+#: rich-text-excerpts.php:529
 msgid ""
 "If you want to configure the buttons for the advanced editor, install and "
 "activate the TinyMCE Advanced plugin"

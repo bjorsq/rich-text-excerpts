@@ -14,6 +14,7 @@ module.exports = function(grunt) {
         text_domain: 'rich-text-excerpts',
         dest: 'languages/',
         language: 'PHP',
+        msgmerge: true,
         keywords: [
           '__:1',
           '_e:1',
