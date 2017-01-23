@@ -3,8 +3,8 @@ Contributors: bjorsq
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ2WC8UHFMEQ
 Tags: excerpt, editor, TinyMCE, formatting
 Requires at least: 3.3
-Tested up to: 4.4
-Stable tag: 1.3.3
+Tested up to: 4.6
+Stable tag: 1.3.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 

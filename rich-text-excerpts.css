@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards <pete@bjorsq.net>
 Author URI: https://github.com/bjorsq/rich-text-excerpts
-Version: 1.3.3
+Version: 1.3.4
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
@@ -47,4 +47,34 @@ div.rich-text-excerpt td.mceIframeContainer {
 }
 #wp-excerpt-editor-container {
   border-width: 1px 0 0 0;
+}
+#rich-text-excerpts-mce-buttons-sortable li {
+	float:left;
+	display:inline-block;
+	border:1px solid #999;
+	border-radius:.2em;
+	height:4em;
+	background:#ccc;
+	margin-right:.2em;
+}
+#rich-text-excerpts-mce-buttons-sortable span.handle {
+	display:inline-block;
+	width:100%;
+	height:1em;
+	background:#999;
+	cursor:move;
+}
+#rich-text-excerpts-mce-buttons-sortable label {
+	display:inline-block;
+	padding:.5em;
+	color:#999;
+}
+#rich-text-excerpts-mce-buttons-sortable input {
+	display:none;
+}
+#rich-text-excerpts-mce-buttons-sortable input.selected {
+	background:#fff;
+}
+#rich-text-excerpts-mce-buttons-sortable input.selected label {
+	color:#000;
 }
