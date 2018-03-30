@@ -531,6 +531,132 @@ class Rich_Text_Excerpts {
 		print( '</div>');
 	}
 
+	/* input field for text */
+	public static function setting_mce_buttons( )
+	{
+		$options = self::get_plugin_options();
+		$buttons = $options['editor_settings']['buttons'];
+		printf('<input type="hidden" id="rich_text_excerpts_options-editor_settings-buttons" name="rich_text_excerpts_options[editor_settings][buttons]" value="%s">', implode(',', $buttons) );
+		$allowed_buttons = array(
+			'bold' => array(
+				'icon'      => 'dashicons-editor-bold',
+				'label'     => __('Bold', 'hps')
+			),
+			'italic' => array(
+				'icon'      => 'dashicons-editor-italic',
+				'label'     => __('Italic', 'hps')
+			),
+			'underline' => array(
+				'icon'      => 'dashicons-editor-underline',
+				'label'     => __('Underline', 'hps')
+			),
+			'formatselect' => array(
+				'icon'      => plugins_url('/img/formatselect.png', __FILE__),
+				'label'     => __('Format selection', 'hps')
+			),
+			'bullist' => array(
+				'icon'      => 'dashicons-editor-ul',
+				'label'     => __('Bulleted list', 'hps')
+			),
+			'numlist' => array(
+				'icon'      => 'dashicons-editor-ol',
+				'label'     => __('Numbered list', 'hps')
+			),
+			'quote' => array(
+				'icon'      => 'dashicons-editor-quote',
+				'label'     => __('Quote', 'hps')
+			),
+			'outdent' => array(
+				'icon'      => 'dashicons-editor-outdent',
+				'label'     => __('Outdent', 'hps')
+			),
+			'indent' => array(
+				'icon'      => 'dashicons-editor-indent',
+				'label'     => __('Indent', 'hps')
+			),
+			'alignleft' => array(
+				'icon'      => 'dashicons-editor-alignleft',
+				'label'     => __('Align left', 'hps')
+			),
+			'aligncenter' => array(
+				'icon'      => 'dashicons-editor-aligncenter',
+				'label'     => __('Align center', 'hps')
+			),
+			'alignright' => array(
+				'icon'      => 'dashicons-editor-alignright',
+				'label'     => __('Align right', 'hps')
+			),
+			'alignjustify' => array(
+				'icon'      => 'dashicons-editor-justify',
+				'label'     => __('Justify', 'hps')
+			),
+			'paste-word' => array(
+				'icon'      => 'dashicons-editor-paste-word',
+				'label'     => __('Paste from Word', 'hps')
+			),
+			'paste-text' => array(
+				'icon'      => 'dashicons-editor-paste-text',
+				'label'     => __('Plain text paste', 'hps')
+			),
+			'charmap' => array(
+				'icon'      => 'dashicons-editor-customchar',
+				'label'     => __('Text colour', 'hps')
+			),
+			'link' => array(
+				'icon'      => 'dashicons-admin-links',
+				'label'     => __('Insert link', 'hps')
+			),
+			'unlink' => array(
+				'icon'      => 'dashicons-editor-unlink',
+				'label'     => __('Remove link', 'hps')
+			),
+			'undo' => array(
+				'icon'      => 'dashicons-undo',
+				'label'     => __('Undo', 'hps')
+			),
+			'redo' => array(
+				'icon'      => 'dashicons-redo',
+				'label'     => __('Redo', 'hps')
+			),
+			'removeformat' => array(
+				'icon'      => 'dashicons-editor-removeformatting',
+				'label'     => __('Clear formatting', 'hps')
+			),
+			'strikethrough' => array(
+				'icon'      => 'dashicons-editor-strikethrough',
+				'label'     => __('Strikethrough', 'hps')
+			),
+			'spellchecker' => array(
+				'icon'      => 'dashicons-editor-spellcheck',
+				'label'     => __('Spell check', 'hps')
+			),
+			'forecolor' => array(
+				'icon'      => 'dashicons-editor-textcolor',
+				'label'     => __('Text colour', 'hps')
+			),
+			'fullscreen' => array(
+				'icon'      => 'dashicons-editor-expand',
+				'label'     => __('Full screen editing', 'hps')
+			)
+		);
+		print('<ul id="rich-text-excerpts-mce-buttons-sortable">');
+		$allowed_buttons = apply_filters( 'rich_text_excerpts_allowed_buttons', $allowed_buttons );
+		foreach ($buttons as $button) {
+			if ( in_array( $button, array_keys( $allowed_buttons ) ) ) {
+				$icon = ( strpos($allowed_buttons[$button]['icon'], 'http') === 0 )? '<img src="' . $allowed_buttons[$button]['icon'] . '" title="' . $allowed_buttons[$button]['label'] . '">': '<span class="dashicons ' . $allowed_buttons[$button]['icon'] . '" title="' . $allowed_buttons[$button]['label'] . '"></span>';
+				printf('<li class="selected"><span class="handle"></span><label for="rich_text_excerpts_options-editor_settings-buttons-%1$s">%2$s</label><input type="checkbox" id="rich_text_excerpts_options-editor_settings-buttons-%1$s" name="editor_button_%1$s" value="%1$s" checked></li>', $button, $icon );
+				unset($allowed_buttons[$button]);
+			}
+		}
+		if ( count( $allowed_buttons ) ) {
+			foreach( $allowed_buttons as $button => $details ) {
+				$icon = ( strpos($details['icon'], 'http') === 0 )? '<img src="' . $details['icon'] . '" title="' . $details['label'] . '">': '<span class="dashicons dashicons-' . $details['icon'] . '" title="' . $details['label'] . '"></span>';
+				printf('<li><span class="handle"></span><label for="rich_text_excerpts_options-editor_settings-buttons-%1$s">%2$s</label><input type="checkbox" id="rich_text_excerpts_options-editor_settings-buttons-%1$s" name="editor_button_%1$s" value="%1$s"></li>', $button, $icon );
+			}
+		}
+		print('</ul>');
+	}
+
 	/**
 	 * takes a string of comma-separated arguments and splits it into an array
 	 */

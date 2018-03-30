@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
 Description: Adds rich text editing capability for excerpts using wp_editor()
 Author: Peter Edwards <pete@bjorsq.net>
 Author URI: https://github.com/bjorsq/rich-text-excerpts
-Version: 1.3.3
+Version: 1.3.4
 License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
@@ -71,7 +71,27 @@ jQuery(document).ready(function($){
 		} else {
 			$('#rte-metabox-settings').hide();
 		}
-	};
+	},
+
+	/**
+	 * TinyMCE configuration buttons
+	 */
+	updateCheckedButtons = function()
+	{
+		var checkedItems = [];
+		$('#rich-text-excerpts-mce-buttons-sortable input:checked').each(function(){
+			checkedItems.push($(this).val());
+		});
+		$('#rich_text_excerpts_options-editor_settings-buttons').val(checkedItems.join(','));
+		$('#rich-text-excerpts-mce-buttons-sortable input').each(function(){
+			if ($(this).is(':checked')){
+				$(this).parents('li').addClass('selected');
+			} else {
+				$(this).parents('li').removeClass('selected');
+			}
+		});
+	},
+
 
 	/* add event handlers and setup the form */
 	if ( $('#rich_text_excerpts_options_form').length ) {
@@ -91,6 +111,16 @@ jQuery(document).ready(function($){
 			lastchecked = $(this);
 			check_post_type_options();
 		});
+
+		/* make TinyMCE buttons sortable */
+		$('#rich-text-excerpts-mce-buttons-sortable').sortable({
+			update: updateCheckedButtons,
+			handle: '.handle',
+			helper: 'clone'
+		});
+
+		/* update buttons appearance when they are checked/unchecked */
+		$('#rich-text-excerpts-mce-buttons-sortable :checkbox').on('click', updateCheckedButtons);
 
 		/* initial checks on page load */
 		check_editor_options();
