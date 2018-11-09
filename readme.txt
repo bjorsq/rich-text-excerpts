@@ -12,7 +12,7 @@ A Wordpress plugin which swaps out the textarea used for excerpts with a TinyMCE
 
 == Description ==
 
-The Plugin uses the [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) function to generate a rich text editor for page/post excerpts placed in a metabox on the edit screen, so **will only work in Wordpress 3.5 or greater**. This plugin **does not currently work with the Gutenberg editor** - users of WordPress 5.0 and above should activate the [Classic Editor Plugin](https://wordpress.org/plugins/classic-editor/) if they wish to continue to use this plugin.
+The Plugin uses the [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor) function to generate a rich text editor for page/post excerpts placed in a meta box on the edit screen, so **will only work in Wordpress 3.5 or greater**. This plugin **does not currently work with the Gutenberg editor** - users of WordPress 5.0 and above should activate the [Classic Editor Plugin](https://wordpress.org/plugins/classic-editor/) if they wish to continue to use this plugin.
 
 The plugin removes the excerpt meta box and replaces it with a new one containing the TinyMCE editor using the [wp_editor](http://codex.wordpress.org/Function_Reference/wp_editor)function. You can set the options for the rich text editor in the plugin options page (in the Wordpress Settings menu). You can also use a "teeny" version of the editor with limited buttons, and configure those buttons on the plugin options page.
 
@@ -66,10 +66,10 @@ Other plugins which enhance the excerpt editor in some way will probably have is
 == Changelog ==
 
 = 1.3.5 =
-* After testing with the Gutenberg Editor, decided to disable this plugin automatically if Gutenberg was active. I will try to find a way for this plugin to work with Gutenberg in a future version.
+* It is currently not possible to change the excerpt input when using the Gutenberg Editor. The plugin disables itself if it detects that Gutenberg is active.
 * Removed Finnish translation in response to user feedback.
 * Tidied up code to more closely adhere to WordPress coding standards.
-* Removed the option to show the Excerpt editor in a static box.
+* Removed the option to show the Excerpt editor in a static box and increased minimum version to 3.5.
 * Bumped “Tested up to” value to 5
 
 = 1.3.4 =
@@ -96,7 +96,7 @@ Other plugins which enhance the excerpt editor in some way will probably have is
 
 = 1.3 =
 * made register_plugin_options() static (bugfix).
-* added option to use a metabox instead of placing the excerpt statically using edit_form_advanced or edit_page_form.
+* added option to use a meta box instead of placing the excerpt statically using edit_form_advanced or edit_page_form.
 
 = 1.2.1 =
 * removed a debugging setting from the plugin which set the `textarea_rows` to 20. Setting `textarea_rows` in `wp_editor()` doesn't appear to have any effect anyway.

@@ -1,19 +1,19 @@
 <?php
 /**
  * A WordPress plugin which adds rich text editing capability for excerpts
+ * Plugin Name: Rich Text Excerpts
+ * Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
+ * Description: Adds rich text editing capability for excerpts using wp_editor()
+ * Author: Peter Edwards <pete@bjorsq.net>
+ * Author URI: https://github.com/bjorsq/rich-text-excerpts
+ * Version: 1.3.4
+ * Text Domain: rich-text-excerpts
+ * License: GPLv3
  *
  * @package Rich_Text_Excerpts
  */
 
 /*
-Plugin Name: Rich Text Excerpts
-Plugin URI: http://wordpress.org/extend/plugins/rich-text-excerpts/
-Description: Adds rich text editing capability for excerpts using wp_editor()
-Author: Peter Edwards <pete@bjorsq.net>
-Author URI: https://github.com/bjorsq/rich-text-excerpts
-Version: 1.3.4
-Text Domain: rich-text-excerpts
-License: GPLv3
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -49,8 +49,7 @@ if ( ! class_exists( 'Rich_Text_Excerpts' ) ) {
 			/**
 			 * Bail if Gutenberg is being used
 			 */
-			if ( function_exists( 'is_gutenberg_page' ) ) {
-				add_action( 'admin_init', array( $this, 'auto_deactivate_plugin' ) );
+			if ( $this->is_gutenberg_active() ) {
 				return;
 			}
 
@@ -106,9 +105,39 @@ if ( ! class_exists( 'Rich_Text_Excerpts' ) ) {
 			deactivate_plugins( dirname( __FILE__ ) . '/rich-text-excerpts.php' );
 			add_action( 'admin_notices', function() {
 				print( '<div class="notice notice-error is-dismissible"><p>' );
-				esc_html_e( 'Sorry, Rich Text Excerpts does not work with the Gutenberg editor enabled (yet)', 'rich-text-excerpts' );
+				esc_html_e( 'Sorry, Rich Text Excerpts does not work with the Gutenberg editor enabled', 'rich-text-excerpts' );
 				print( '</p></div>' );
 			}, 10);
+		}
+
+		public function is_gutenberg_active() {
+			$gutenberg = false;
+			$block_editor = false;
+
+			if ( has_filter( 'replace_editor', 'gutenberg_init' ) ) {
+				// Gutenberg is installed and activated.
+				$gutenberg = true;
+			}
+
+			if ( version_compare( $GLOBALS['wp_version'], '5.0-beta', '>' ) ) {
+				// Block editor.
+				$block_editor = true;
+			}
+
+			if ( ! $gutenberg && ! $block_editor ) {
+				return false;
+			}
+
+			$replace = ( get_option( 'classic-editor-replace' ) !== 'no-replace' );
+
+			if ( $block_editor && ( $replace || isset( $_GET['classic-editor'] ) ) ) {
+				return false;
+			}
+
+			if ( $gutenberg && ( $replace || isset( $_GET['classic-editor'] ) ) ) {
+				return true;
+			}
+			return $gutenberg;
 		}
 
 		/**
@@ -125,7 +154,7 @@ if ( ! class_exists( 'Rich_Text_Excerpts' ) ) {
 			if ( ! current_user_can( 'activate_plugins' ) ) {
 				return;
 			}
-			update_option( 'rich_text_excerpts_options', $this->get_default_plugin_options() );
+			update_option( 'rich_text_excerpts_options', self::get_default_plugin_options() );
 		}
 
 		/**
@@ -430,7 +459,7 @@ if ( ! class_exists( 'Rich_Text_Excerpts' ) ) {
 		/**
 		 * Gets default plugin options
 		 */
-		public function get_default_plugin_options() {
+		public static function get_default_plugin_options() {
 			return array(
 				'supported_post_types' => array( 'post' ),
 				'editor_type'          => 'teeny',
@@ -599,7 +628,7 @@ if ( ! class_exists( 'Rich_Text_Excerpts' ) ) {
 		 */
 		public function validate_rich_text_excerpts_options( $plugin_options ) {
 			/* get defaults as a fallabck for missing values */
-			$defaults = $this->get_default_plugin_options();
+			$defaults = self::get_default_plugin_options();
 
 			/* make sure supported post types is an array */
 			if ( ! isset( $plugin_options['supported_post_types'] ) || ! is_array( $plugin_options['supported_post_types'] ) ) {
@@ -709,7 +738,7 @@ if ( ! class_exists( 'Rich_Text_Excerpts' ) ) {
 		 * Gets the version of the plugin
 		 */
 		public function version() {
-			return $this->$version;
+			return $this->version;
 		}
 
 	}
